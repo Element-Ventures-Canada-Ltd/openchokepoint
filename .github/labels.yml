@@ -1,0 +1,6 @@
+- { name: bounty,           color: "0e8a16", description: "Paid on merge — see BOUNTIES.md" }
+- { name: good first issue, color: "7057ff", description: "Small, well-scoped starting task" }
+- { name: schema,           color: "1d76db", description: "Schema proposal or change" }
+- { name: tooling,          color: "5319e7", description: "Validator, converters, CI" }
+- { name: examples,         color: "fbca04", description: "Synthetic examples and docs" }
+- { name: bug,              color: "d73a4a", description: "Something is not working" }

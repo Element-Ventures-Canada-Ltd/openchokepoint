@@ -1,0 +1,18 @@
+name: Task or bounty
+description: A scoped piece of work with an acceptance test (maintainers)
+body:
+  - type: input
+    id: track
+    attributes: { label: Track, placeholder: "Schema / Tooling / Examples" }
+    validations: { required: true }
+  - type: textarea
+    id: scope
+    attributes: { label: Scope }
+    validations: { required: true }
+  - type: textarea
+    id: acceptance
+    attributes: { label: Acceptance test, description: "How a reviewer will know it is done." }
+    validations: { required: true }
+  - type: input
+    id: bounty
+    attributes: { label: Bounty, description: "Amount if this is a bounty issue; blank otherwise." }
