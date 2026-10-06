@@ -11,7 +11,7 @@ schema:
 shared_properties:            # every object and link carries these
   id:             { type: string, required: true }
   name:           { type: string }
-  evidence_grade: { type: enum, values: [confirmed, reported, inferred, no_evidence], required: true }
+  evidence_grade: { type: enum, values: [confirmed, reported, inferred, speculative, no_evidence], required: true }
   sources:        { type: url, many: true, required: true }
   as_of:          { type: date, required: true }
   lifecycle:      { type: enum, values: [announced, active, inactive, retired], required: true }
