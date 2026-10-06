@@ -1,0 +1,60 @@
+# Handling: Unclassified — public
+# OpenChokepoint schema v0.1 (working name) — an open grammar for supply-chain dependency registries.
+# Types only: no entities, no scores, no assessments. Licensed under Apache-2.0.
+# © 2026 T. Leroy Smith. Exclusively licensed to Element Ventures (Canada) Ltd.
+
+schema:
+  name: openchokepoint
+  version: 0.1.0
+  status: draft
+
+shared_properties:            # every object and link carries these
+  id:             { type: string, required: true }
+  name:           { type: string }
+  evidence_grade: { type: enum, values: [confirmed, reported, inferred, no_evidence], required: true }
+  sources:        { type: url, many: true, required: true }
+  as_of:          { type: date, required: true }
+  lifecycle:      { type: enum, values: [announced, active, inactive, retired], required: true }
+  synthetic:      { type: boolean }
+
+object_types:
+  Entity:
+    description: An organization that holds or supplies a capability.
+    properties:
+      name:                       { type: string, required: true }
+      entity_kind:                { type: enum, values: [company, government, academic, nonprofit, consortium], required: true }
+      incorporation_jurisdiction: { type: iso3166, required: true }
+      controlling_jurisdiction:   { type: iso3166, required: true }   # jurisdiction of control, not residency
+  Facility:
+    description: A physical site where work is performed.
+    properties:
+      name:              { type: string, required: true }
+      facility_kind:     { type: enum, values: [manufacturing, test, launch, ground_station, processing, mine, research], required: true }
+      host_jurisdiction: { type: iso3166, required: true }
+  Capability:
+    description: Something an entity or facility can do or supply.
+    properties:
+      name:         { type: string, required: true }
+      taxonomy_ref: { type: string }        # optional pointer into any external taxonomy
+  Programme:
+    description: A demand-side programme that requires capabilities.
+    properties:
+      name: { type: string, required: true }
+
+link_types:
+  located_at:
+    from: [Entity]
+    to: [Facility]
+  provides_capability:
+    from: [Entity, Facility]
+    to: [Capability]
+    properties:
+      maturity: { type: enum, values: [concept, prototype, demonstrated, qualified, production] }
+  requires_capability:
+    from: [Programme]
+    to: [Capability]
+  supplies:
+    from: [Entity]
+    to: [Entity]
+    properties:
+      item: { type: string, required: true }

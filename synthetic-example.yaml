@@ -1,0 +1,26 @@
+# Handling: Unclassified — public
+# SYNTHETIC EXAMPLE ONLY — every name, identifier and source below is fictional.
+
+objects:
+  - { type: Entity, id: ent-0001, name: "Example Propulsion Ltd.", entity_kind: company, incorporation_jurisdiction: CA,
+      controlling_jurisdiction: CA, evidence_grade: confirmed, sources: ["https://example.org/synthetic/ent-0001"],
+      as_of: 2026-10-01, lifecycle: active, synthetic: true }
+  - { type: Entity, id: ent-0002, name: "Example Turbomachinery GmbH", entity_kind: company, incorporation_jurisdiction: DE,
+      controlling_jurisdiction: DE, evidence_grade: reported, sources: ["https://example.org/synthetic/ent-0002"],
+      as_of: 2026-10-01, lifecycle: active, synthetic: true }
+  - { type: Facility, id: fac-0001, name: "Example Test Site", facility_kind: test, host_jurisdiction: CA-BC,
+      evidence_grade: inferred, sources: ["https://example.org/synthetic/fac-0001"], as_of: 2026-10-01, lifecycle: active, synthetic: true }
+  - { type: Capability, id: cap-0001, name: "Example turbopump hot-fire testing", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/cap-0001"], as_of: 2026-10-01, lifecycle: active, synthetic: true }
+  - { type: Programme, id: prg-0001, name: "Example Launch Programme", evidence_grade: confirmed,
+      sources: ["https://example.org/synthetic/prg-0001"], as_of: 2026-10-01, lifecycle: announced, synthetic: true }
+
+links:
+  - { type: located_at, id: lnk-0001, from: ent-0001, to: fac-0001, evidence_grade: confirmed,
+      sources: ["https://example.org/synthetic/lnk-0001"], as_of: 2026-10-01, lifecycle: active, synthetic: true }
+  - { type: provides_capability, id: lnk-0002, from: fac-0001, to: cap-0001, maturity: demonstrated, evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/lnk-0002"], as_of: 2026-10-01, lifecycle: active, synthetic: true }
+  - { type: requires_capability, id: lnk-0003, from: prg-0001, to: cap-0001, evidence_grade: confirmed,
+      sources: ["https://example.org/synthetic/lnk-0003"], as_of: 2026-10-01, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-0004, from: ent-0002, to: ent-0001, item: "Example turbopump bearing set", evidence_grade: reported,
+      sources: ["https://example.org/synthetic/lnk-0004"], as_of: 2026-10-01, lifecycle: active, synthetic: true }
