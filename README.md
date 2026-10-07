@@ -28,7 +28,7 @@ python3 tools/validate.py examples/synthetic-example.yaml
 
 ## Contributing
 
-Read [PROGRAM.md](PROGRAM.md) for the programme and first use case, [CONTRIBUTING.md](CONTRIBUTING.md) for how to contribute, and [BOUNTIES.md](BOUNTIES.md) for paid issues. Contributions require the CLA and DCO sign-off.
+Read [PROGRAM.md](PROGRAM.md) for the programme and first use case, [CONTRIBUTING.md](CONTRIBUTING.md) for how to contribute, and [BOUNTIES.md](BOUNTIES.md) for paid issues. Contributors sign the CLA once, through the CLA bot on their first pull request.
 
 ## Licences
 

@@ -2,10 +2,9 @@ Handling: Unclassified — public
 
 # Contributing
 
-1. **Sign the CLA once.** Individuals: tick the CLA box in your first pull request ([CLA.md](CLA.md)). Organizations: sign [CCLA.md](CCLA.md) first.
-2. **Sign off every commit** with the Developer Certificate of Origin: `git commit -s`.
-3. **Pick an issue.** Start with `good first issue`, or a `bounty` issue under [BOUNTIES.md](BOUNTIES.md). Comment to claim it before you start.
-4. **Open a pull request** from a branch. CI runs the validator, the data-handling guard and the CLA/DCO check.
+1. **Sign once.** On your first pull request the CLA bot asks you to post a one-line signing statement; that covers all your later contributions ([CLA.md](CLA.md)). If you contribute for an organization, it signs [CCLA.md](CCLA.md) first and its contributors are allowlisted.
+2. **Pick an issue.** Start with `good first issue`, or a `bounty` issue under [BOUNTIES.md](BOUNTIES.md). Comment to claim it before you start.
+3. **Open a pull request** from a branch. CI runs the validator and the data-handling guard; the CLA bot checks your signature.
 
 ## Rules
 

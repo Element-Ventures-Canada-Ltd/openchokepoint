@@ -7,7 +7,7 @@ Usage:
     python3 tools/validate.py [instance.yaml ...]
 
 Defaults to the synthetic example. Requires PyYAML. Exits non-zero on any error.
-While external data contributions are closed, every record must carry `synthetic: true`.
+Records outside data/ must carry `synthetic: true`. Real records are accepted only under data/ with a provenance.yaml (see DATA-CONTRIBUTIONS.md).
 """
 import datetime
 import re
@@ -59,6 +59,39 @@ def check_props(record, props, label, errors, known_ids, reserved):
             errors.append(f"{label}: unknown property '{name}'")
 
 
+PERSONAL = re.compile(r"[\w.+-]+@[\w-]+\.[a-z]{2,}|\(?\b\d{3}\)?[ .-]\d{3}[ .-]\d{4}\b")
+
+
+def check_public_data(path, records):
+    """Real (non-synthetic) records are accepted only under data/, with a complete provenance.yaml,
+    public http(s) sources on every record, and no personal contact details (DATA-CONTRIBUTIONS.md)."""
+    errs = []
+    rel = path.resolve().relative_to(ROOT) if path.resolve().is_relative_to(ROOT) else path
+    if not str(rel).startswith("data/"):
+        return [f"{path}: real records are accepted only under data/ — everything else must be synthetic"]
+    prov_path = path.parent / "provenance.yaml"
+    if not prov_path.exists():
+        return [f"{path}: real records need a provenance.yaml in the same folder"]
+    prov = load(prov_path) or {}
+    if prov.get("personal_information") != "none":
+        errs.append(f"{prov_path}: personal_information must be 'none'")
+    if prov.get("export_controlled") is not False:
+        errs.append(f"{prov_path}: export_controlled must be false")
+    if not prov.get("sources"):
+        errs.append(f"{prov_path}: sources missing")
+    for rec in records:
+        if rec.get("synthetic") is not False:
+            errs.append(f"{rec.get('id')}: set synthetic: false explicitly on real records")
+        if rec.get("evidence_grade") in ("speculative", "no_evidence"):
+            errs.append(f"{rec.get('id')}: real records need evidence grade confirmed, reported or inferred")
+        for s in rec.get("sources") or []:
+            if not str(s).startswith("https://"):
+                errs.append(f"{rec.get('id')}: sources must be public https URLs")
+        if PERSONAL.search(" ".join(str(v) for v in rec.values() if isinstance(v, str))):
+            errs.append(f"{rec.get('id')}: looks like an email address or phone number — no personal contact details")
+    return errs
+
+
 def validate(instance_path, onto):
     errors = []
     data = load(instance_path)
@@ -72,9 +105,9 @@ def validate(instance_path, onto):
         errors.append(f"duplicate id '{d}'")
     types_by_id = {o.get("id"): o.get("type") for o in objects}
 
-    for rec in objects + links:
-        if rec.get("synthetic") is not True:
-            errors.append(f"{rec.get('id')}: only synthetic records are accepted while data contributions are closed")
+    real = [r for r in objects + links if r.get("synthetic") is not True]
+    if real:
+        errors.extend(check_public_data(Path(instance_path), real))
 
     for obj in objects:
         label = f"object {obj.get('id')}"

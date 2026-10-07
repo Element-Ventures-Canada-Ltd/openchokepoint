@@ -1,0 +1,16 @@
+handling: Unclassified — public
+contribution: Canadian launch supply-chain registry — public extract
+type: dataset
+sources:
+- description: Public web sources cited per record (organization websites, government
+    pages, trade press)
+  url: see per-record sources
+  licence: facts; citations only
+  retrieved: '2026-10-07'
+synthetic: false
+personal_information: none
+export_controlled: false
+training_rights_confirmed: true
+base_model: ''
+notes: Weekly extract. Organization-level facts only. Scores, tiers and assessments
+  are not published.
