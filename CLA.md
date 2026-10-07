@@ -70,9 +70,12 @@ law, You provide Contributions "as is", without warranty of any kind.
 
 ## 8. Acceptance
 
-You accept this Agreement by checking the CLA box in the pull request template
-and signing off every commit under the Developer Certificate of Origin
-(`git commit -s`). The `contribution-check` workflow verifies both.
+You accept this Agreement once, by posting the signing statement the CLA bot
+requests on your first pull request. The bot records your GitHub username, the
+pull request and the time of signature in the signatures register held by EV.
+That record applies to all of your later Contributions to the Project. If you
+contribute as part of your work for an organization, that organization must
+sign the Corporate CLA ([CCLA.md](CCLA.md)) before your Contribution is merged.
 
 ## 9. Governing Law
 
