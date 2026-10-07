@@ -1,0 +1,1630 @@
+# Handling: Unclassified — public
+# Canadian launch supply-chain registry — public extract. Facts from public sources only; no scores or assessments.
+# Generated 2026-10-07 by the weekly export. Licence: OGL-Canada-2.0. Corrections welcome by issue.
+
+objects:
+- type: Entity
+  id: ent-r-001
+  name: NordSpace
+  entity_kind: company
+  incorporation_jurisdiction: CA
+  controlling_jurisdiction: CA
+  evidence_grade: reported
+  sources:
+  - https://nordspace.com
+  - https://canada.ca
+  as_of: 2026-10-07
+  lifecycle: active
+  synthetic: false
+- type: Entity
+  id: ent-r-002
+  name: Reaction Dynamics (RDX)
+  entity_kind: company
+  incorporation_jurisdiction: CA
+  controlling_jurisdiction: CA
+  evidence_grade: reported
+  sources:
+  - https://reactiondynamics.space
+  as_of: 2026-10-07
+  lifecycle: active
+  synthetic: false
+- type: Entity
+  id: ent-r-003
+  name: Canada Rocket Company
+  entity_kind: company
+  incorporation_jurisdiction: CA
+  controlling_jurisdiction: CA
+  evidence_grade: reported
+  sources:
+  - https://canada.ca
+  - https://spaceq.ca
+  as_of: 2026-10-07
+  lifecycle: active
+  synthetic: false
+- type: Entity
+  id: ent-r-004
+  name: Maritime Launch Services / Spaceport Nova Scotia
+  entity_kind: company
+  incorporation_jurisdiction: CA
+  controlling_jurisdiction: CA
+  evidence_grade: reported
+  sources:
+  - https://theglobeandmail.com
+  - https://spacenews.com
+  as_of: 2026-10-07
+  lifecycle: active
+  synthetic: false
+- type: Entity
+  id: ent-r-005
+  name: Magellan Aerospace
+  entity_kind: company
+  incorporation_jurisdiction: CA
+  controlling_jurisdiction: CA
+  evidence_grade: reported
+  sources:
+  - https://magellan.aero
+  - https://mbaerospace.ca
+  as_of: 2026-10-07
+  lifecycle: active
+  synthetic: false
+- type: Entity
+  id: ent-r-006
+  name: Bristol Aerospace (Magellan div.)
+  entity_kind: company
+  incorporation_jurisdiction: CA
+  controlling_jurisdiction: CA
+  evidence_grade: reported
+  sources:
+  - https://en.wikipedia.org
+  as_of: 2026-10-07
+  lifecycle: active
+  synthetic: false
+- type: Entity
+  id: ent-r-007
+  name: MDA Space
+  entity_kind: company
+  incorporation_jurisdiction: CA
+  controlling_jurisdiction: CA
+  evidence_grade: reported
+  sources:
+  - https://mda.space
+  - https://spacenews.com
+  as_of: 2026-10-07
+  lifecycle: active
+  synthetic: false
+- type: Entity
+  id: ent-r-008
+  name: Telesat
+  entity_kind: company
+  incorporation_jurisdiction: CA
+  controlling_jurisdiction: CA
+  evidence_grade: reported
+  sources:
+  - https://telesat.com
+  as_of: 2026-10-07
+  lifecycle: active
+  synthetic: false
+- type: Entity
+  id: ent-r-009
+  name: SFL Missions Inc. (ex-UTIAS SFL)
+  entity_kind: company
+  incorporation_jurisdiction: CA
+  controlling_jurisdiction: CA
+  evidence_grade: reported
+  sources:
+  - https://utias-sfl.net
+  - https://sflmissions.com
+  as_of: 2026-10-07
+  lifecycle: active
+  synthetic: false
+- type: Entity
+  id: ent-r-010
+  name: Kepler Communications
+  entity_kind: company
+  incorporation_jurisdiction: CA
+  controlling_jurisdiction: CA
+  evidence_grade: reported
+  sources:
+  - https://kepler.space
+  - https://betakit.com
+  as_of: 2026-10-07
+  lifecycle: active
+  synthetic: false
+- type: Entity
+  id: ent-r-011
+  name: Honeywell Aerospace Canada (ex-COM DEV)
+  entity_kind: company
+  incorporation_jurisdiction: CA
+  controlling_jurisdiction: US
+  evidence_grade: reported
+  sources:
+  - https://newspaceeconomy.ca
+  as_of: 2026-10-07
+  lifecycle: active
+  synthetic: false
+- type: Entity
+  id: ent-r-012
+  name: Xiphos Systems
+  entity_kind: company
+  incorporation_jurisdiction: CA
+  controlling_jurisdiction: CA
+  evidence_grade: reported
+  sources:
+  - https://eoportal.org
+  as_of: 2026-10-07
+  lifecycle: active
+  synthetic: false
+- type: Entity
+  id: ent-r-013
+  name: NGC Aerospace
+  entity_kind: company
+  incorporation_jurisdiction: CA
+  controlling_jurisdiction: CA
+  evidence_grade: reported
+  sources:
+  - https://spaceq.ca
+  as_of: 2026-10-07
+  lifecycle: active
+  synthetic: false
+- type: Entity
+  id: ent-r-014
+  name: Sinclair Interplanetary (Rocket Lab)
+  entity_kind: company
+  incorporation_jurisdiction: CA
+  controlling_jurisdiction: US
+  evidence_grade: reported
+  sources:
+  - https://newspacetracker.com
+  as_of: 2026-10-07
+  lifecycle: active
+  synthetic: false
+- type: Entity
+  id: ent-r-015
+  name: ABB Canada (Measurement & Analytics)
+  entity_kind: company
+  incorporation_jurisdiction: CA
+  controlling_jurisdiction: CH
+  evidence_grade: reported
+  sources:
+  - https://newspaceeconomy.ca
+  as_of: 2026-10-07
+  lifecycle: active
+  synthetic: false
+- type: Entity
+  id: ent-r-016
+  name: Calian Group (Advanced Technologies)
+  entity_kind: company
+  incorporation_jurisdiction: CA
+  controlling_jurisdiction: CA
+  evidence_grade: reported
+  sources:
+  - https://betakit.com
+  as_of: 2026-10-07
+  lifecycle: active
+  synthetic: false
+- type: Entity
+  id: ent-r-017
+  name: Mission Control Space Services
+  entity_kind: company
+  incorporation_jurisdiction: CA
+  controlling_jurisdiction: CA
+  evidence_grade: reported
+  sources:
+  - https://newspacetracker.com
+  as_of: 2026-10-07
+  lifecycle: active
+  synthetic: false
+- type: Entity
+  id: ent-r-018
+  name: C-CORE
+  entity_kind: academic
+  incorporation_jurisdiction: CA
+  controlling_jurisdiction: CA
+  evidence_grade: reported
+  sources:
+  - https://asc-csa.gc.ca
+  as_of: 2026-10-07
+  lifecycle: active
+  synthetic: false
+- type: Entity
+  id: ent-r-019
+  name: NorthStar Earth & Space
+  entity_kind: company
+  incorporation_jurisdiction: CA
+  controlling_jurisdiction: CA
+  evidence_grade: reported
+  sources:
+  - https://truenorthstrategicreview.ca
+  as_of: 2026-10-07
+  lifecycle: active
+  synthetic: false
+- type: Entity
+  id: ent-r-020
+  name: GHGSat
+  entity_kind: company
+  incorporation_jurisdiction: CA
+  controlling_jurisdiction: CA
+  evidence_grade: reported
+  sources:
+  - https://eoportal.org
+  as_of: 2026-10-07
+  lifecycle: active
+  synthetic: false
+- type: Entity
+  id: ent-r-021
+  name: SkyWatch Space Applications
+  entity_kind: company
+  incorporation_jurisdiction: CA
+  controlling_jurisdiction: CA
+  evidence_grade: reported
+  sources:
+  - https://osler.com
+  as_of: 2026-10-07
+  lifecycle: active
+  synthetic: false
+- type: Entity
+  id: ent-r-022
+  name: Wyvern
+  entity_kind: company
+  incorporation_jurisdiction: CA
+  controlling_jurisdiction: CA
+  evidence_grade: reported
+  sources:
+  - https://betakit.com
+  as_of: 2026-10-07
+  lifecycle: active
+  synthetic: false
+- type: Entity
+  id: ent-r-023
+  name: exactEarth (Spire Global)
+  entity_kind: company
+  incorporation_jurisdiction: CA
+  controlling_jurisdiction: US
+  evidence_grade: reported
+  sources:
+  - https://newspacetracker.com
+  as_of: 2026-10-07
+  lifecycle: active
+  synthetic: false
+- type: Entity
+  id: ent-r-024
+  name: Saskatchewan Research Council (SRC) Rare Earth Processing Facility
+  entity_kind: government
+  incorporation_jurisdiction: CA
+  controlling_jurisdiction: CA
+  evidence_grade: reported
+  sources:
+  - https://src.sk.ca
+  as_of: 2026-10-07
+  lifecycle: active
+  synthetic: false
+- type: Entity
+  id: ent-r-025
+  name: Ucore Rare Metals
+  entity_kind: company
+  incorporation_jurisdiction: CA
+  controlling_jurisdiction: CA
+  evidence_grade: reported
+  sources:
+  - https://ucore.com
+  as_of: 2026-10-07
+  lifecycle: active
+  synthetic: false
+- type: Entity
+  id: ent-r-026
+  name: Vital Metals / Nechalacho
+  entity_kind: company
+  incorporation_jurisdiction: CA
+  controlling_jurisdiction: CA
+  evidence_grade: reported
+  sources:
+  - https://innovationnewsnetwork.com
+  as_of: 2026-10-07
+  lifecycle: active
+  synthetic: false
+- type: Entity
+  id: ent-r-030
+  name: Space Canada
+  entity_kind: nonprofit
+  incorporation_jurisdiction: CA
+  controlling_jurisdiction: CA
+  evidence_grade: reported
+  sources:
+  - https://space-canada.ca
+  as_of: 2026-10-07
+  lifecycle: active
+  synthetic: false
+- type: Entity
+  id: ent-r-032
+  name: Canadian Space Agency (CSA)
+  entity_kind: government
+  incorporation_jurisdiction: CA
+  controlling_jurisdiction: CA
+  evidence_grade: reported
+  sources:
+  - https://asc-csa.gc.ca
+  as_of: 2026-10-07
+  lifecycle: active
+  synthetic: false
+- type: Entity
+  id: ent-r-033
+  name: Defence R&D Canada (DRDC)
+  entity_kind: government
+  incorporation_jurisdiction: CA
+  controlling_jurisdiction: CA
+  evidence_grade: reported
+  sources:
+  - https://canada.ca
+  as_of: 2026-10-07
+  lifecycle: active
+  synthetic: false
+- type: Entity
+  id: ent-r-034
+  name: DND / ADM(Mat) / ADM(IE) / 3 Canadian Space Division
+  entity_kind: government
+  incorporation_jurisdiction: CA
+  controlling_jurisdiction: CA
+  evidence_grade: reported
+  sources:
+  - https://canada.ca
+  as_of: 2026-10-07
+  lifecycle: active
+  synthetic: false
+- type: Entity
+  id: ent-r-036
+  name: Natural Resources Canada (NRCan)
+  entity_kind: government
+  incorporation_jurisdiction: CA
+  controlling_jurisdiction: CA
+  evidence_grade: reported
+  sources:
+  - https://canada.ca
+  as_of: 2026-10-07
+  lifecycle: active
+  synthetic: false
+- type: Entity
+  id: ent-r-043
+  name: Thales Alenia Space / Thales Canada
+  entity_kind: company
+  incorporation_jurisdiction: FR
+  controlling_jurisdiction: FR
+  evidence_grade: reported
+  sources:
+  - https://newspaceeconomy.ca
+  as_of: 2026-10-07
+  lifecycle: active
+  synthetic: false
+- type: Entity
+  id: ent-r-044
+  name: L3Harris Technologies Canada
+  entity_kind: company
+  incorporation_jurisdiction: CA
+  controlling_jurisdiction: US
+  evidence_grade: reported
+  sources:
+  - https://newspaceeconomy.ca
+  as_of: 2026-10-07
+  lifecycle: active
+  synthetic: false
+- type: Entity
+  id: ent-r-045
+  name: Lockheed Martin Canada
+  entity_kind: company
+  incorporation_jurisdiction: CA
+  controlling_jurisdiction: US
+  evidence_grade: reported
+  sources:
+  - https://newspaceeconomy.ca
+  as_of: 2026-10-07
+  lifecycle: active
+  synthetic: false
+- type: Entity
+  id: ent-r-046
+  name: REEtec (processing partner)
+  entity_kind: company
+  incorporation_jurisdiction: 'NO'
+  controlling_jurisdiction: 'NO'
+  evidence_grade: reported
+  sources:
+  - https://investingnews.com
+  as_of: 2026-10-07
+  lifecycle: active
+  synthetic: false
+- type: Entity
+  id: ent-r-047
+  name: Bombardier / CAE (training & simulation)
+  entity_kind: company
+  incorporation_jurisdiction: CA
+  controlling_jurisdiction: CA
+  evidence_grade: reported
+  sources:
+  - https://spaceq.ca
+  as_of: 2026-10-07
+  lifecycle: active
+  synthetic: false
+- type: Entity
+  id: ent-r-048
+  name: UTIAS Space Flight Laboratory (academic)
+  entity_kind: academic
+  incorporation_jurisdiction: CA
+  controlling_jurisdiction: CA
+  evidence_grade: reported
+  sources:
+  - https://utias-sfl.net
+  as_of: 2026-10-07
+  lifecycle: active
+  synthetic: false
+- type: Entity
+  id: ent-r-050
+  name: Canadian Assoc. of Defence & Security Industries (CADSI)
+  entity_kind: nonprofit
+  incorporation_jurisdiction: CA
+  controlling_jurisdiction: CA
+  evidence_grade: reported
+  sources:
+  - https://cadsi.org
+  as_of: 2026-10-07
+  lifecycle: active
+  synthetic: false
+- type: Entity
+  id: ent-r-051
+  name: Public Services and Procurement Canada (PSPC)
+  entity_kind: government
+  incorporation_jurisdiction: CA
+  controlling_jurisdiction: CA
+  evidence_grade: reported
+  sources:
+  - https://canada.ca
+  as_of: 2026-10-07
+  lifecycle: active
+  synthetic: false
+- type: Entity
+  id: ent-r-056
+  name: REalloys Inc.
+  entity_kind: company
+  incorporation_jurisdiction: US
+  controlling_jurisdiction: US
+  evidence_grade: reported
+  sources:
+  - https://realloys.com
+  as_of: 2026-10-07
+  lifecycle: active
+  synthetic: false
+- type: Entity
+  id: ent-r-057
+  name: Neo Performance Materials
+  entity_kind: company
+  incorporation_jurisdiction: CA
+  controlling_jurisdiction: CA
+  evidence_grade: reported
+  sources:
+  - https://neomaterials.com
+  - https://cnbc.com
+  as_of: 2026-10-07
+  lifecycle: active
+  synthetic: false
+- type: Entity
+  id: ent-r-058
+  name: Canadensys Aerospace
+  entity_kind: company
+  incorporation_jurisdiction: CA
+  controlling_jurisdiction: CA
+  evidence_grade: reported
+  sources:
+  - https://canadensys.com
+  as_of: 2026-10-07
+  lifecycle: active
+  synthetic: false
+- type: Entity
+  id: ent-r-059
+  name: Thoth Technology / ThothX
+  entity_kind: company
+  incorporation_jurisdiction: CA
+  controlling_jurisdiction: US
+  evidence_grade: reported
+  sources:
+  - https://thothx.com
+  - https://mda.space
+  as_of: 2026-10-07
+  lifecycle: active
+  synthetic: false
+- type: Entity
+  id: ent-r-068
+  name: Kinaxis Inc.
+  entity_kind: company
+  incorporation_jurisdiction: CA
+  controlling_jurisdiction: CA
+  evidence_grade: reported
+  sources:
+  - https://kinaxis.com
+  as_of: 2026-10-07
+  lifecycle: active
+  synthetic: false
+- type: Entity
+  id: ent-r-069
+  name: CGI Canada
+  entity_kind: company
+  incorporation_jurisdiction: CA
+  controlling_jurisdiction: CA
+  evidence_grade: reported
+  sources:
+  - https://cgi.com
+  - https://canada.ca
+  as_of: 2026-10-07
+  lifecycle: active
+  synthetic: false
+- type: Entity
+  id: ent-r-070
+  name: Descartes Systems Group
+  entity_kind: company
+  incorporation_jurisdiction: CA
+  controlling_jurisdiction: CA
+  evidence_grade: reported
+  sources:
+  - https://descartes.com
+  as_of: 2026-10-07
+  lifecycle: active
+  synthetic: false
+- type: Entity
+  id: ent-r-071
+  name: OpenText
+  entity_kind: company
+  incorporation_jurisdiction: CA
+  controlling_jurisdiction: CA
+  evidence_grade: reported
+  sources:
+  - https://opentext.com
+  as_of: 2026-10-07
+  lifecycle: active
+  synthetic: false
+- type: Entity
+  id: ent-r-072
+  name: ADGA Group Consultants
+  entity_kind: company
+  incorporation_jurisdiction: CA
+  controlling_jurisdiction: CA
+  evidence_grade: reported
+  sources:
+  - https://adga.ca
+  as_of: 2026-10-07
+  lifecycle: active
+  synthetic: false
+- type: Entity
+  id: ent-r-073
+  name: Deloitte Canada
+  entity_kind: company
+  incorporation_jurisdiction: CA
+  controlling_jurisdiction: CA
+  evidence_grade: reported
+  sources:
+  - https://deloitte.com
+  - https://canada.ca
+  as_of: 2026-10-07
+  lifecycle: active
+  synthetic: false
+- type: Entity
+  id: ent-r-074
+  name: Arcfield Canada
+  entity_kind: company
+  incorporation_jurisdiction: CA
+  controlling_jurisdiction: US
+  evidence_grade: reported
+  sources:
+  - https://canada.ca
+  as_of: 2026-10-07
+  lifecycle: active
+  synthetic: false
+- type: Entity
+  id: ent-r-075
+  name: Sapper Labs Group
+  entity_kind: company
+  incorporation_jurisdiction: CA
+  controlling_jurisdiction: CA
+  evidence_grade: reported
+  sources:
+  - https://canada.ca
+  as_of: 2026-10-07
+  lifecycle: active
+  synthetic: false
+- type: Capability
+  id: cap-launch-propulsion
+  name: Launch & Propulsion
+  taxonomy_ref: launch-chain:launch-vehicle
+  evidence_grade: reported
+  sources:
+  - https://nordspace.com
+  as_of: 2026-10-07
+  lifecycle: active
+  synthetic: false
+- type: Capability
+  id: cap-launch
+  name: Launch
+  taxonomy_ref: launch-chain:launch-vehicle
+  evidence_grade: reported
+  sources:
+  - https://canada.ca
+  as_of: 2026-10-07
+  lifecycle: active
+  synthetic: false
+- type: Capability
+  id: cap-launch-infrastructure
+  name: Launch Infrastructure
+  taxonomy_ref: launch-chain:spaceport-range
+  evidence_grade: reported
+  sources:
+  - https://theglobeandmail.com
+  as_of: 2026-10-07
+  lifecycle: active
+  synthetic: false
+- type: Capability
+  id: cap-propulsion-structures
+  name: Propulsion & Structures
+  taxonomy_ref: launch-chain:components-subsystems
+  evidence_grade: reported
+  sources:
+  - https://magellan.aero
+  as_of: 2026-10-07
+  lifecycle: active
+  synthetic: false
+- type: Capability
+  id: cap-solid-propellant-motors
+  name: Solid Propellant & Motors
+  taxonomy_ref: launch-chain:midstream-components
+  evidence_grade: reported
+  sources:
+  - https://en.wikipedia.org
+  as_of: 2026-10-07
+  lifecycle: active
+  synthetic: false
+- type: Capability
+  id: cap-eo-sar-satcom-robotics
+  name: EO/SAR, SATCOM & Robotics
+  taxonomy_ref: launch-chain:systems-primes
+  evidence_grade: reported
+  sources:
+  - https://mda.space
+  as_of: 2026-10-07
+  lifecycle: active
+  synthetic: false
+- type: Capability
+  id: cap-satcom
+  name: SATCOM
+  taxonomy_ref: launch-chain:data-applications
+  evidence_grade: reported
+  sources:
+  - https://telesat.com
+  as_of: 2026-10-07
+  lifecycle: active
+  synthetic: false
+- type: Capability
+  id: cap-microsat-buses
+  name: Microsat Buses
+  taxonomy_ref: launch-chain:systems-primes
+  evidence_grade: reported
+  sources:
+  - https://utias-sfl.net
+  as_of: 2026-10-07
+  lifecycle: active
+  synthetic: false
+- type: Capability
+  id: cap-satcom-optical-data-relay
+  name: SATCOM / Optical Data Relay
+  taxonomy_ref: launch-chain:systems-primes
+  evidence_grade: reported
+  sources:
+  - https://kepler.space
+  as_of: 2026-10-07
+  lifecycle: active
+  synthetic: false
+- type: Capability
+  id: cap-space-hardware-payloads
+  name: Space Hardware & Payloads
+  taxonomy_ref: launch-chain:components-subsystems
+  evidence_grade: reported
+  sources:
+  - https://newspaceeconomy.ca
+  as_of: 2026-10-07
+  lifecycle: active
+  synthetic: false
+- type: Capability
+  id: cap-avionics-rad-tolerant-processors
+  name: Avionics / Rad-tolerant Processors
+  taxonomy_ref: launch-chain:components-subsystems
+  evidence_grade: reported
+  sources:
+  - https://eoportal.org
+  as_of: 2026-10-07
+  lifecycle: active
+  synthetic: false
+- type: Capability
+  id: cap-gnc-software
+  name: GNC Software
+  taxonomy_ref: launch-chain:components-subsystems
+  evidence_grade: reported
+  sources:
+  - https://spaceq.ca
+  as_of: 2026-10-07
+  lifecycle: active
+  synthetic: false
+- type: Capability
+  id: cap-adcs-reaction-wheels-star-trackers
+  name: ADCS (reaction wheels, star trackers)
+  taxonomy_ref: launch-chain:components-subsystems
+  evidence_grade: reported
+  sources:
+  - https://newspacetracker.com
+  as_of: 2026-10-07
+  lifecycle: active
+  synthetic: false
+- type: Capability
+  id: cap-optics-spectrometers-sensors
+  name: Optics / Spectrometers / Sensors
+  taxonomy_ref: launch-chain:components-subsystems
+  evidence_grade: reported
+  sources:
+  - https://newspaceeconomy.ca
+  as_of: 2026-10-07
+  lifecycle: active
+  synthetic: false
+- type: Capability
+  id: cap-ground-systems
+  name: Ground Systems
+  taxonomy_ref: launch-chain:ground-segment-ops
+  evidence_grade: reported
+  sources:
+  - https://betakit.com
+  as_of: 2026-10-07
+  lifecycle: active
+  synthetic: false
+- type: Capability
+  id: cap-mission-ops-autonomy-sw
+  name: Mission Ops / Autonomy SW
+  taxonomy_ref: launch-chain:ground-segment-ops
+  evidence_grade: reported
+  sources:
+  - https://newspacetracker.com
+  as_of: 2026-10-07
+  lifecycle: active
+  synthetic: false
+- type: Capability
+  id: cap-eo-sar-analytics
+  name: EO / SAR Analytics
+  taxonomy_ref: launch-chain:data-applications
+  evidence_grade: reported
+  sources:
+  - https://asc-csa.gc.ca
+  as_of: 2026-10-07
+  lifecycle: active
+  synthetic: false
+- type: Capability
+  id: cap-space-domain-awareness-sda-ssa
+  name: Space Domain Awareness (SDA/SSA)
+  taxonomy_ref: launch-chain:data-applications
+  evidence_grade: reported
+  sources:
+  - https://truenorthstrategicreview.ca
+  as_of: 2026-10-07
+  lifecycle: active
+  synthetic: false
+- type: Capability
+  id: cap-eo-ghg-monitoring
+  name: EO (GHG monitoring)
+  taxonomy_ref: launch-chain:data-applications
+  evidence_grade: reported
+  sources:
+  - https://eoportal.org
+  as_of: 2026-10-07
+  lifecycle: active
+  synthetic: false
+- type: Capability
+  id: cap-eo-data-platform
+  name: EO Data Platform
+  taxonomy_ref: launch-chain:data-applications
+  evidence_grade: reported
+  sources:
+  - https://osler.com
+  as_of: 2026-10-07
+  lifecycle: active
+  synthetic: false
+- type: Capability
+  id: cap-eo-hyperspectral
+  name: EO (Hyperspectral)
+  taxonomy_ref: launch-chain:data-applications
+  evidence_grade: reported
+  sources:
+  - https://betakit.com
+  as_of: 2026-10-07
+  lifecycle: active
+  synthetic: false
+- type: Capability
+  id: cap-maritime-ais
+  name: Maritime AIS
+  taxonomy_ref: launch-chain:data-applications
+  evidence_grade: reported
+  sources:
+  - https://newspacetracker.com
+  as_of: 2026-10-07
+  lifecycle: active
+  synthetic: false
+- type: Capability
+  id: cap-critical-minerals-ree-separation
+  name: Critical Minerals - REE separation
+  taxonomy_ref: launch-chain:midstream-processing
+  evidence_grade: reported
+  sources:
+  - https://src.sk.ca
+  as_of: 2026-10-07
+  lifecycle: active
+  synthetic: false
+- type: Capability
+  id: cap-critical-minerals-ree-mining
+  name: Critical Minerals - REE mining
+  taxonomy_ref: launch-chain:upstream-minerals
+  evidence_grade: reported
+  sources:
+  - https://innovationnewsnetwork.com
+  as_of: 2026-10-07
+  lifecycle: active
+  synthetic: false
+- type: Capability
+  id: cap-industry-association
+  name: Industry Association
+  taxonomy_ref: launch-chain:governance
+  evidence_grade: reported
+  sources:
+  - https://space-canada.ca
+  as_of: 2026-10-07
+  lifecycle: active
+  synthetic: false
+- type: Capability
+  id: cap-funder-operator
+  name: Funder / Operator
+  taxonomy_ref: launch-chain:governance
+  evidence_grade: reported
+  sources:
+  - https://asc-csa.gc.ca
+  as_of: 2026-10-07
+  lifecycle: active
+  synthetic: false
+- type: Capability
+  id: cap-sponsor-r-d
+  name: Sponsor / R&D
+  taxonomy_ref: launch-chain:governance
+  evidence_grade: reported
+  sources:
+  - https://canada.ca
+  as_of: 2026-10-07
+  lifecycle: active
+  synthetic: false
+- type: Capability
+  id: cap-anchor-customer
+  name: Anchor Customer
+  taxonomy_ref: launch-chain:governance
+  evidence_grade: reported
+  sources:
+  - https://canada.ca
+  as_of: 2026-10-07
+  lifecycle: active
+  synthetic: false
+- type: Capability
+  id: cap-critical-minerals-policy
+  name: Critical Minerals Policy
+  taxonomy_ref: launch-chain:governance
+  evidence_grade: reported
+  sources:
+  - https://canada.ca
+  as_of: 2026-10-07
+  lifecycle: active
+  synthetic: false
+- type: Capability
+  id: cap-satcom-systems
+  name: SATCOM / Systems
+  taxonomy_ref: launch-chain:systems-primes
+  evidence_grade: reported
+  sources:
+  - https://newspaceeconomy.ca
+  as_of: 2026-10-07
+  lifecycle: active
+  synthetic: false
+- type: Capability
+  id: cap-isr-rf-payloads
+  name: ISR / RF / Payloads
+  taxonomy_ref: launch-chain:components-subsystems
+  evidence_grade: reported
+  sources:
+  - https://newspaceeconomy.ca
+  as_of: 2026-10-07
+  lifecycle: active
+  synthetic: false
+- type: Capability
+  id: cap-defence-systems-integration
+  name: Defence Systems Integration
+  taxonomy_ref: launch-chain:systems-primes
+  evidence_grade: reported
+  sources:
+  - https://newspaceeconomy.ca
+  as_of: 2026-10-07
+  lifecycle: active
+  synthetic: false
+- type: Capability
+  id: cap-training-simulation
+  name: Training & Simulation
+  taxonomy_ref: launch-chain:workforce-enablers
+  evidence_grade: reported
+  sources:
+  - https://spaceq.ca
+  as_of: 2026-10-07
+  lifecycle: active
+  synthetic: false
+- type: Capability
+  id: cap-r-d-talent
+  name: R&D / Talent
+  taxonomy_ref: launch-chain:workforce-enablers
+  evidence_grade: reported
+  sources:
+  - https://utias-sfl.net
+  as_of: 2026-10-07
+  lifecycle: active
+  synthetic: false
+- type: Capability
+  id: cap-industry-association-engagement
+  name: Industry Association / Engagement
+  taxonomy_ref: launch-chain:governance
+  evidence_grade: reported
+  sources:
+  - https://cadsi.org
+  as_of: 2026-10-07
+  lifecycle: active
+  synthetic: false
+- type: Capability
+  id: cap-central-procurement-authority
+  name: Central Procurement Authority
+  taxonomy_ref: launch-chain:governance
+  evidence_grade: reported
+  sources:
+  - https://canada.ca
+  as_of: 2026-10-07
+  lifecycle: active
+  synthetic: false
+- type: Capability
+  id: cap-ndfeb-magnet-alloy-sintered-magnets
+  name: NdFeB magnet alloy & sintered magnets
+  taxonomy_ref: launch-chain:midstream-components
+  evidence_grade: reported
+  sources:
+  - https://realloys.com
+  as_of: 2026-10-07
+  lifecycle: active
+  synthetic: false
+- type: Capability
+  id: cap-sintered-ndfeb-permanent-magnets
+  name: Sintered NdFeB permanent magnets
+  taxonomy_ref: launch-chain:midstream-components
+  evidence_grade: reported
+  sources:
+  - https://neomaterials.com
+  as_of: 2026-10-07
+  lifecycle: active
+  synthetic: false
+- type: Capability
+  id: cap-micro-nano-sat-lunar-systems
+  name: Micro/nano-sat & lunar systems
+  taxonomy_ref: launch-chain:systems-primes
+  evidence_grade: reported
+  sources:
+  - https://canadensys.com
+  as_of: 2026-10-07
+  lifecycle: active
+  synthetic: false
+- type: Capability
+  id: cap-deep-space-radar-sda-sensors
+  name: Deep-space radar; SDA sensors
+  taxonomy_ref: launch-chain:ground-segment-ops-sda
+  evidence_grade: reported
+  sources:
+  - https://thothx.com
+  as_of: 2026-10-07
+  lifecycle: active
+  synthetic: false
+- type: Capability
+  id: cap-supply-chain-orchestration-erp
+  name: Supply-Chain Orchestration ERP
+  taxonomy_ref: launch-chain:digital-backbone-control-tower
+  evidence_grade: reported
+  sources:
+  - https://kinaxis.com
+  as_of: 2026-10-07
+  lifecycle: active
+  synthetic: false
+- type: Capability
+  id: cap-government-erp-c2
+  name: Government ERP + C2
+  taxonomy_ref: launch-chain:digital-backbone-government-erp
+  evidence_grade: reported
+  sources:
+  - https://cgi.com
+  as_of: 2026-10-07
+  lifecycle: active
+  synthetic: false
+- type: Capability
+  id: cap-logistics-visibility
+  name: Logistics Visibility
+  taxonomy_ref: launch-chain:digital-backbone-control-tower
+  evidence_grade: reported
+  sources:
+  - https://descartes.com
+  as_of: 2026-10-07
+  lifecycle: active
+  synthetic: false
+- type: Capability
+  id: cap-protected-b-content-mgmt
+  name: Protected B Content Mgmt
+  taxonomy_ref: launch-chain:digital-backbone-data-layer
+  evidence_grade: reported
+  sources:
+  - https://opentext.com
+  as_of: 2026-10-07
+  lifecycle: active
+  synthetic: false
+- type: Capability
+  id: cap-cleared-systems-integration
+  name: Cleared Systems Integration
+  taxonomy_ref: launch-chain:workforce-enablers
+  evidence_grade: reported
+  sources:
+  - https://adga.ca
+  as_of: 2026-10-07
+  lifecycle: active
+  synthetic: false
+- type: Capability
+  id: cap-risk-intelligence-advisory
+  name: Risk Intelligence / Advisory
+  taxonomy_ref: launch-chain:governance
+  evidence_grade: reported
+  sources:
+  - https://deloitte.com
+  as_of: 2026-10-07
+  lifecycle: active
+  synthetic: false
+- type: Capability
+  id: cap-avionics-in-service-support
+  name: Avionics In-Service Support
+  taxonomy_ref: launch-chain:supply-chain-execution
+  evidence_grade: reported
+  sources:
+  - https://canada.ca
+  as_of: 2026-10-07
+  lifecycle: active
+  synthetic: false
+- type: Capability
+  id: cap-osint-risk-intelligence
+  name: OSINT / Risk Intelligence
+  taxonomy_ref: launch-chain:governance
+  evidence_grade: reported
+  sources:
+  - https://canada.ca
+  as_of: 2026-10-07
+  lifecycle: active
+  synthetic: false
+links:
+- type: provides_capability
+  id: lnk-r-001
+  from: ent-r-001
+  to: cap-launch-propulsion
+  evidence_grade: reported
+  sources:
+  - https://nordspace.com
+  - https://canada.ca
+  as_of: 2026-10-07
+  lifecycle: active
+  synthetic: false
+- type: provides_capability
+  id: lnk-r-002
+  from: ent-r-002
+  to: cap-launch-propulsion
+  evidence_grade: reported
+  sources:
+  - https://reactiondynamics.space
+  as_of: 2026-10-07
+  lifecycle: active
+  synthetic: false
+- type: provides_capability
+  id: lnk-r-003
+  from: ent-r-003
+  to: cap-launch
+  evidence_grade: reported
+  sources:
+  - https://canada.ca
+  - https://spaceq.ca
+  as_of: 2026-10-07
+  lifecycle: active
+  synthetic: false
+- type: provides_capability
+  id: lnk-r-004
+  from: ent-r-004
+  to: cap-launch-infrastructure
+  evidence_grade: reported
+  sources:
+  - https://theglobeandmail.com
+  - https://spacenews.com
+  as_of: 2026-10-07
+  lifecycle: active
+  synthetic: false
+- type: provides_capability
+  id: lnk-r-005
+  from: ent-r-005
+  to: cap-propulsion-structures
+  evidence_grade: reported
+  sources:
+  - https://magellan.aero
+  - https://mbaerospace.ca
+  as_of: 2026-10-07
+  lifecycle: active
+  synthetic: false
+- type: provides_capability
+  id: lnk-r-006
+  from: ent-r-006
+  to: cap-solid-propellant-motors
+  evidence_grade: reported
+  sources:
+  - https://en.wikipedia.org
+  as_of: 2026-10-07
+  lifecycle: active
+  synthetic: false
+- type: provides_capability
+  id: lnk-r-007
+  from: ent-r-007
+  to: cap-eo-sar-satcom-robotics
+  evidence_grade: reported
+  sources:
+  - https://mda.space
+  - https://spacenews.com
+  as_of: 2026-10-07
+  lifecycle: active
+  synthetic: false
+- type: provides_capability
+  id: lnk-r-008
+  from: ent-r-008
+  to: cap-satcom
+  evidence_grade: reported
+  sources:
+  - https://telesat.com
+  as_of: 2026-10-07
+  lifecycle: active
+  synthetic: false
+- type: provides_capability
+  id: lnk-r-009
+  from: ent-r-009
+  to: cap-microsat-buses
+  evidence_grade: reported
+  sources:
+  - https://utias-sfl.net
+  - https://sflmissions.com
+  as_of: 2026-10-07
+  lifecycle: active
+  synthetic: false
+- type: provides_capability
+  id: lnk-r-010
+  from: ent-r-010
+  to: cap-satcom-optical-data-relay
+  evidence_grade: reported
+  sources:
+  - https://kepler.space
+  - https://betakit.com
+  as_of: 2026-10-07
+  lifecycle: active
+  synthetic: false
+- type: provides_capability
+  id: lnk-r-011
+  from: ent-r-011
+  to: cap-space-hardware-payloads
+  evidence_grade: reported
+  sources:
+  - https://newspaceeconomy.ca
+  as_of: 2026-10-07
+  lifecycle: active
+  synthetic: false
+- type: provides_capability
+  id: lnk-r-012
+  from: ent-r-012
+  to: cap-avionics-rad-tolerant-processors
+  evidence_grade: reported
+  sources:
+  - https://eoportal.org
+  as_of: 2026-10-07
+  lifecycle: active
+  synthetic: false
+- type: provides_capability
+  id: lnk-r-013
+  from: ent-r-013
+  to: cap-gnc-software
+  evidence_grade: reported
+  sources:
+  - https://spaceq.ca
+  as_of: 2026-10-07
+  lifecycle: active
+  synthetic: false
+- type: provides_capability
+  id: lnk-r-014
+  from: ent-r-014
+  to: cap-adcs-reaction-wheels-star-trackers
+  evidence_grade: reported
+  sources:
+  - https://newspacetracker.com
+  as_of: 2026-10-07
+  lifecycle: active
+  synthetic: false
+- type: provides_capability
+  id: lnk-r-015
+  from: ent-r-015
+  to: cap-optics-spectrometers-sensors
+  evidence_grade: reported
+  sources:
+  - https://newspaceeconomy.ca
+  as_of: 2026-10-07
+  lifecycle: active
+  synthetic: false
+- type: provides_capability
+  id: lnk-r-016
+  from: ent-r-016
+  to: cap-ground-systems
+  evidence_grade: reported
+  sources:
+  - https://betakit.com
+  as_of: 2026-10-07
+  lifecycle: active
+  synthetic: false
+- type: provides_capability
+  id: lnk-r-017
+  from: ent-r-017
+  to: cap-mission-ops-autonomy-sw
+  evidence_grade: reported
+  sources:
+  - https://newspacetracker.com
+  as_of: 2026-10-07
+  lifecycle: active
+  synthetic: false
+- type: provides_capability
+  id: lnk-r-018
+  from: ent-r-018
+  to: cap-eo-sar-analytics
+  evidence_grade: reported
+  sources:
+  - https://asc-csa.gc.ca
+  as_of: 2026-10-07
+  lifecycle: active
+  synthetic: false
+- type: provides_capability
+  id: lnk-r-019
+  from: ent-r-019
+  to: cap-space-domain-awareness-sda-ssa
+  evidence_grade: reported
+  sources:
+  - https://truenorthstrategicreview.ca
+  as_of: 2026-10-07
+  lifecycle: active
+  synthetic: false
+- type: provides_capability
+  id: lnk-r-020
+  from: ent-r-020
+  to: cap-eo-ghg-monitoring
+  evidence_grade: reported
+  sources:
+  - https://eoportal.org
+  as_of: 2026-10-07
+  lifecycle: active
+  synthetic: false
+- type: provides_capability
+  id: lnk-r-021
+  from: ent-r-021
+  to: cap-eo-data-platform
+  evidence_grade: reported
+  sources:
+  - https://osler.com
+  as_of: 2026-10-07
+  lifecycle: active
+  synthetic: false
+- type: provides_capability
+  id: lnk-r-022
+  from: ent-r-022
+  to: cap-eo-hyperspectral
+  evidence_grade: reported
+  sources:
+  - https://betakit.com
+  as_of: 2026-10-07
+  lifecycle: active
+  synthetic: false
+- type: provides_capability
+  id: lnk-r-023
+  from: ent-r-023
+  to: cap-maritime-ais
+  evidence_grade: reported
+  sources:
+  - https://newspacetracker.com
+  as_of: 2026-10-07
+  lifecycle: active
+  synthetic: false
+- type: provides_capability
+  id: lnk-r-024
+  from: ent-r-024
+  to: cap-critical-minerals-ree-separation
+  evidence_grade: reported
+  sources:
+  - https://src.sk.ca
+  as_of: 2026-10-07
+  lifecycle: active
+  synthetic: false
+- type: provides_capability
+  id: lnk-r-025
+  from: ent-r-025
+  to: cap-critical-minerals-ree-separation
+  evidence_grade: reported
+  sources:
+  - https://ucore.com
+  as_of: 2026-10-07
+  lifecycle: active
+  synthetic: false
+- type: provides_capability
+  id: lnk-r-026
+  from: ent-r-026
+  to: cap-critical-minerals-ree-mining
+  evidence_grade: reported
+  sources:
+  - https://innovationnewsnetwork.com
+  as_of: 2026-10-07
+  lifecycle: active
+  synthetic: false
+- type: provides_capability
+  id: lnk-r-030
+  from: ent-r-030
+  to: cap-industry-association
+  evidence_grade: reported
+  sources:
+  - https://space-canada.ca
+  as_of: 2026-10-07
+  lifecycle: active
+  synthetic: false
+- type: provides_capability
+  id: lnk-r-032
+  from: ent-r-032
+  to: cap-funder-operator
+  evidence_grade: reported
+  sources:
+  - https://asc-csa.gc.ca
+  as_of: 2026-10-07
+  lifecycle: active
+  synthetic: false
+- type: provides_capability
+  id: lnk-r-033
+  from: ent-r-033
+  to: cap-sponsor-r-d
+  evidence_grade: reported
+  sources:
+  - https://canada.ca
+  as_of: 2026-10-07
+  lifecycle: active
+  synthetic: false
+- type: provides_capability
+  id: lnk-r-034
+  from: ent-r-034
+  to: cap-anchor-customer
+  evidence_grade: reported
+  sources:
+  - https://canada.ca
+  as_of: 2026-10-07
+  lifecycle: active
+  synthetic: false
+- type: provides_capability
+  id: lnk-r-036
+  from: ent-r-036
+  to: cap-critical-minerals-policy
+  evidence_grade: reported
+  sources:
+  - https://canada.ca
+  as_of: 2026-10-07
+  lifecycle: active
+  synthetic: false
+- type: provides_capability
+  id: lnk-r-043
+  from: ent-r-043
+  to: cap-satcom-systems
+  evidence_grade: reported
+  sources:
+  - https://newspaceeconomy.ca
+  as_of: 2026-10-07
+  lifecycle: active
+  synthetic: false
+- type: provides_capability
+  id: lnk-r-044
+  from: ent-r-044
+  to: cap-isr-rf-payloads
+  evidence_grade: reported
+  sources:
+  - https://newspaceeconomy.ca
+  as_of: 2026-10-07
+  lifecycle: active
+  synthetic: false
+- type: provides_capability
+  id: lnk-r-045
+  from: ent-r-045
+  to: cap-defence-systems-integration
+  evidence_grade: reported
+  sources:
+  - https://newspaceeconomy.ca
+  as_of: 2026-10-07
+  lifecycle: active
+  synthetic: false
+- type: provides_capability
+  id: lnk-r-046
+  from: ent-r-046
+  to: cap-critical-minerals-ree-separation
+  evidence_grade: reported
+  sources:
+  - https://investingnews.com
+  as_of: 2026-10-07
+  lifecycle: active
+  synthetic: false
+- type: provides_capability
+  id: lnk-r-047
+  from: ent-r-047
+  to: cap-training-simulation
+  evidence_grade: reported
+  sources:
+  - https://spaceq.ca
+  as_of: 2026-10-07
+  lifecycle: active
+  synthetic: false
+- type: provides_capability
+  id: lnk-r-048
+  from: ent-r-048
+  to: cap-r-d-talent
+  evidence_grade: reported
+  sources:
+  - https://utias-sfl.net
+  as_of: 2026-10-07
+  lifecycle: active
+  synthetic: false
+- type: provides_capability
+  id: lnk-r-050
+  from: ent-r-050
+  to: cap-industry-association-engagement
+  evidence_grade: reported
+  sources:
+  - https://cadsi.org
+  as_of: 2026-10-07
+  lifecycle: active
+  synthetic: false
+- type: provides_capability
+  id: lnk-r-051
+  from: ent-r-051
+  to: cap-central-procurement-authority
+  evidence_grade: reported
+  sources:
+  - https://canada.ca
+  as_of: 2026-10-07
+  lifecycle: active
+  synthetic: false
+- type: provides_capability
+  id: lnk-r-056
+  from: ent-r-056
+  to: cap-ndfeb-magnet-alloy-sintered-magnets
+  evidence_grade: reported
+  sources:
+  - https://realloys.com
+  as_of: 2026-10-07
+  lifecycle: active
+  synthetic: false
+- type: provides_capability
+  id: lnk-r-057
+  from: ent-r-057
+  to: cap-sintered-ndfeb-permanent-magnets
+  evidence_grade: reported
+  sources:
+  - https://neomaterials.com
+  - https://cnbc.com
+  as_of: 2026-10-07
+  lifecycle: active
+  synthetic: false
+- type: provides_capability
+  id: lnk-r-058
+  from: ent-r-058
+  to: cap-micro-nano-sat-lunar-systems
+  evidence_grade: reported
+  sources:
+  - https://canadensys.com
+  as_of: 2026-10-07
+  lifecycle: active
+  synthetic: false
+- type: provides_capability
+  id: lnk-r-059
+  from: ent-r-059
+  to: cap-deep-space-radar-sda-sensors
+  evidence_grade: reported
+  sources:
+  - https://thothx.com
+  - https://mda.space
+  as_of: 2026-10-07
+  lifecycle: active
+  synthetic: false
+- type: provides_capability
+  id: lnk-r-068
+  from: ent-r-068
+  to: cap-supply-chain-orchestration-erp
+  evidence_grade: reported
+  sources:
+  - https://kinaxis.com
+  as_of: 2026-10-07
+  lifecycle: active
+  synthetic: false
+- type: provides_capability
+  id: lnk-r-069
+  from: ent-r-069
+  to: cap-government-erp-c2
+  evidence_grade: reported
+  sources:
+  - https://cgi.com
+  - https://canada.ca
+  as_of: 2026-10-07
+  lifecycle: active
+  synthetic: false
+- type: provides_capability
+  id: lnk-r-070
+  from: ent-r-070
+  to: cap-logistics-visibility
+  evidence_grade: reported
+  sources:
+  - https://descartes.com
+  as_of: 2026-10-07
+  lifecycle: active
+  synthetic: false
+- type: provides_capability
+  id: lnk-r-071
+  from: ent-r-071
+  to: cap-protected-b-content-mgmt
+  evidence_grade: reported
+  sources:
+  - https://opentext.com
+  as_of: 2026-10-07
+  lifecycle: active
+  synthetic: false
+- type: provides_capability
+  id: lnk-r-072
+  from: ent-r-072
+  to: cap-cleared-systems-integration
+  evidence_grade: reported
+  sources:
+  - https://adga.ca
+  as_of: 2026-10-07
+  lifecycle: active
+  synthetic: false
+- type: provides_capability
+  id: lnk-r-073
+  from: ent-r-073
+  to: cap-risk-intelligence-advisory
+  evidence_grade: reported
+  sources:
+  - https://deloitte.com
+  - https://canada.ca
+  as_of: 2026-10-07
+  lifecycle: active
+  synthetic: false
+- type: provides_capability
+  id: lnk-r-074
+  from: ent-r-074
+  to: cap-avionics-in-service-support
+  evidence_grade: reported
+  sources:
+  - https://canada.ca
+  as_of: 2026-10-07
+  lifecycle: active
+  synthetic: false
+- type: provides_capability
+  id: lnk-r-075
+  from: ent-r-075
+  to: cap-osint-risk-intelligence
+  evidence_grade: reported
+  sources:
+  - https://canada.ca
+  as_of: 2026-10-07
+  lifecycle: active
+  synthetic: false
