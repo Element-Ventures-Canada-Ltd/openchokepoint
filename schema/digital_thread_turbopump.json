@@ -1,0 +1,38 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://openchokepoint.org/schema/digital_thread_turbopump.json",
+  "title": "Digital Thread - Rocket Turbopump Critical Items Register",
+  "type": "object",
+  "properties": {
+    "component_id": {
+      "type": "string",
+      "description": "Unique identifier for the turbopump component (e.g., TP-RP1-001)."
+    },
+    "criticality_level": {
+      "type": "string",
+      "enum": ["LOW", "MEDIUM", "HIGH", "CRITICAL"],
+      "description": "Assessment of failure impact on vehicle loss."
+    },
+    "manufacturing_data": {
+      "type": "object",
+      "properties": {
+        "supplier_name": {"type": "string"},
+        "batch_number": {"type": "string"},
+        "material_certification": {"type": "string", "format": "uri"}
+      },
+      "required": ["supplier_name", "batch_number"]
+    },
+    "supply_chain_nodes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "node_id": {"type": "string"},
+          "location": {"type": "string"},
+          "transit_time_days": {"type": "integer"}
+        }
+      }
+    }
+  },
+  "required": ["component_id", "criticality_level", "manufacturing_data"]
+}
