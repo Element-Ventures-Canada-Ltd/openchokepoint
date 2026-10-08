@@ -6,8 +6,20 @@
 Usage:
     python3 tools/validate.py [instance.yaml ...]
 
-Defaults to the synthetic example. Requires PyYAML. Exits non-zero on any error.
+Defaults to the synthetic examples. Requires PyYAML. Exits non-zero on any error.
 Records outside data/ must carry `synthetic: true`. Real records are accepted only under data/ with a provenance.yaml (see DATA-CONTRIBUTIONS.md).
+
+Schema v0.2 adds digital-thread rules. Each error starts with a stable rule ID so reviewers can cite it:
+  EV-001  EvidenceRecord must carry a content hash or a public citation
+  EV-002  EvidenceRecord must not carry inline content; content_hash must be sha256:<64 hex>; short strings only
+  EV-003  EvidenceRecord citation must be a public https URL
+  EV-004  A real EvidenceRecord must use a public citation (public reports only)
+  CI-001  CriticalItem must be synthetic: true
+  CI-002  CriticalItem must not flag, or be offered an alternate by, a real record
+  CI-003  CriticalItem must not reach a real record through its target (mixed graphs)
+  CI-004  CriticalItem flags must be consistent with the graph (alternate linked; missing evidence really missing)
+  DT-001  underwent.sequence must be unique per SerialItem
+  DT-002  Real digital-thread records must be graded confirmed or reported (gaps are shown, never inferred)
 """
 import datetime
 import re
@@ -92,6 +104,106 @@ def check_public_data(path, records):
     return errs
 
 
+THREAD_TYPES = {"Component", "SerialItem", "MaterialLot", "ProcessStep", "EvidenceRecord"}
+SHA256 = re.compile(r"^sha256:[0-9a-f]{64}$")
+INLINE_CONTENT = {"content", "body", "text", "data", "attachment", "payload", "excerpt", "value", "values",
+                  "result", "results", "measurements", "parameters", "notes"}
+EVIDENCE_STRING_MAX = 120   # pointers are short; anything longer looks like content (EV-002)
+
+
+def is_real(rec):
+    return rec.get("synthetic") is not True
+
+
+def check_thread(objects, links):
+    """Digital-thread and critical-item rules (schema v0.2). Fail closed; every error names the rule and the record."""
+    errs = []
+    by_id = {r.get("id"): r for r in objects + links}
+
+    # EvidenceRecord: pointer only.
+    for o in objects:
+        if o.get("type") != "EvidenceRecord":
+            continue
+        rid = o.get("id")
+        has_hash, has_cite = "content_hash" in o, "citation" in o
+        if not (has_hash or has_cite):
+            errs.append(f"EV-001 {rid}: EvidenceRecord needs content_hash or citation (a pointer to the record, never the record)")
+        bad = sorted(INLINE_CONTENT & set(o))
+        if bad:
+            errs.append(f"EV-002 {rid}: inline content field(s) {bad} not allowed; point to the record with content_hash or citation")
+        if has_hash and not SHA256.match(str(o["content_hash"])):
+            errs.append(f"EV-002 {rid}: content_hash must be sha256:<64 lowercase hex>")
+        for k in ("issuer", "citation_section", "name"):
+            if isinstance(o.get(k), str) and len(o[k]) > EVIDENCE_STRING_MAX:
+                errs.append(f"EV-002 {rid}: '{k}' longer than {EVIDENCE_STRING_MAX} characters looks like content, not a pointer")
+        if has_cite and not str(o["citation"]).startswith("https://"):
+            errs.append(f"EV-003 {rid}: citation must be a public https URL")
+        if is_real(o) and not has_cite:
+            errs.append(f"EV-004 {rid}: a real EvidenceRecord must cite a publicly released report (citation), not only a hash")
+
+    # Real digital-thread records: no inference.
+    for o in objects:
+        if o.get("type") in THREAD_TYPES and is_real(o) and o.get("evidence_grade") not in ("confirmed", "reported"):
+            errs.append(f"DT-002 {o.get('id')}: real digital-thread records must be graded confirmed or reported; show gaps, do not infer")
+
+    # underwent.sequence unique per SerialItem.
+    seen = {}
+    for l in links:
+        if l.get("type") == "underwent":
+            key = (l.get("from"), l.get("sequence"))
+            if key in seen:
+                errs.append(f"DT-001 {l.get('id')}: sequence {l.get('sequence')} already used for {l.get('from')} by {seen[key]}")
+            seen[key] = l.get("id")
+
+    # CriticalItem: synthetic only, never touching real records.
+    neighbours = {}
+    for l in links:
+        a, b = l.get("from"), l.get("to")
+        neighbours.setdefault(a, set()).add(b)
+        neighbours.setdefault(b, set()).add(a)
+    evidenced_steps = {l.get("from") for l in links if l.get("type") == "evidenced_by"}
+
+    for o in objects:
+        if o.get("type") != "CriticalItem":
+            continue
+        cid = o.get("id")
+        if is_real(o):
+            errs.append(f"CI-001 {cid}: CriticalItem is a judgment and must be synthetic: true")
+        flag_links = [l for l in links if l.get("type") == "flags" and l.get("from") == cid]
+        alt_links = [l for l in links if l.get("type") == "alternate_for" and l.get("to") == cid]
+        targets = [l.get("to") for l in flag_links]
+        for l in flag_links + alt_links:
+            if is_real(l):
+                errs.append(f"CI-002 {l.get('id')}: links to or from a CriticalItem must be synthetic: true")
+        for t in targets:
+            if t in by_id and is_real(by_id[t]):
+                errs.append(f"CI-002 {cid}: flags real record {t}; judgments are never recorded against a real organization or part")
+        for l in alt_links:
+            src = l.get("from")
+            if src in by_id and is_real(by_id[src]):
+                errs.append(f"CI-002 {cid}: alternate_for from real record {src}; judgments are never recorded against a real organization")
+        for t in targets:
+            if t in by_id and is_real(by_id[t]):
+                continue
+            for n in sorted(neighbours.get(t, set()) - {cid}):
+                if n in by_id and is_real(by_id[n]) and by_id[n].get("type") != "CriticalItem":
+                    errs.append(f"CI-003 {cid}: target {t} is linked to real record {n}; a synthetic flag cannot reach a real organization or part")
+        if not flag_links:
+            errs.append(f"CI-004 {cid}: CriticalItem must flag at least one item")
+        if o.get("qualified_alternate") is True and not alt_links:
+            errs.append(f"CI-004 {cid}: qualified_alternate is true but no alternate_for link names the alternate")
+        if o.get("single_source") is True and (alt_links or o.get("qualified_alternate") is True):
+            errs.append(f"CI-004 {cid}: single_source contradicts a qualified alternate")
+        if o.get("missing_evidence") is True:
+            steps = [t for t in targets if by_id.get(t, {}).get("type") == "ProcessStep"]
+            if not steps:
+                errs.append(f"CI-004 {cid}: missing_evidence is true but no ProcessStep is flagged")
+            for t in steps:
+                if t in evidenced_steps:
+                    errs.append(f"CI-004 {cid}: missing_evidence is true but step {t} has an EvidenceRecord")
+    return errs
+
+
 def validate(instance_path, onto):
     errors = []
     data = load(instance_path)
@@ -132,12 +244,14 @@ def validate(instance_path, onto):
                 errors.append(f"{label}: '{end}' references unknown object '{target}'")
             elif types_by_id[target] not in ltype[end]:
                 errors.append(f"{label}: '{end}' type {types_by_id[target]} not allowed (expects {ltype[end]})")
+
+    errors.extend(check_thread(objects, links))
     return errors
 
 
 def main(argv):
     onto = load(ROOT / "schema" / "openchokepoint.yaml")
-    targets = argv[1:] or [ROOT / "examples" / "synthetic-example.yaml"]
+    targets = argv[1:] or sorted((ROOT / "examples").glob("*.yaml"))
     failed = False
     for target in targets:
         errors = validate(target, onto)
