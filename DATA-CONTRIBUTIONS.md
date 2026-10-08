@@ -39,3 +39,16 @@ notes: ""
 ```
 
 Contributions without a complete manifest will not be merged.
+
+## Real-world records (v0.1)
+
+Real (non-synthetic) records are accepted under `data/` when every rule below holds. Anything else is synthetic and lives under `examples/`.
+
+1. **Public and citable.** Every record cites a publicly released source by https URL and section. Company filings, government registries, procurement and grant disclosures, and published technical reports qualify. Paywalled, leaked, internal or "shared in confidence" material does not.
+2. **Licensed for redistribution.** The source's terms permit redistribution of the facts recorded. Facts are recorded in your own words; source text is not copied.
+3. **Graded, not inferred.** Real records are graded `confirmed` or `reported`. Gaps are shown as gaps.
+4. **Mapping, not technical data.** Who supplies what, where, and with what dependency. No design, process, test or performance data ([CONTRIBUTION-SCOPE.md](CONTRIBUTION-SCOPE.md)).
+5. **No judgments on real records.** Critical-item flags and assessments appear on synthetic records only.
+6. **Public tier hides process order.** Real step records show which steps happened, not their order (validator rule DT-003).
+7. **People.** No named individuals below officer or public-spokesperson level; no personal contact details.
+8. **Screened.** The contribution passes the export-control screen ([EXPORT-CONTROL.md](EXPORT-CONTROL.md)).
