@@ -19,7 +19,7 @@ Handling: Unclassified — public
 
 ## Pre-publication notice for programme-funded work
 
-Material produced under a government-funded programme engagement (for example SoW 4.21 deliverables) is not contributed to this repository directly. Maintainers publish it only after the funder's pre-publication notice period (15 business days for government-funded work, where the agreement applies it) and the deliverable owner's review. Community contributions are not affected.
+Material produced under a government-funded programme engagement is not contributed to this repository directly. Maintainers publish it only after the funder's pre-publication notice period (15 business days for government-funded work, where the agreement applies it) and the deliverable owner's review. Community contributions are not affected.
 
 ## Sign-off
 
