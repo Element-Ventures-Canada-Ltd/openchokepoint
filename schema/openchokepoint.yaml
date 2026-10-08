@@ -1,5 +1,5 @@
 # Handling: Unclassified — public
-# OpenChokepoint schema v0.2.0-draft (working name) — an open grammar for supply-chain dependency registries.
+# OpenChokepoint schema v0.2.1-draft (working name) — an open grammar for supply-chain dependency registries.
 # Types only: no entities, no scores, no assessments. Licensed under Apache-2.0.
 # © 2026 T. Leroy Smith. Exclusively licensed to Element Ventures (Canada) Ltd.
 #
@@ -10,7 +10,7 @@
 
 schema:
   name: openchokepoint
-  version: 0.2.0-draft
+  version: 0.2.1-draft
   status: draft
 
 shared_properties:            # every object and link carries these
@@ -121,7 +121,7 @@ link_types:
     from: [SerialItem]
     to: [ProcessStep]
     properties:
-      sequence: { type: integer, required: true }          # order of the step for this SerialItem; unique per SerialItem (rule DT-001)
+      sequence: { type: integer }                          # order of the step for this SerialItem; unique per SerialItem (DT-001); required except on real links in the public tier (DT-003, DT-004)
   evidenced_by:
     from: [ProcessStep]
     to: [EvidenceRecord]

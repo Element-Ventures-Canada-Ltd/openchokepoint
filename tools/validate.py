@@ -4,7 +4,9 @@
 """Validate instance files against the OpenChokepoint schema.
 
 Usage:
-    python3 tools/validate.py [instance.yaml ...]
+    python3 tools/validate.py [--tier public|private] [instance.yaml ...]
+
+--tier public (default) is for this public repository and its CI. --tier private is for private clones that hold full data.
 
 Defaults to the synthetic examples. Requires PyYAML. Exits non-zero on any error.
 Records outside data/ must carry `synthetic: true`. Real records are accepted only under data/ with a provenance.yaml (see DATA-CONTRIBUTIONS.md).
@@ -20,6 +22,8 @@ Schema v0.2 adds digital-thread rules. Each error starts with a stable rule ID s
   CI-004  CriticalItem flags must be consistent with the graph (alternate linked; missing evidence really missing)
   DT-001  underwent.sequence must be unique per SerialItem
   DT-002  Real digital-thread records must be graded confirmed or reported (gaps are shown, never inferred)
+  DT-003  Public tier: a real underwent link must not carry a sequence (steps that happened, not their order)
+  DT-004  An underwent link needs a sequence, except a real link in the public tier
 """
 import datetime
 import re
@@ -115,7 +119,7 @@ def is_real(rec):
     return rec.get("synthetic") is not True
 
 
-def check_thread(objects, links):
+def check_thread(objects, links, tier="public"):
     """Digital-thread and critical-item rules (schema v0.2). Fail closed; every error names the rule and the record."""
     errs = []
     by_id = {r.get("id"): r for r in objects + links}
@@ -146,10 +150,16 @@ def check_thread(objects, links):
         if o.get("type") in THREAD_TYPES and is_real(o) and o.get("evidence_grade") not in ("confirmed", "reported"):
             errs.append(f"DT-002 {o.get('id')}: real digital-thread records must be graded confirmed or reported; show gaps, do not infer")
 
-    # underwent.sequence unique per SerialItem.
+    # underwent.sequence: unique per SerialItem; real links carry none in the public tier.
     seen = {}
     for l in links:
         if l.get("type") == "underwent":
+            if tier == "public" and is_real(l) and "sequence" in l:
+                errs.append(f"DT-003 {l.get('id')}: a real step link must not carry a sequence in the public tier; record that the step happened, not its order")
+            elif "sequence" not in l and not (tier == "public" and is_real(l)):
+                errs.append(f"DT-004 {l.get('id')}: underwent link needs a sequence")
+            if "sequence" not in l:
+                continue
             key = (l.get("from"), l.get("sequence"))
             if key in seen:
                 errs.append(f"DT-001 {l.get('id')}: sequence {l.get('sequence')} already used for {l.get('from')} by {seen[key]}")
@@ -204,7 +214,7 @@ def check_thread(objects, links):
     return errs
 
 
-def validate(instance_path, onto):
+def validate(instance_path, onto, tier="public"):
     errors = []
     data = load(instance_path)
     shared = onto["shared_properties"]
@@ -245,16 +255,25 @@ def validate(instance_path, onto):
             elif types_by_id[target] not in ltype[end]:
                 errors.append(f"{label}: '{end}' type {types_by_id[target]} not allowed (expects {ltype[end]})")
 
-    errors.extend(check_thread(objects, links))
+    errors.extend(check_thread(objects, links, tier))
     return errors
 
 
 def main(argv):
+    args = argv[1:]
+    tier = "public"
+    if "--tier" in args:
+        i = args.index("--tier")
+        if i + 1 >= len(args) or args[i + 1] not in ("public", "private"):
+            print("usage: validate.py [--tier public|private] [instance.yaml ...]")
+            return 2
+        tier = args[i + 1]
+        del args[i:i + 2]
     onto = load(ROOT / "schema" / "openchokepoint.yaml")
-    targets = argv[1:] or sorted((ROOT / "examples").glob("*.yaml"))
+    targets = args or sorted((ROOT / "examples").glob("*.yaml"))
     failed = False
     for target in targets:
-        errors = validate(target, onto)
+        errors = validate(target, onto, tier)
         if errors:
             failed = True
             print(f"FAIL {target}")

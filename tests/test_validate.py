@@ -63,19 +63,19 @@ def thread():
     return objects, links
 
 
-def run(objects, links, where="examples"):
+def run(objects, links, where="examples", tier="public"):
     """Write a temporary instance file inside the repo (so location rules apply) and validate it."""
     folder = ROOT / where
     created = not folder.exists()
     folder.mkdir(parents=True, exist_ok=True)
     try:
-        return _run_in(folder, objects, links, where)
+        return _run_in(folder, objects, links, where, tier)
     finally:
         if created:
             folder.rmdir()
 
 
-def _run_in(folder, objects, links, where):
+def _run_in(folder, objects, links, where, tier="public"):
     with tempfile.TemporaryDirectory(dir=folder, prefix=".test-") as d:
         path = Path(d) / "instance.yaml"
         path.write_text(yaml.safe_dump({"objects": objects, "links": links}, sort_keys=False), encoding="utf-8")
@@ -83,7 +83,7 @@ def _run_in(folder, objects, links, where):
             (Path(d) / "provenance.yaml").write_text(yaml.safe_dump({
                 "personal_information": "none", "export_controlled": False,
                 "sources": ["https://example.org/public-report"]}), encoding="utf-8")
-        return V.validate(path, ONTO)
+        return V.validate(path, ONTO, tier)
 
 
 def rules(errors):
@@ -171,6 +171,47 @@ class ThreadRules(unittest.TestCase):
         o = [rec("Component", "cmp-9", part_number="X-9", revision="A", component_kind="rotor",
                  synthetic=False, evidence_grade="inferred")]
         self.assertIn("DT-002", rules(run(o, [], where="data/.tests")))
+
+
+class StepOrderTiers(unittest.TestCase):
+    """Real records show which steps happened, not their order, in the public tier."""
+
+    def real_thread(self, with_sequence):
+        o, l = thread()
+        for r in o + l:
+            r["synthetic"] = False
+        o = [r for r in o if r["type"] != "EvidenceRecord"]
+        o.append(ev("evd-1", citation="https://example.org/public-report", citation_section="Section 2", synthetic=False))
+        if not with_sequence:
+            for x in l:
+                x.pop("sequence", None)
+        return o, l
+
+    def test_public_real_with_sequence_fails_dt003(self):
+        o, l = self.real_thread(True)
+        self.assertIn("DT-003", rules(run(o, l, where="data/.tests")))
+
+    def test_public_real_without_sequence_passes(self):
+        o, l = self.real_thread(False)
+        self.assertEqual(run(o, l, where="data/.tests"), [])
+
+    def test_private_real_with_sequence_passes(self):
+        o, l = self.real_thread(True)
+        self.assertEqual(run(o, l, where="data/.tests", tier="private"), [])
+
+    def test_private_real_without_sequence_fails_dt004(self):
+        o, l = self.real_thread(False)
+        self.assertIn("DT-004", rules(run(o, l, where="data/.tests", tier="private")))
+
+    def test_synthetic_without_sequence_fails_dt004(self):
+        o, l = thread()
+        l[4].pop("sequence")
+        self.assertIn("DT-004", rules(run(o, l)))
+
+    def test_synthetic_with_sequence_passes_both_tiers(self):
+        o, l = thread()
+        self.assertEqual(run(o, l), [])
+        self.assertEqual(run(o, l, tier="private"), [])
 
 
 class CriticalItemRules(unittest.TestCase):
