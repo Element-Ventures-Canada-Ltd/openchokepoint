@@ -18,7 +18,7 @@ Map the supply chain behind liquid-rocket-engine turbopumps — materials, beari
 | Tooling | Validator features, converters (CSV, JSON), test coverage |
 | Examples | Synthetic worked examples and documentation |
 
-Issues are labelled by track. Paid issues carry the `bounty` label (see [BOUNTIES.md](BOUNTIES.md)).
+Issues are labelled by track. Bounty issues carry the `bounty` label and a tier label. Accepted work is recorded in the deferred ledger ([BOUNTIES.md](BOUNTIES.md), [LEDGER.md](LEDGER.md)) and paid only after a Funding Event.
 
 ## Timeline
 
