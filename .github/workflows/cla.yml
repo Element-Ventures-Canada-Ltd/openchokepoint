@@ -1,7 +1,7 @@
 # CLA bot: each contributor signs CLA.md once by comment; signatures are stored on the
 # `cla-signatures` branch (leave that branch unprotected). Organizations that signed the
 # CCLA are added to the allowlist below.
-# Before first use: confirm the pinned release of contributor-assistant/github-action.
+# Action pinned to the full commit SHA of release v2.6.1 (a moved tag would run with write access).
 name: CLA
 
 on:
@@ -21,7 +21,7 @@ jobs:
     runs-on: ubuntu-24.04
     steps:
       - if: (github.event.comment.body == 'recheck' || github.event.comment.body == 'I have read the CLA Document and I hereby sign the CLA') || github.event_name == 'pull_request_target'
-        uses: contributor-assistant/github-action@v2.6.1
+        uses: contributor-assistant/github-action@ca4a40a7d1004f18d9960b404b97e5f30a505a08 # v2.6.1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
