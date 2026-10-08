@@ -28,9 +28,11 @@ relationship.
 - **Composition (up to 7):** EV (chair), one independent developer, one
   academic, one industry member, one domain-expert contributor, and up to two
   non-voting observer seats for public-sector or program partners.
-- **Selection:** the steward appoints the first TSC and publishes the list in
-  MAINTAINERS.md. Later seats go to contributors with accepted work, nominated
-  by the TSC and confirmed by the steward.
+- **Selection:** the steward appoints the TSC and publishes its composition by
+  seat in MAINTAINERS.md. A member is named there with their consent; TSC
+  working records are kept in EV's private repositories. Later seats go to
+  contributors with accepted work, nominated by the TSC and confirmed by the
+  steward.
 - **Scope of authority:** open-tier roadmap, issue priority and labels,
   recommended bounty tier and allocation (see BOUNTIES.md), Code of Conduct
   escalations. The TSC has no
@@ -47,21 +49,20 @@ This repository is licensed as set out in LICENSING.md (Apache-2.0 for code,
 Open Government Licence – Canada 2.0 for documents and data) and accepts
 contributions under the CLA. EV's proprietary components are maintained
 privately and do not accept public contributions. Contributing here gives no
-rights in them. In this document, "open tier" means this repository.
+rights in them.
 
 ## 4. Commitments to contributors
 
 These commitments limit how EV uses the relicensing right in CLA.md section 2:
 
-1. Versions of the open tier already released under their open licence
-   (Apache-2.0 or OGL-Canada 2.0, as set out in LICENSING.md) stay available to
-   everyone who received them under that licence. EV will not withdraw or
+1. Versions of the open tier already released under Apache-2.0 stay available
+   to everyone who received them under Apache-2.0. EV will not withdraw or
    retroactively restrict them.
 2. Any future change to the licence of the open tier applies only to versions
    released after the change, and is announced at least 90 days in advance.
 3. EV may include contributions in proprietary or commercial offerings, as the
-   CLA allows, but will not remove the open-licence release (Apache-2.0 or OGL-Canada 2.0) of
-   those contributions from this repository.
+   CLA allows, but will not remove the Apache-2.0 release of those
+   contributions from this repository.
 4. Contributors are credited by name (or handle) for accepted work unless they
    ask otherwise.
 
