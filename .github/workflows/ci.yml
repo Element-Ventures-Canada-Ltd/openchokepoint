@@ -32,5 +32,7 @@ jobs:
     steps:
       - uses: actions/checkout@v6
       - run: pip install pyyaml
-      - name: Validate every example and data file (synthetic only)
+      - name: Validate every example and data file
         run: python3 tools/validate.py $(find examples data -name '*.yaml' 2>/dev/null | sort)
+      - name: Validator tests (standard library unittest)
+        run: python3 -m unittest discover -s tests -v

@@ -10,13 +10,17 @@ An open grammar for mapping supply-chain dependencies: who supplies what, from w
 
 | Path | Content |
 |---|---|
-| `schema/openchokepoint.yaml` | Object and link types: Entity, Facility, Capability, Programme; located_at, provides_capability, requires_capability, supplies |
+| `schema/openchokepoint.yaml` | Object and link types (v0.2.0-draft): Entity, Facility, Capability, Programme; and the digital thread: Component, SerialItem, MaterialLot, ProcessStep, EvidenceRecord, CriticalItem |
 | `tools/validate.py` | Validator for instance files |
 | `examples/synthetic-example.yaml` | A fully fictional worked example (space turbopump supply chain) |
+| `examples/synthetic-turbopump-thread.yaml` | A fully fictional digital thread: one rotor traced from material lot to assembly, plus three critical items |
+| `docs/digital-thread.md` | The digital thread in plain language |
+| `tests/` | Validator tests (`python3 -m unittest discover -s tests`) |
 
 ```bash
 pip install pyyaml
-python3 tools/validate.py examples/synthetic-example.yaml
+python3 tools/validate.py examples/*.yaml
+python3 -m unittest discover -s tests
 ```
 
 ## Design rules

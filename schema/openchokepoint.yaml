@@ -1,11 +1,16 @@
 # Handling: Unclassified — public
-# OpenChokepoint schema v0.1 (working name) — an open grammar for supply-chain dependency registries.
+# OpenChokepoint schema v0.2.0-draft (working name) — an open grammar for supply-chain dependency registries.
 # Types only: no entities, no scores, no assessments. Licensed under Apache-2.0.
 # © 2026 T. Leroy Smith. Exclusively licensed to Element Ventures (Canada) Ltd.
+#
+# v0.2 adds the digital-thread and critical-items types (issue #3). The thread records THAT evidence
+# exists and WHERE it sits. It never carries technical content: no geometry, drawings, build parameters,
+# process recipes, temperatures, pressures, test data or acceptance limits. See docs/digital-thread.md.
+# v0.1 types, links and shared properties are unchanged; v0.1 instance files validate as before.
 
 schema:
   name: openchokepoint
-  version: 0.1.0
+  version: 0.2.0-draft
   status: draft
 
 shared_properties:            # every object and link carries these
@@ -18,6 +23,7 @@ shared_properties:            # every object and link carries these
   synthetic:      { type: boolean }
 
 object_types:
+  # ---- v0.1: who supplies what, from where ----
   Entity:
     description: An organization that holds or supplies a capability.
     properties:
@@ -41,7 +47,49 @@ object_types:
     properties:
       name: { type: string, required: true }
 
+  # ---- v0.2: the digital thread ----
+  Component:
+    description: A part design, identified by part number and revision. No geometry, no drawings.
+    properties:
+      part_number:    { type: string, required: true }
+      revision:       { type: string, required: true }
+      component_kind: { type: enum, values: [rotor, impeller, inducer, turbine_disk, shaft, housing, bearing, seal, manifold, other], required: true }
+  SerialItem:
+    description: One physical instance of a Component, identified by its serial.
+    properties:
+      serial: { type: string, required: true }
+  MaterialLot:
+    description: A batch of feedstock, identified by lot number and material class. No composition or properties.
+    properties:
+      lot_number:     { type: string, required: true }
+      material_class: { type: enum, values: [metal_powder, wire, bar, billet, plate, forging, casting, other], required: true }
+  ProcessStep:
+    description: One controlled operation performed on a SerialItem. The kind of step only; never its parameters.
+    properties:
+      step_kind: { type: enum, values: [build, stress_relief, hip, heat_treatment, machining, finishing, cleaning, inspection, balancing, assembly], required: true }
+  EvidenceRecord:
+    description: >-
+      A pointer to proof that a step happened: record kind, issuer, date, and a content hash or a public
+      citation. Never the content itself, and never a statement that the part was accepted.
+    properties:
+      record_kind:      { type: enum, values: [material_certificate, build_record, heat_treatment_record, cleaning_certificate, inspection_report, balancing_record, assembly_record, other], required: true }
+      issuer:           { type: string, required: true }   # organization or role that issued the record
+      issued_on:        { type: date, required: true }
+      content_hash:     { type: string }                   # sha256:<64 hex> of the record held elsewhere (rule EV-002)
+      citation:         { type: url }                      # public https location of the record (rule EV-003)
+      citation_section: { type: string }                   # section, page or figure reference within the citation
+  CriticalItem:
+    description: >-
+      A judgment flag: loss of the flagged item would delay a programme by more than 30 days.
+      Synthetic records only (rules CI-001 to CI-003); never recorded against a real organization or part.
+    properties:
+      delay_band:          { type: enum, values: [d30_90, d90_180, d180_365, over_365], required: true }
+      single_source:       { type: boolean, required: true }
+      qualified_alternate: { type: boolean, required: true }
+      missing_evidence:    { type: boolean }               # true when the flag is about a step with no EvidenceRecord (rule CI-004)
+
 link_types:
+  # ---- v0.1 ----
   located_at:
     from: [Entity]
     to: [Facility]
@@ -58,3 +106,31 @@ link_types:
     to: [Entity]
     properties:
       item: { type: string, required: true }
+
+  # ---- v0.2: the digital thread ----
+  instance_of:
+    from: [SerialItem]
+    to: [Component]
+  made_from:
+    from: [SerialItem]
+    to: [MaterialLot]
+  produced_by:
+    from: [MaterialLot]
+    to: [Entity]
+  underwent:
+    from: [SerialItem]
+    to: [ProcessStep]
+    properties:
+      sequence: { type: integer, required: true }          # order of the step for this SerialItem; unique per SerialItem (rule DT-001)
+  evidenced_by:
+    from: [ProcessStep]
+    to: [EvidenceRecord]
+  performed_at:
+    from: [ProcessStep]
+    to: [Facility]
+  flags:
+    from: [CriticalItem]
+    to: [Component, MaterialLot, Capability, ProcessStep]
+  alternate_for:
+    from: [Entity, Facility]
+    to: [CriticalItem]
