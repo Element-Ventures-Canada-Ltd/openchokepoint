@@ -2,7 +2,7 @@ Handling: Unclassified — public
 
 # The digital thread, in plain language
 
-A rocket turbopump is only as trustworthy as the paper trail behind each part. A good design is not enough. Someone has to show that this particular part was made from this particular material, treated, cleaned and inspected the way it must be. That trail is the **digital thread**. This page explains how OpenChokepoint (schema v0.2.0-draft) describes it, for readers who are not engineers.
+A rocket turbopump is only as trustworthy as the paper trail behind each part. A good design is not enough. Someone has to show that this particular part was made from this particular material, treated, cleaned and inspected the way it must be. That trail is the **digital thread**. This page explains how OpenChokepoint (schema v0.2.1-draft) describes it, for readers who are not engineers.
 
 The schema records **that** evidence exists and **where it sits**. It never holds the technical content: no drawings, geometry, process settings, test numbers or acceptance limits.
 
@@ -45,6 +45,14 @@ Why it matters: "a cleaning certificate exists" and "the part was accepted" are 
 If a record cannot be found, the thread shows a step with **no evidence record**. It does not fill the gap with a guess, even a reasonable one. Real (non-fictional) thread records must be graded `confirmed` or `reported`; `inferred` is not accepted for them.
 
 Why it matters: a gap is information. It tells a reader where to ask a question. A guess that looks like a fact hides the question.
+
+## Order of steps: public and private tiers
+
+Fictional examples show the order of steps (`sequence`). A real part's process route is a statement about how it was made, so **real records in this public repository show which steps happened, not their order**. The validator's default public tier rejects a real `underwent` link that carries a `sequence` (DT-003).
+
+A private clone that holds full data can record the order. It validates with `python3 tools/validate.py --tier private`, and each `underwent` link then needs a `sequence` (DT-004). The tier is chosen by the person running the validator, so private data stays in private repositories and is never contributed here.
+
+The public tier limits the explicit order only. Dates on evidence records (`issued_on`) are public facts and can suggest an order to a careful reader. Do not add dates beyond what the public report states.
 
 ## Critical items
 
@@ -92,12 +100,15 @@ Each error starts with a rule ID you can cite in a review.
 | CI-004 | Critical-item markers match the graph (alternate linked; missing evidence really missing) |
 | DT-001 | Step order is unique for each serial item |
 | DT-002 | Real thread records are graded confirmed or reported |
+| DT-003 | In the public tier, a real step link carries no sequence number |
+| DT-004 | A step link carries a sequence number, except a real link in the public tier |
 
 ## What this is not
 
 - Not a design repository. It holds no geometry and no drawings.
 - Not a quality verdict. A pointer to an inspection report is not a pass.
 - Not a ranking of suppliers. Judgments are shown only on fictional examples.
+- Not technical data. Step and record kinds name that something happened. They never say how a part is designed, made, tested or how it performs. Contributions that do are rejected (see `HANDLING.md`).
 
 ## Where to look
 
