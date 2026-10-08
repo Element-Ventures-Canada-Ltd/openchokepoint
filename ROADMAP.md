@@ -5,7 +5,7 @@ Handling: Unclassified — public
 | Version | Scope |
 |---|---|
 | 0.1 (preview) | Core types, validator, synthetic turbopump example |
-| 0.2 | Bill-of-materials types (component, lot, material class) — structure only |
+| 0.2 (draft) | Digital-thread and critical-items types (component, serial item, material lot, process step, evidence record, critical item) — structure and pointers only; validator rules and tests ([#3](https://github.com/Element-Ventures-Canada-Ltd/openchokepoint/issues/3)) |
 | 0.3 | Converters (CSV and JSON), JSON Schema export, documentation site |
 | 1.0 (31 Mar 2027) | Stable grammar, full test suite, contribution of reviewed synthetic registries |
 
