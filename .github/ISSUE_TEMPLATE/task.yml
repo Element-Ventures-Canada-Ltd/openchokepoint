@@ -13,6 +13,23 @@ body:
     id: acceptance
     attributes: { label: Acceptance test, description: "How a reviewer will know it is done." }
     validations: { required: true }
-  - type: input
-    id: bounty
-    attributes: { label: Bounty, description: "Amount if this is a bounty issue; blank otherwise." }
+  - type: dropdown
+    id: tier
+    attributes:
+      label: Bounty tier
+      description: "Nominal values are set in BOUNTIES.md section 2. Entries are recorded in LEDGER.md and paid only after a Funding Event."
+      options: ["None (not a bounty)", "bounty:starter", "bounty:standard", "bounty:major", "bounty:expert"]
+    validations: { required: true }
+  - type: textarea
+    id: depends_on
+    attributes: { label: Depends on, description: "Issues, PRs or schema versions that must merge first. A bounty with an unmet dependency is labelled blocked and cannot be claimed." }
+  - type: textarea
+    id: files
+    attributes: { label: Files touched, description: "Paths this work changes. Bounties that touch different files may run at the same time." }
+  - type: dropdown
+    id: funded_deliverable
+    attributes:
+      label: Funded Deliverable
+      description: "Set before anyone claims the issue. If Yes, copyright is assigned to EV on acceptance, with a licence back to the contributor (CLA.md section 12.6)."
+      options: ["No", "Yes"]
+    validations: { required: true }
