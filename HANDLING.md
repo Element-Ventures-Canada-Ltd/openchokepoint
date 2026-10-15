@@ -14,3 +14,5 @@ Every file in this repository is public and carries the marking `Handling: Uncla
 
 CI enforces the marking and scans for classification markings and credentials. Reviewers remain responsible for judgment.
 If you think something sensitive was committed, report it privately (see SECURITY.md); do not open a public issue.
+
+<!-- gate test, do not merge -->
