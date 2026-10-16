@@ -1,0 +1,228 @@
+# Handling: Unclassified — public
+# Digital thread trace for the retired NASA Saturn V F-1 Liquid Rocket Engine Turbopump Turbine Wheel assembly.
+# Sources: NASA SP-8110 (NTRS 19740026132) and NASA SP-8107 (NTRS 19750012398).
+# Pointers to report sections only; no dimensions, alloy designations, process parameters, or test results.
+# Rule DT-003: real process steps recorded without temporal sequence ordering in the public tier.
+# Historical gap demonstrated: step stp-f1-003 has no EvidenceRecord.
+
+objects:
+  # ---- organizations and facilities ----
+  - type: Entity
+    id: ent-rocketdyne
+    name: "Rocketdyne Division, Rockwell International"
+    entity_kind: company
+    incorporation_jurisdiction: US
+    controlling_jurisdiction: US
+    evidence_grade: confirmed
+    sources:
+      - "https://ntrs.nasa.gov/citations/19740026132"
+    as_of: 1974-01-01
+    lifecycle: retired
+    synthetic: false
+
+  - type: Facility
+    id: fac-canoga-park
+    name: "Rocketdyne Canoga Park Main Plant"
+    facility_kind: manufacturing
+    host_jurisdiction: US-CA
+    evidence_grade: confirmed
+    sources:
+      - "https://ntrs.nasa.gov/citations/19740026132"
+    as_of: 1974-01-01
+    lifecycle: retired
+    synthetic: false
+
+  # ---- design and physical serial instance ----
+  - type: Component
+    id: cmp-f1-turbopump-turbine-disk
+    name: "F-1 Turbopump Turbine Two-Row Velocity-Compounded Disk"
+    part_number: "F-1-TURBINE-DISK"
+    revision: "A"
+    component_kind: turbine_disk
+    evidence_grade: confirmed
+    sources:
+      - "https://ntrs.nasa.gov/citations/19740026132"
+    as_of: 1974-01-01
+    lifecycle: retired
+    synthetic: false
+
+  - type: SerialItem
+    id: ser-f1-tp-prototype
+    name: "F-1 Turbopump Development Turbine Assembly"
+    serial: "F1-TP-DEV-01"
+    evidence_grade: reported
+    sources:
+      - "https://ntrs.nasa.gov/citations/19740026132"
+    as_of: 1974-01-01
+    lifecycle: retired
+    synthetic: false
+
+  # ---- 3 process steps (Record 1: Broaching/Machining, Record 2: Dynamic Balancing, Record 3: Inspection Gap) ----
+  - type: ProcessStep
+    id: stp-f1-001
+    name: "Turbine blade attachment slot broaching and wheel machining"
+    step_kind: machining
+    evidence_grade: confirmed
+    sources:
+      - "https://ntrs.nasa.gov/citations/19740026132"
+    as_of: 1974-01-01
+    lifecycle: retired
+    synthetic: false
+
+  - type: ProcessStep
+    id: stp-f1-002
+    name: "Turbine rotor high-speed dynamic balancing"
+    step_kind: balancing
+    evidence_grade: confirmed
+    sources:
+      - "https://ntrs.nasa.gov/citations/19740026132"
+    as_of: 1974-01-01
+    lifecycle: retired
+    synthetic: false
+
+  - type: ProcessStep
+    id: stp-f1-003
+    name: "Turbine wheel ultrasonic and dye-penetrant subsurface inspection"
+    step_kind: inspection
+    evidence_grade: reported
+    sources:
+      - "https://ntrs.nasa.gov/citations/19740026132"
+    as_of: 1974-01-01
+    lifecycle: retired
+    synthetic: false
+
+  # ---- evidence records (public citations only, pointers without inline content) ----
+  - type: EvidenceRecord
+    id: evd-f1-001
+    name: "NASA SP-8110 Turbine Blade Attachment Design Monograph"
+    record_kind: other
+    issuer: "Rocketdyne Division, Rockwell International"
+    issued_on: 1974-01-01
+    citation: "https://ntrs.nasa.gov/citations/19740026132"
+    citation_section: "Section 3.1.2 Turbine Blading and Attachment"
+    evidence_grade: confirmed
+    sources:
+      - "https://ntrs.nasa.gov/citations/19740026132"
+    as_of: 1974-01-01
+    lifecycle: retired
+    synthetic: false
+
+  - type: EvidenceRecord
+    id: evd-f1-002
+    name: "NASA SP-8110 Dynamic Balancing Monograph Reference"
+    record_kind: balancing_record
+    issuer: "Rocketdyne Division, Rockwell International"
+    issued_on: 1974-01-01
+    citation: "https://ntrs.nasa.gov/citations/19740026132"
+    citation_section: "Section 3.1.4 Dynamic Rotor Balancing and Critical Speed"
+    evidence_grade: confirmed
+    sources:
+      - "https://ntrs.nasa.gov/citations/19740026132"
+    as_of: 1974-01-01
+    lifecycle: retired
+    synthetic: false
+
+links:
+  # ---- organization & facility ----
+  - type: located_at
+    id: lnk-f1-001
+    from: ent-rocketdyne
+    to: fac-canoga-park
+    evidence_grade: confirmed
+    sources:
+      - "https://ntrs.nasa.gov/citations/19740026132"
+    as_of: 1974-01-01
+    lifecycle: retired
+    synthetic: false
+
+  # ---- serial to design ----
+  - type: instance_of
+    id: lnk-f1-002
+    from: ser-f1-tp-prototype
+    to: cmp-f1-turbopump-turbine-disk
+    evidence_grade: confirmed
+    sources:
+      - "https://ntrs.nasa.gov/citations/19740026132"
+    as_of: 1974-01-01
+    lifecycle: retired
+    synthetic: false
+
+  # ---- serial underwent process steps (NO sequence in public tier - rule DT-003) ----
+  - type: underwent
+    id: lnk-f1-003
+    from: ser-f1-tp-prototype
+    to: stp-f1-001
+    evidence_grade: confirmed
+    sources:
+      - "https://ntrs.nasa.gov/citations/19740026132"
+    as_of: 1974-01-01
+    lifecycle: retired
+    synthetic: false
+
+  - type: underwent
+    id: lnk-f1-004
+    from: ser-f1-tp-prototype
+    to: stp-f1-002
+    evidence_grade: confirmed
+    sources:
+      - "https://ntrs.nasa.gov/citations/19740026132"
+    as_of: 1974-01-01
+    lifecycle: retired
+    synthetic: false
+
+  - type: underwent
+    id: lnk-f1-005
+    from: ser-f1-tp-prototype
+    to: stp-f1-003
+    evidence_grade: reported
+    sources:
+      - "https://ntrs.nasa.gov/citations/19740026132"
+    as_of: 1974-01-01
+    lifecycle: retired
+    synthetic: false
+
+  # ---- process steps evidenced by public records (stp-f1-003 has no evidence link: expected gap) ----
+  - type: evidenced_by
+    id: lnk-f1-006
+    from: stp-f1-001
+    to: evd-f1-001
+    evidence_grade: confirmed
+    sources:
+      - "https://ntrs.nasa.gov/citations/19740026132"
+    as_of: 1974-01-01
+    lifecycle: retired
+    synthetic: false
+
+  - type: evidenced_by
+    id: lnk-f1-007
+    from: stp-f1-002
+    to: evd-f1-002
+    evidence_grade: confirmed
+    sources:
+      - "https://ntrs.nasa.gov/citations/19740026132"
+    as_of: 1974-01-01
+    lifecycle: retired
+    synthetic: false
+
+  # ---- process steps performed at facility ----
+  - type: performed_at
+    id: lnk-f1-008
+    from: stp-f1-001
+    to: fac-canoga-park
+    evidence_grade: confirmed
+    sources:
+      - "https://ntrs.nasa.gov/citations/19740026132"
+    as_of: 1974-01-01
+    lifecycle: retired
+    synthetic: false
+
+  - type: performed_at
+    id: lnk-f1-009
+    from: stp-f1-002
+    to: fac-canoga-park
+    evidence_grade: confirmed
+    sources:
+      - "https://ntrs.nasa.gov/citations/19740026132"
+    as_of: 1974-01-01
+    lifecycle: retired
+    synthetic: false

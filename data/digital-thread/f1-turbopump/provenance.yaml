@@ -1,0 +1,18 @@
+handling: "Unclassified — public"
+contribution: "F-1 Liquid Rocket Engine Turbopump Digital Thread Trace"
+type: dataset
+sources:
+  - description: "NASA SP-8110: Liquid Rocket Engine Turbines (S. B. Macaluso, Rocketdyne)"
+    url: "https://ntrs.nasa.gov/citations/19740026132"
+    licence: "NASA Public Release / U.S. Government Work (Public Domain)"
+    retrieved: "2026-10-16"
+  - description: "NASA SP-8107: Turbopump Systems for Liquid Rocket Engines"
+    url: "https://ntrs.nasa.gov/citations/19750012398"
+    licence: "NASA Public Release / U.S. Government Work (Public Domain)"
+    retrieved: "2026-10-16"
+synthetic: false
+personal_information: none
+export_controlled: false
+training_rights_confirmed: true
+base_model: ""
+notes: "Historical manufacturing and inspection step pointers for the retired Saturn V F-1 engine turbopump turbine wheel assembly from public NASA SP monographs. Pointers only; no proprietary drawings, dimensions, alloy designations, or operating data."
