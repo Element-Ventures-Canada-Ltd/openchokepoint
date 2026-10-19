@@ -1,0 +1,18 @@
+case: RT-005b-range-in-serial
+category: RT
+expected: reject
+expected_rule: RT-001
+note: 'Fictional record — invented values only (example.org). Boundary red-team corpus,
+  issue #18 Slice C.'
+objects:
+- type: SerialItem
+  id: ser-5
+  evidence_grade: confirmed
+  sources:
+  - https://example.org/synthetic/red-team
+  as_of: 2026-10-19
+  lifecycle: active
+  synthetic: true
+  name: Demo blank
+  serial: SN-001-range-(-54C-to-177C)
+links: []

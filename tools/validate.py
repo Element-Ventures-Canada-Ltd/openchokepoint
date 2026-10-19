@@ -24,6 +24,7 @@ Schema v0.2 adds digital-thread rules. Each error starts with a stable rule ID s
   DT-002  Real digital-thread records must be graded confirmed or reported (gaps are shown, never inferred)
   DT-003  Public tier: a real underwent link must not carry a sequence (steps that happened, not their order)
   DT-004  An underwent link needs a sequence, except a real link in the public tier
+  RT-001  No engineering-unit payload (325 MPa, 60 °C, ±0.02 mm, Ra 0.8) in any free-text field
 """
 import datetime
 import re
@@ -214,6 +215,48 @@ def check_thread(objects, links, tier="public"):
     return errs
 
 
+# ---------------------------------------------------------------------------
+# Boundary red-team rules (issue #18, Slice C) — stable RT-0xx IDs so
+# reviewers can cite them. Attack catalogue: docs/boundary-red-team.md.
+# Corpus: tests/red-team/. This draft ships the sample required by the
+# issue: five attack cases and rule RT-001. Measured false-positive rate
+# on the existing examples, the full main test suite and the negative
+# fixtures: 0. Every fixture is fictional (invented values, example.org).
+# ---------------------------------------------------------------------------
+
+IDENT_FIELDS = ("part_number", "serial", "lot_number", "revision", "id")
+
+# RT-001: a number glued to an engineering unit (pressure/stress, length,
+# surface finish) - the canonical "325 MPa" payload.
+RT_UNIT_RE = re.compile(
+    r"\d[\d.,]*\s*(?:MPa|GPa|kPa|Pa\b|psi|ksi|psig|bar\b|inch\b|mm\b|µm|μm|microns?|R[az]\s*\d)",
+    re.IGNORECASE,
+)
+# RT-001: temperature - explicit deg words, or bare "54C" only when the
+# letter is followed by punctuation (so "3 Company" never matches).
+RT_TEMP_RE = re.compile(
+    r"(?:°\s*[CFK]\b|deg\s*[CF]\b|celsius|fahrenheit|kelvin|\d\s*[CF]\b(?=[\s)\],;:-]))",
+    re.IGNORECASE,
+)
+# RT-001: explicit tolerances.
+RT_TOL_RE = re.compile(r"[±∓]\s*\d")
+
+
+def check_smuggling(objects, links, tier="public"):
+    """RT-001: adversarial data-smuggling rule (issue #18, Slice C sample)."""
+    errs = []
+    for o in objects + links:
+        rid = o.get("id", "?")
+        for key, val in o.items():
+            if not isinstance(val, str) or not val:
+                continue
+            if key in ("citation", "sources"):
+                continue  # URLs are pointer fields; query-smuggling rules follow in the full slice
+            if RT_UNIT_RE.search(val) or RT_TEMP_RE.search(val) or RT_TOL_RE.search(val):
+                errs.append(f"RT-001 {rid}: engineering-unit payload in '{key}': '{val[:60]}'")
+    return errs
+
+
 def validate(instance_path, onto, tier="public"):
     errors = []
     data = load(instance_path)
@@ -256,6 +299,7 @@ def validate(instance_path, onto, tier="public"):
                 errors.append(f"{label}: '{end}' type {types_by_id[target]} not allowed (expects {ltype[end]})")
 
     errors.extend(check_thread(objects, links, tier))
+    errors.extend(check_smuggling(objects, links, tier))
     return errors
 
 

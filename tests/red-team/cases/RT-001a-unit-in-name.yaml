@@ -1,0 +1,20 @@
+case: RT-001a-unit-in-name
+category: RT
+expected: reject
+expected_rule: RT-001
+note: 'Fictional record — invented values only (example.org). Boundary red-team corpus,
+  issue #18 Slice C.'
+objects:
+- type: Component
+  id: comp-1
+  evidence_grade: confirmed
+  sources:
+  - https://example.org/synthetic/red-team
+  as_of: 2026-10-19
+  lifecycle: active
+  synthetic: true
+  name: Inducer forging batch, min 325 MPa yield
+  part_number: PN-100
+  revision: A
+  component_kind: impeller
+links: []

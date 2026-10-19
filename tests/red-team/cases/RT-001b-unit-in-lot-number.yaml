@@ -1,0 +1,19 @@
+case: RT-001b-unit-in-lot-number
+category: RT
+expected: reject
+expected_rule: RT-001
+note: 'Fictional record — invented values only (example.org). Boundary red-team corpus,
+  issue #18 Slice C.'
+objects:
+- type: MaterialLot
+  id: lot-1
+  evidence_grade: confirmed
+  sources:
+  - https://example.org/synthetic/red-team
+  as_of: 2026-10-19
+  lifecycle: active
+  synthetic: true
+  name: Demo supplier lot
+  lot_number: LOT-2026-325MPa-HT
+  material_class: forging
+links: []
