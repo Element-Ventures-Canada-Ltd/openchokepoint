@@ -1,0 +1,26 @@
+handling: "Unclassified — public"
+contribution: "Relativity Space Terran R Propulsion Digital Thread Trace"
+type: dataset
+sources:
+  - description: "NASA Stennis Space Center Enhanced Use Lease Agreement (A-2 Test Stand)"
+    url: "https://www.nasa.gov/news-release/nasa-stennis-inks-expanded-test-complex-agreement-with-relativity-space/"
+    licence: "NASA Public Domain / Official News Release"
+    retrieved: "2026-10-21"
+  - description: "Relativity Space Official Release: A-2 Historic Test Stand Lease"
+    url: "https://www.relativityspace.com/press-release/2023/9/5/relativity-space-signs-lease-on-historic-nasa-test-stand"
+    licence: "Relativity Space Public Technical Release"
+    retrieved: "2026-10-21"
+  - description: "NASA Launch Services II (NLS II) Contract Onboarding Release"
+    url: "https://www.nasa.gov/news-release/nasa-adds-relativity-spaces-terran-r-to-launch-services-contract/"
+    licence: "NASA Public Domain / Official News Release"
+    retrieved: "2026-10-21"
+  - description: "Relativity Space Official Terran R Vehicle & Engine Architecture"
+    url: "https://www.relativityspace.com/terran-r"
+    licence: "Relativity Space Public Technical Page"
+    retrieved: "2026-10-21"
+synthetic: false
+personal_information: none
+export_controlled: false
+training_rights_confirmed: true
+base_model: ""
+notes: "Public digital thread trace of the first-stage propulsion assembly and vertical stage test campaign for the Relativity Space Terran R launch vehicle and Aeon R engine under active development within 24 months. Contains pointers to public disclosures only."
