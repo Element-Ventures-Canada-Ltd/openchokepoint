@@ -233,6 +233,14 @@ def validate(instance_path, onto, tier="public"):
 
     for obj in objects:
         label = f"object {obj.get('id')}"
+        
+        # --- Slice B: EvidenceRecord Pointer Validation ---
+        try:
+            validate_evidence_record_pointer(obj)
+        except ValueError as e:
+            errors.append(f"{label}: {str(e)}")
+        # --------------------------------------------------
+
         otype = onto["object_types"].get(obj.get("type"))
         if not otype:
             errors.append(f"{label}: unknown object type '{obj.get('type')}'")
@@ -286,3 +294,41 @@ def main(argv):
 
 if __name__ == "__main__":
     sys.exit(main(sys.argv))
+import re
+
+ALLOWED_HASH_ALGORITHMS = {"sha256", "blake3"}
+FORBIDDEN_EMBEDDED_KEYS = {"content", "raw", "data", "payload", "base64"}
+
+
+def validate_evidence_record_pointer(record: dict) -> None:
+    """Validates Slice B rules for Verifiable Evidence Pointers (0.3.0-draft).
+
+    Ensures no embedded raw content, valid hash algorithms, and proper hex
+    digest formats.
+    """
+    if not isinstance(record, dict) or record.get("type") != "EvidenceRecord":
+        return
+
+    # Rule 1: Prohibit embedded raw record content
+    found_forbidden = FORBIDDEN_EMBEDDED_KEYS.intersection(record.keys())
+    if found_forbidden:
+        raise ValueError(
+            f"Invalid EvidenceRecord: embedded content keys {found_forbidden} are prohibited. "
+            "Only cryptographic pointers (digest/hashAlgorithm) are allowed."
+        )
+
+    # Rule 2: Check hash algorithm whitelist
+    algo = record.get("hashAlgorithm")
+    if algo is not None and algo not in ALLOWED_HASH_ALGORITHMS:
+        raise ValueError(
+            f"Invalid EvidenceRecord: unsupported hash algorithm '{algo}'. "
+            f"Allowed algorithms: {ALLOWED_HASH_ALGORITHMS}"
+        )
+
+    # Rule 3: Validate 64-character hexadecimal digest
+    digest = record.get("digest")
+    if digest is not None:
+        if not isinstance(digest, str) or not re.fullmatch(r"^[a-fA-F0-9]{64}$", digest):
+            raise ValueError(
+                "Invalid EvidenceRecord: digest must be a valid 64-character hexadecimal string."
+            )
