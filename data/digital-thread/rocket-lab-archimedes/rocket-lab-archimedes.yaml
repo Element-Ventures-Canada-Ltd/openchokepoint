@@ -85,7 +85,7 @@ objects:
     id: stp-arch-002
     name: "Turbopump housing machining"
     step_kind: machining
-    evidence_grade: confirmed
+    evidence_grade: reported
     sources:
       - "https://www.sec.gov/Archives/edgar/data/1819994/000181999426000013/rklb-20251231.htm"
     as_of: 2026-02-26
@@ -186,7 +186,7 @@ links:
     id: lnk-arch-005
     from: ser-archimedes-tp-dev01
     to: stp-arch-002
-    evidence_grade: confirmed
+    evidence_grade: reported
     sources:
       - "https://www.sec.gov/Archives/edgar/data/1819994/000181999426000013/rklb-20251231.htm"
     as_of: 2026-02-26
@@ -224,6 +224,17 @@ links:
     sources:
       - "https://www.sec.gov/Archives/edgar/data/1819994/000181999426000013/rklb-20251231.htm"
     as_of: 2026-02-26
+    lifecycle: active
+    synthetic: false
+
+  - type: evidenced_by
+    id: lnk-arch-011
+    from: stp-arch-001
+    to: evd-arch-002
+    evidence_grade: confirmed
+    sources:
+      - "https://www.rocketlabusa.com/updates/rocket-lab-completes-archimedes-engine-build-begins-engine-test-campaign/"
+    as_of: 2024-05-06
     lifecycle: active
     synthetic: false
 
