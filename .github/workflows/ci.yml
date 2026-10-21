@@ -36,3 +36,9 @@ jobs:
         run: python3 tools/validate.py $(find examples data -name '*.yaml' 2>/dev/null | sort)
       - name: Validator tests (standard library unittest)
         run: python3 -m unittest discover -s tests -v
+      - name: PROV-O export parses (rdflib)
+        run: |
+          pip install rdflib
+          python3 tools/export_prov.py --format ttl examples/synthetic-turbopump-thread.yaml > /tmp/prov.ttl
+          python3 tools/export_prov.py --format json-ld examples/synthetic-turbopump-thread.yaml > /tmp/prov.jsonld
+          python3 -c "from rdflib import Graph; [Graph().parse(p, format=f) for p, f in [('/tmp/prov.ttl','turtle'), ('/tmp/prov.jsonld','json-ld')]]; print('PROV-O output parses')"
