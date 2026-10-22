@@ -1,0 +1,26 @@
+objects:
+  - id: ge9x-fan-blade
+    type: Component
+    name: GE9X Composite Fan Blade
+    synthetic: false
+  - id: ge9x-fan-blade-record
+    type: EvidenceRecord
+    citation: https://www.geaerospace.com/commercial-engines/ge9x
+    citation_section: Technology
+    evidence_grade: confirmed
+    synthetic: false
+  - id: ge9x-assembly-step
+    type: ProcessStep
+    name: Fan Module Assembly
+    synthetic: false
+links:
+  - id: link-evidenced-by
+    type: evidenced_by
+    from: ge9x-fan-blade
+    to: ge9x-fan-blade-record
+    synthetic: false
+  - id: link-underwent
+    type: underwent
+    from: ge9x-fan-blade
+    to: ge9x-assembly-step
+    synthetic: false
