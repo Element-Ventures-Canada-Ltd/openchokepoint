@@ -1,350 +1,302 @@
-# Handling: Unclassified — public
-# Digital thread trace for the Relativity Space Terran R Liquid Rocket Launch Vehicle First-Stage Propulsion Subsystem.
-# Sources: NASA Stennis Enhanced Use Lease Agreement, Relativity Space A-2 Lease Release, NASA NLS II Contract Release, Terran R Specification.
-# Pointers to public disclosures only; no dimensions, CAD geometry, alloy compositions, or test results.
-# Rule DT-003: real process steps recorded without temporal sequence ordering in the public tier.
-# Visibility gap demonstrated: step stp-rel-003 (stage acceptance review) has no EvidenceRecord.
-
-objects:
-  # ---- organizations and facilities ----
-  - type: Entity
-    id: ent-relativity-space
-    name: "Relativity Space, Inc."
-    entity_kind: company
-    incorporation_jurisdiction: US-DE
-    controlling_jurisdiction: US
-    evidence_grade: confirmed
-    sources:
-      - "https://www.relativityspace.com/press-release/2023/9/5/relativity-space-signs-lease-on-historic-nasa-test-stand"
-      - "https://www.nasa.gov/news-release/nasa-stennis-inks-expanded-test-complex-agreement-with-relativity-space/"
-    as_of: 2026-03-01
-    lifecycle: active
-    synthetic: false
-
-  - type: Facility
-    id: fac-relativity-long-beach
-    name: "Relativity Space Long Beach Headquarters & Manufacturing Facility"
-    facility_kind: manufacturing
-    host_jurisdiction: US-CA
-    evidence_grade: confirmed
-    sources:
-      - "https://www.relativityspace.com/terran-r"
-      - "https://www.relativityspace.com/press-release/2023/9/5/relativity-space-signs-lease-on-historic-nasa-test-stand"
-    as_of: 2026-03-01
-    lifecycle: active
-    synthetic: false
-
-  - type: Facility
-    id: fac-nasa-stennis-a2
-    name: "NASA Stennis Space Center A-2 Test Stand"
-    facility_kind: test
-    host_jurisdiction: US-MS
-    evidence_grade: confirmed
-    sources:
-      - "https://www.nasa.gov/news-release/nasa-stennis-inks-expanded-test-complex-agreement-with-relativity-space/"
-      - "https://www.relativityspace.com/press-release/2023/9/5/relativity-space-signs-lease-on-historic-nasa-test-stand"
-    as_of: 2026-03-01
-    lifecycle: active
-    synthetic: false
-
-  # ---- components and serial items ----
-  - type: Component
-    id: cmp-terran-r-first-stage
-    name: "Terran R First Stage Propulsion Subsystem"
-    component_kind: other
-    part_number: "TR-PROP-STAGE1"
-    revision: "A"
-    evidence_grade: confirmed
-    sources:
-      - "https://www.relativityspace.com/terran-r"
-      - "https://www.nasa.gov/news-release/nasa-adds-relativity-spaces-terran-r-to-launch-services-contract/"
-    as_of: 2026-03-01
-    lifecycle: active
-    synthetic: false
-
-  - type: Component
-    id: cmp-aeon-r-engine
-    name: "Aeon R Liquid Rocket Engine"
-    component_kind: other
-    part_number: "AEON-R-ENG"
-    revision: "A"
-    evidence_grade: confirmed
-    sources:
-      - "https://www.relativityspace.com/terran-r"
-      - "https://www.relativityspace.com/press-release/2023/9/5/relativity-space-signs-lease-on-historic-nasa-test-stand"
-    as_of: 2026-03-01
-    lifecycle: active
-    synthetic: false
-
-  - type: SerialItem
-    id: ser-terran-r-stage1-dev01
-    name: "Terran R First Stage Development Test Article"
-    serial: "TR-S1-DEV01"
-    evidence_grade: reported
-    sources:
-      - "https://www.relativityspace.com/press-release/2023/9/5/relativity-space-signs-lease-on-historic-nasa-test-stand"
-      - "https://www.relativityspace.com/terran-r"
-    as_of: 2026-03-01
-    lifecycle: active
-    synthetic: true
-
-  # ---- process steps ----
-  - type: ProcessStep
-    id: stp-rel-001
-    name: "Terran R first-stage propulsion integration and assembly"
-    step_kind: assembly
-    evidence_grade: confirmed
-    sources:
-      - "https://www.relativityspace.com/terran-r"
-      - "https://www.relativityspace.com/press-release/2023/9/5/relativity-space-signs-lease-on-historic-nasa-test-stand"
-    as_of: 2026-03-01
-    lifecycle: active
-    synthetic: false
-
-  - type: ProcessStep
-    id: stp-rel-002
-    name: "Terran R first-stage vertical test stand integration and stage testing"
-    step_kind: assembly
-    evidence_grade: confirmed
-    sources:
-      - "https://www.nasa.gov/news-release/nasa-stennis-inks-expanded-test-complex-agreement-with-relativity-space/"
-      - "https://www.relativityspace.com/press-release/2023/9/5/relativity-space-signs-lease-on-historic-nasa-test-stand"
-    as_of: 2026-03-01
-    lifecycle: active
-    synthetic: false
-
-  - type: ProcessStep
-    id: stp-rel-003
-    name: "Terran R first-stage flight readiness and stage acceptance review"
-    step_kind: inspection
-    evidence_grade: reported
-    sources:
-      - "https://www.relativityspace.com/terran-r"
-    as_of: 2026-03-01
-    lifecycle: active
-    synthetic: false
-
-  # ---- evidence records ----
-  - type: EvidenceRecord
-    id: evd-rel-001
-    name: "NASA Stennis Enhanced Use Lease Agreement (A-2 Test Stand Modernization)"
-    record_kind: other
-    issuer: "National Aeronautics and Space Administration"
-    issued_on: 2023-09-07
-    citation: "https://www.nasa.gov/news-release/nasa-stennis-inks-expanded-test-complex-agreement-with-relativity-space/"
-    citation_section: "Enhanced Use Lease Agreement for Historic A-2 Test Stand at Stennis Space Center"
-    evidence_grade: confirmed
-    sources:
-      - "https://www.nasa.gov/news-release/nasa-stennis-inks-expanded-test-complex-agreement-with-relativity-space/"
-    as_of: 2026-03-01
-    lifecycle: active
-    synthetic: false
-
-  - type: EvidenceRecord
-    id: evd-rel-002
-    name: "Relativity Space Official Press Release on Stennis A-2 Vertical Test Stand Modernization"
-    record_kind: other
-    issuer: "Relativity Space, Inc."
-    issued_on: 2023-09-07
-    citation: "https://www.relativityspace.com/press-release/2023/9/5/relativity-space-signs-lease-on-historic-nasa-test-stand"
-    citation_section: "Terran R First-Stage Propulsion and Vertical Testing at Stennis A-2"
-    evidence_grade: confirmed
-    sources:
-      - "https://www.relativityspace.com/press-release/2023/9/5/relativity-space-signs-lease-on-historic-nasa-test-stand"
-    as_of: 2026-03-01
-    lifecycle: active
-    synthetic: false
-
-  - type: EvidenceRecord
-    id: evd-rel-003
-    name: "NASA Launch Services II (NLS II) Contract Onboarding Release"
-    record_kind: other
-    issuer: "National Aeronautics and Space Administration"
-    issued_on: 2026-09-09
-    citation: "https://www.nasa.gov/news-release/nasa-adds-relativity-spaces-terran-r-to-launch-services-contract/"
-    citation_section: "NASA LSP Onboarding Terran R Under NLS II Launch Services Contract"
-    evidence_grade: confirmed
-    sources:
-      - "https://www.nasa.gov/news-release/nasa-adds-relativity-spaces-terran-r-to-launch-services-contract/"
-    as_of: 2026-09-09
-    lifecycle: active
-    synthetic: false
-
-  - type: EvidenceRecord
-    id: evd-rel-004
-    name: "Relativity Space Official Terran R Vehicle & Engine Architecture Specification"
-    record_kind: other
-    issuer: "Relativity Space, Inc."
-    issued_on: 2026-01-15
-    citation: "https://www.relativityspace.com/terran-r"
-    citation_section: "Terran R Propulsion: 13 First-Stage Aeon R Gas-Generator LOX/Methane Engines"
-    evidence_grade: confirmed
-    sources:
-      - "https://www.relativityspace.com/terran-r"
-    as_of: 2026-03-01
-    lifecycle: active
-    synthetic: false
-
 links:
-  # ---- entity to facilities ----
-  - type: located_at
-    id: lnk-rel-001
-    name: "Relativity Space headquarters at Long Beach production facility"
-    from: ent-relativity-space
-    to: fac-relativity-long-beach
-    evidence_grade: confirmed
-    sources:
-      - "https://www.relativityspace.com/terran-r"
-    as_of: 2026-03-01
-    lifecycle: active
-    synthetic: false
-
-  - type: located_at
-    id: lnk-rel-002
-    name: "Relativity Space test operations at NASA Stennis A-2 vertical stand"
-    from: ent-relativity-space
-    to: fac-nasa-stennis-a2
-    evidence_grade: confirmed
-    sources:
-      - "https://www.nasa.gov/news-release/nasa-stennis-inks-expanded-test-complex-agreement-with-relativity-space/"
-      - "https://www.relativityspace.com/press-release/2023/9/5/relativity-space-signs-lease-on-historic-nasa-test-stand"
-    as_of: 2026-03-01
-    lifecycle: active
-    synthetic: false
-
-  # ---- serial item to component ----
-  - type: instance_of
-    id: lnk-rel-003
-    name: "Development first-stage article is an instance of Terran R stage 1"
-    from: ser-terran-r-stage1-dev01
-    to: cmp-terran-r-first-stage
-    evidence_grade: confirmed
-    sources:
-      - "https://www.relativityspace.com/press-release/2023/9/5/relativity-space-signs-lease-on-historic-nasa-test-stand"
-    as_of: 2026-03-01
-    lifecycle: active
-    synthetic: true
-
-  # ---- process steps undergone by serial item (Rule DT-003: no sequence) ----
-  - type: underwent
-    id: lnk-rel-004
-    name: "Stage 1 development article underwent propulsion integration"
-    from: ser-terran-r-stage1-dev01
-    to: stp-rel-001
-    evidence_grade: confirmed
-    sources:
-      - "https://www.relativityspace.com/press-release/2023/9/5/relativity-space-signs-lease-on-historic-nasa-test-stand"
-    as_of: 2026-03-01
-    lifecycle: active
-    synthetic: false
-
-  - type: underwent
-    id: lnk-rel-005
-    name: "Stage 1 development article underwent vertical test stand testing"
-    from: ser-terran-r-stage1-dev01
-    to: stp-rel-002
-    evidence_grade: confirmed
-    sources:
-      - "https://www.nasa.gov/news-release/nasa-stennis-inks-expanded-test-complex-agreement-with-relativity-space/"
-      - "https://www.relativityspace.com/press-release/2023/9/5/relativity-space-signs-lease-on-historic-nasa-test-stand"
-    as_of: 2026-03-01
-    lifecycle: active
-    synthetic: false
-
-  - type: underwent
-    id: lnk-rel-006
-    name: "Stage 1 development article underwent stage acceptance review"
-    from: ser-terran-r-stage1-dev01
-    to: stp-rel-003
-    evidence_grade: reported
-    sources:
-      - "https://www.relativityspace.com/terran-r"
-    as_of: 2026-03-01
-    lifecycle: active
-    synthetic: false
-
-  # ---- process steps performed at facilities ----
-  - type: performed_at
-    id: lnk-rel-007
-    name: "Propulsion integration performed at Long Beach headquarters"
-    from: stp-rel-001
-    to: fac-relativity-long-beach
-    evidence_grade: confirmed
-    sources:
-      - "https://www.relativityspace.com/terran-r"
-    as_of: 2026-03-01
-    lifecycle: active
-    synthetic: false
-
-  - type: performed_at
-    id: lnk-rel-008
-    name: "Vertical stage testing performed at NASA Stennis A-2 test stand"
-    from: stp-rel-002
-    to: fac-nasa-stennis-a2
-    evidence_grade: confirmed
-    sources:
-      - "https://www.nasa.gov/news-release/nasa-stennis-inks-expanded-test-complex-agreement-with-relativity-space/"
-    as_of: 2026-03-01
-    lifecycle: active
-    synthetic: false
-
-  # ---- process steps evidenced by records ----
-  - type: evidenced_by
-    id: lnk-rel-009
-    name: "Propulsion integration evidenced by Relativity A-2 release"
-    from: stp-rel-001
-    to: evd-rel-002
-    evidence_grade: confirmed
-    sources:
-      - "https://www.relativityspace.com/press-release/2023/9/5/relativity-space-signs-lease-on-historic-nasa-test-stand"
-    as_of: 2026-03-01
-    lifecycle: active
-    synthetic: false
-
-  - type: evidenced_by
-    id: lnk-rel-010
-    name: "Propulsion integration evidenced by Terran R technical specification"
-    from: stp-rel-001
-    to: evd-rel-004
-    evidence_grade: confirmed
-    sources:
-      - "https://www.relativityspace.com/terran-r"
-    as_of: 2026-03-01
-    lifecycle: active
-    synthetic: false
-
-  - type: evidenced_by
-    id: lnk-rel-011
-    name: "Vertical stage testing evidenced by NASA Stennis EULA announcement"
-    from: stp-rel-002
-    to: evd-rel-001
-    evidence_grade: confirmed
-    sources:
-      - "https://www.nasa.gov/news-release/nasa-stennis-inks-expanded-test-complex-agreement-with-relativity-space/"
-    as_of: 2026-03-01
-    lifecycle: active
-    synthetic: false
-
-  - type: evidenced_by
-    id: lnk-rel-012
-    name: "Vertical stage testing evidenced by Relativity A-2 lease announcement"
-    from: stp-rel-002
-    to: evd-rel-002
-    evidence_grade: confirmed
-    sources:
-      - "https://www.relativityspace.com/press-release/2023/9/5/relativity-space-signs-lease-on-historic-nasa-test-stand"
-    as_of: 2026-03-01
-    lifecycle: active
-    synthetic: false
-
-  - type: evidenced_by
-    id: lnk-rel-013
-    name: "Propulsion integration evidenced by NASA NLS II onboarding"
-    from: stp-rel-001
-    to: evd-rel-003
-    evidence_grade: confirmed
-    sources:
-      - "https://www.nasa.gov/news-release/nasa-adds-relativity-spaces-terran-r-to-launch-services-contract/"
-    as_of: 2026-09-09
-    lifecycle: active
-    synthetic: false
+- as_of: 2026-03-01
+  evidence_grade: confirmed
+  from: ent-relativity-space
+  id: lnk-rel-001
+  lifecycle: active
+  name: Relativity Space headquarters at Long Beach production facility
+  sources:
+  - https://www.relativityspace.com/terran-r
+  synthetic: false
+  to: fac-relativity-long-beach
+  type: located_at
+- as_of: 2026-03-01
+  evidence_grade: confirmed
+  from: ent-relativity-space
+  id: lnk-rel-002
+  lifecycle: active
+  name: Relativity Space test operations at NASA Stennis A-2 vertical stand
+  sources:
+  - https://www.nasa.gov/news-release/nasa-stennis-inks-expanded-test-complex-agreement-with-relativity-space/
+  - https://www.relativityspace.com/press-release/2023/9/5/relativity-space-signs-lease-on-historic-nasa-test-stand
+  synthetic: false
+  to: fac-nasa-stennis-a2
+  type: located_at
+- as_of: 2026-03-01
+  evidence_grade: reported
+  from: ser-terran-r-stage1-dev01
+  id: lnk-rel-003
+  lifecycle: active
+  name: Development first-stage article is an instance of Terran R stage 1
+  sources:
+  - https://www.relativityspace.com/press-release/2023/9/5/relativity-space-signs-lease-on-historic-nasa-test-stand
+  synthetic: true
+  to: cmp-terran-r-first-stage
+  type: instance_of
+- as_of: 2026-03-01
+  evidence_grade: reported
+  from: ser-terran-r-stage1-dev01
+  id: lnk-rel-004
+  lifecycle: active
+  name: Stage 1 development article underwent propulsion integration
+  sequence: 1
+  sources:
+  - https://www.relativityspace.com/press-release/2023/9/5/relativity-space-signs-lease-on-historic-nasa-test-stand
+  synthetic: true
+  to: stp-rel-001
+  type: underwent
+- as_of: 2026-03-01
+  evidence_grade: reported
+  from: ser-terran-r-stage1-dev01
+  id: lnk-rel-005
+  lifecycle: active
+  name: Stage 1 development article underwent vertical test stand testing
+  sequence: 2
+  sources:
+  - https://www.nasa.gov/news-release/nasa-stennis-inks-expanded-test-complex-agreement-with-relativity-space/
+  - https://www.relativityspace.com/press-release/2023/9/5/relativity-space-signs-lease-on-historic-nasa-test-stand
+  synthetic: true
+  to: stp-rel-002
+  type: underwent
+- as_of: 2026-03-01
+  evidence_grade: reported
+  from: ser-terran-r-stage1-dev01
+  id: lnk-rel-006
+  lifecycle: active
+  name: Stage 1 development article underwent stage acceptance review
+  sequence: 3
+  sources:
+  - https://www.relativityspace.com/terran-r
+  synthetic: true
+  to: stp-rel-003
+  type: underwent
+- as_of: 2026-03-01
+  evidence_grade: reported
+  from: stp-rel-001
+  id: lnk-rel-007
+  lifecycle: active
+  name: Propulsion integration performed at Long Beach headquarters
+  sources:
+  - https://www.relativityspace.com/terran-r
+  synthetic: false
+  to: fac-relativity-long-beach
+  type: performed_at
+- as_of: 2026-03-01
+  evidence_grade: reported
+  from: stp-rel-002
+  id: lnk-rel-008
+  lifecycle: active
+  name: Vertical stage testing performed at NASA Stennis A-2 test stand
+  sources:
+  - https://www.nasa.gov/news-release/nasa-stennis-inks-expanded-test-complex-agreement-with-relativity-space/
+  synthetic: false
+  to: fac-nasa-stennis-a2
+  type: performed_at
+- as_of: 2026-03-01
+  evidence_grade: reported
+  from: stp-rel-001
+  id: lnk-rel-009
+  lifecycle: active
+  name: Propulsion integration evidenced by Relativity A-2 release
+  sources:
+  - https://www.relativityspace.com/press-release/2023/9/5/relativity-space-signs-lease-on-historic-nasa-test-stand
+  synthetic: false
+  to: evd-rel-002
+  type: evidenced_by
+- as_of: 2026-03-01
+  evidence_grade: reported
+  from: stp-rel-001
+  id: lnk-rel-010
+  lifecycle: active
+  name: Propulsion integration evidenced by Terran R technical specification
+  sources:
+  - https://www.relativityspace.com/terran-r
+  synthetic: false
+  to: evd-rel-004
+  type: evidenced_by
+- as_of: 2026-03-01
+  evidence_grade: reported
+  from: stp-rel-002
+  id: lnk-rel-011
+  lifecycle: active
+  name: Vertical stage testing evidenced by NASA Stennis EULA announcement
+  sources:
+  - https://www.nasa.gov/news-release/nasa-stennis-inks-expanded-test-complex-agreement-with-relativity-space/
+  synthetic: false
+  to: evd-rel-001
+  type: evidenced_by
+- as_of: 2026-03-01
+  evidence_grade: reported
+  from: stp-rel-002
+  id: lnk-rel-012
+  lifecycle: active
+  name: Vertical stage testing evidenced by Relativity A-2 lease announcement
+  sources:
+  - https://www.relativityspace.com/press-release/2023/9/5/relativity-space-signs-lease-on-historic-nasa-test-stand
+  synthetic: false
+  to: evd-rel-002
+  type: evidenced_by
+objects:
+- as_of: 2026-03-01
+  controlling_jurisdiction: US
+  entity_kind: company
+  evidence_grade: confirmed
+  id: ent-relativity-space
+  incorporation_jurisdiction: US-DE
+  lifecycle: active
+  name: Relativity Space, Inc.
+  sources:
+  - https://www.relativityspace.com/press-release/2023/9/5/relativity-space-signs-lease-on-historic-nasa-test-stand
+  - https://www.nasa.gov/news-release/nasa-stennis-inks-expanded-test-complex-agreement-with-relativity-space/
+  synthetic: false
+  type: Entity
+- as_of: 2026-03-01
+  evidence_grade: confirmed
+  facility_kind: manufacturing
+  host_jurisdiction: US-CA
+  id: fac-relativity-long-beach
+  lifecycle: active
+  name: Relativity Space Long Beach Headquarters & Manufacturing Facility
+  sources:
+  - https://www.relativityspace.com/terran-r
+  - https://www.relativityspace.com/press-release/2023/9/5/relativity-space-signs-lease-on-historic-nasa-test-stand
+  synthetic: false
+  type: Facility
+- as_of: 2026-03-01
+  evidence_grade: confirmed
+  facility_kind: test
+  host_jurisdiction: US-MS
+  id: fac-nasa-stennis-a2
+  lifecycle: active
+  name: NASA Stennis Space Center A-2 Test Stand
+  sources:
+  - https://www.nasa.gov/news-release/nasa-stennis-inks-expanded-test-complex-agreement-with-relativity-space/
+  - https://www.relativityspace.com/press-release/2023/9/5/relativity-space-signs-lease-on-historic-nasa-test-stand
+  synthetic: false
+  type: Facility
+- as_of: 2026-03-01
+  component_kind: other
+  evidence_grade: reported
+  id: cmp-terran-r-first-stage
+  lifecycle: active
+  name: Terran R First Stage Propulsion Subsystem
+  part_number: TR-PROP-STAGE1
+  revision: A
+  sources:
+  - https://www.relativityspace.com/terran-r
+  - https://www.nasa.gov/news-release/nasa-adds-relativity-spaces-terran-r-to-launch-services-contract/
+  synthetic: true
+  type: Component
+- as_of: 2026-03-01
+  component_kind: other
+  evidence_grade: reported
+  id: cmp-aeon-r-engine
+  lifecycle: active
+  name: Aeon R Liquid Rocket Engine
+  part_number: AEON-R-ENG
+  revision: A
+  sources:
+  - https://www.relativityspace.com/terran-r
+  synthetic: true
+  type: Component
+- as_of: 2026-03-01
+  evidence_grade: reported
+  id: ser-terran-r-stage1-dev01
+  lifecycle: active
+  name: Terran R First Stage Development Test Article
+  serial: TR-S1-DEV01
+  sources:
+  - https://www.relativityspace.com/press-release/2023/9/5/relativity-space-signs-lease-on-historic-nasa-test-stand
+  - https://www.relativityspace.com/terran-r
+  synthetic: true
+  type: SerialItem
+- as_of: 2026-03-01
+  evidence_grade: reported
+  id: stp-rel-001
+  lifecycle: active
+  name: Terran R first-stage propulsion integration and assembly
+  sources:
+  - https://www.relativityspace.com/terran-r
+  - https://www.relativityspace.com/press-release/2023/9/5/relativity-space-signs-lease-on-historic-nasa-test-stand
+  step_kind: assembly
+  synthetic: false
+  type: ProcessStep
+- as_of: 2026-03-01
+  evidence_grade: reported
+  id: stp-rel-002
+  lifecycle: active
+  name: Terran R first-stage vertical test stand integration and stage testing
+  sources:
+  - https://www.nasa.gov/news-release/nasa-stennis-inks-expanded-test-complex-agreement-with-relativity-space/
+  - https://www.relativityspace.com/press-release/2023/9/5/relativity-space-signs-lease-on-historic-nasa-test-stand
+  step_kind: assembly
+  synthetic: false
+  type: ProcessStep
+- as_of: 2026-03-01
+  evidence_grade: reported
+  id: stp-rel-003
+  lifecycle: active
+  name: Terran R first-stage flight readiness and stage acceptance review
+  sources:
+  - https://www.relativityspace.com/terran-r
+  step_kind: inspection
+  synthetic: false
+  type: ProcessStep
+- as_of: 2026-03-01
+  citation: https://www.nasa.gov/news-release/nasa-stennis-inks-expanded-test-complex-agreement-with-relativity-space/
+  citation_section: NASA Stennis Inks Expanded Test Complex Agreement with Relativity
+    Space
+  evidence_grade: confirmed
+  id: evd-rel-001
+  issued_on: 2023-09-07
+  issuer: National Aeronautics and Space Administration
+  lifecycle: active
+  name: NASA Stennis Enhanced Use Lease Agreement (A-2 Test Stand Modernization)
+  record_kind: other
+  sources:
+  - https://www.nasa.gov/news-release/nasa-stennis-inks-expanded-test-complex-agreement-with-relativity-space/
+  synthetic: false
+  type: EvidenceRecord
+- as_of: 2026-03-01
+  citation: https://www.relativityspace.com/press-release/2023/9/5/relativity-space-signs-lease-on-historic-nasa-test-stand
+  citation_section: Relativity Space Signs Lease On Historic NASA Test Stand
+  evidence_grade: confirmed
+  id: evd-rel-002
+  issued_on: 2023-09-07
+  issuer: Relativity Space, Inc.
+  lifecycle: active
+  name: Relativity Space Official Press Release on Stennis A-2 Vertical Test Stand
+    Modernization
+  record_kind: other
+  sources:
+  - https://www.relativityspace.com/press-release/2023/9/5/relativity-space-signs-lease-on-historic-nasa-test-stand
+  synthetic: false
+  type: EvidenceRecord
+- as_of: 2026-09-09
+  citation: https://www.nasa.gov/news-release/nasa-adds-relativity-spaces-terran-r-to-launch-services-contract/
+  citation_section: "NASA Adds Relativity Space\u2019s Terran R to Launch Services\
+    \ Contract"
+  evidence_grade: confirmed
+  id: evd-rel-003
+  issued_on: 2026-09-09
+  issuer: National Aeronautics and Space Administration
+  lifecycle: active
+  name: NASA Launch Services II (NLS II) Contract Onboarding Release
+  record_kind: other
+  sources:
+  - https://www.nasa.gov/news-release/nasa-adds-relativity-spaces-terran-r-to-launch-services-contract/
+  synthetic: false
+  type: EvidenceRecord
+- as_of: 2026-03-01
+  citation: https://www.relativityspace.com/terran-r
+  citation_section: Powering Terran R
+  evidence_grade: confirmed
+  id: evd-rel-004
+  issuer: Relativity Space, Inc.
+  lifecycle: active
+  name: Relativity Space Official Terran R Vehicle & Engine Architecture Specification
+  record_kind: other
+  sources:
+  - https://www.relativityspace.com/terran-r
+  synthetic: false
+  type: EvidenceRecord
