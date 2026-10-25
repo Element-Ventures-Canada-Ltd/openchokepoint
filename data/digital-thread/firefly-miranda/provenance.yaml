@@ -1,0 +1,18 @@
+handling: "Unclassified — public"
+contribution: "Firefly Aerospace Miranda Engine Turbopump Digital Thread Trace"
+type: dataset
+sources:
+  - description: "Firefly Aerospace Inc. Form 10-K Annual Report (Item 1)"
+    url: "https://www.sec.gov/Archives/edgar/data/1860166/000186016626000010/fly-20251231.htm"
+    licence: "U.S. Securities and Exchange Commission Public Filing / EDGAR Public Domain"
+    retrieved: "2026-10-19"
+  - description: "Firefly Aerospace Official Press Release: Completes Miranda Engine Build, Begins Test Campaign"
+    url: "https://fireflyspace.com/news/firefly-aerospace-completes-miranda-engine-build-begins-test-campaign/"
+    licence: "Firefly Aerospace Inc. Public Release"
+    retrieved: "2026-10-19"
+synthetic: false
+personal_information: none
+export_controlled: false
+training_rights_confirmed: true
+base_model: ""
+notes: "Public digital thread trace of 3D-printed turbopump housings and engine test campaign for the Firefly Aerospace Miranda engine (Medium Launch Vehicle) under active development within 24 months. Contains pointers to public disclosures only."

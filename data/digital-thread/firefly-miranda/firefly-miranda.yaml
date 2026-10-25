@@ -1,0 +1,239 @@
+# Handling: Unclassified — public
+# Digital thread trace for the Firefly Aerospace Miranda Liquid Rocket Engine (Medium Launch Vehicle) Turbopump Housing.
+# Sources: Firefly Aerospace Form 10-K (Item 1) and Firefly Aerospace Official Press Release (June 10, 2025).
+# Pointers to public disclosures only; no dimensions, CAD geometry, alloy compositions, or test results.
+# Rule DT-003: real process steps recorded without temporal sequence ordering in the public tier.
+# Visibility gap demonstrated: step stp-mir-003 (inspection) has no EvidenceRecord.
+
+objects:
+  # ---- organizations and facilities ----
+  - type: Entity
+    id: ent-firefly-aerospace
+    name: "Firefly Aerospace Inc."
+    entity_kind: company
+    incorporation_jurisdiction: US-DE
+    controlling_jurisdiction: US
+    evidence_grade: confirmed
+    sources:
+      - "https://www.sec.gov/Archives/edgar/data/1860166/000186016626000010/fly-20251231.htm"
+    as_of: 2026-03-01
+    lifecycle: active
+    synthetic: false
+
+  - type: Facility
+    id: fac-firefly-cedar-park
+    name: "Firefly Aerospace Cedar Park Manufacturing Facility"
+    facility_kind: manufacturing
+    host_jurisdiction: US-TX
+    evidence_grade: confirmed
+    sources:
+      - "https://www.sec.gov/Archives/edgar/data/1860166/000186016626000010/fly-20251231.htm"
+    as_of: 2026-03-01
+    lifecycle: active
+    synthetic: false
+
+  - type: Facility
+    id: fac-firefly-briggs
+    name: "Firefly Aerospace Briggs Test Facility"
+    facility_kind: test
+    host_jurisdiction: US-TX
+    evidence_grade: confirmed
+    sources:
+      - "https://fireflyspace.com/news/firefly-aerospace-completes-miranda-engine-build-begins-test-campaign/"
+    as_of: 2025-06-10
+    lifecycle: active
+    synthetic: false
+
+  # ---- design and physical serial instance (synthetic: true per maintainer review: part/serial not in public disclosures) ----
+  - type: Component
+    id: cmp-miranda-turbopump-housing
+    name: "Miranda 3D-Printed Turbopump Housing"
+    part_number: "MIR-TP-HOUSING"
+    revision: "DEV"
+    component_kind: housing
+    evidence_grade: confirmed
+    sources:
+      - "https://fireflyspace.com/news/firefly-aerospace-completes-miranda-engine-build-begins-test-campaign/"
+    as_of: 2025-06-10
+    lifecycle: active
+    synthetic: true
+
+  - type: SerialItem
+    id: ser-miranda-tp-dev01
+    name: "Miranda Development Engine Turbopump Housing"
+    serial: "MIR-TP-DEV-01"
+    evidence_grade: reported
+    sources:
+      - "https://fireflyspace.com/news/firefly-aerospace-completes-miranda-engine-build-begins-test-campaign/"
+    as_of: 2025-06-10
+    lifecycle: active
+    synthetic: true
+
+  # ---- process steps (matching source: additive manufacturing & machining from 10-K, generic inspection graded reported) ----
+  - type: ProcessStep
+    id: stp-mir-001
+    name: "Turbopump housing additive manufacturing"
+    step_kind: build
+    evidence_grade: confirmed
+    sources:
+      - "https://www.sec.gov/Archives/edgar/data/1860166/000186016626000010/fly-20251231.htm"
+    as_of: 2026-03-01
+    lifecycle: active
+    synthetic: false
+
+  - type: ProcessStep
+    id: stp-mir-002
+    name: "Turbopump housing machining"
+    step_kind: machining
+    evidence_grade: reported
+    sources:
+      - "https://www.sec.gov/Archives/edgar/data/1860166/000186016626000010/fly-20251231.htm"
+    as_of: 2026-03-01
+    lifecycle: active
+    synthetic: false
+
+  - type: ProcessStep
+    id: stp-mir-003
+    name: "Turbopump housing inspection"
+    step_kind: inspection
+    evidence_grade: reported
+    sources:
+      - "https://fireflyspace.com/news/firefly-aerospace-completes-miranda-engine-build-begins-test-campaign/"
+    as_of: 2025-06-10
+    lifecycle: active
+    synthetic: false
+
+  # ---- evidence records (public citations only, pointers without inline content) ----
+  - type: EvidenceRecord
+    id: evd-mir-001
+    name: "SEC Form 10-K FY2025 Item 1 Manufacturing Process Disclosure"
+    record_kind: other
+    issuer: "Firefly Aerospace Inc."
+    issued_on: 2026-03-01
+    citation: "https://www.sec.gov/Archives/edgar/data/1860166/000186016626000010/fly-20251231.htm"
+    citation_section: "Item 1. Business - Manufacturing"
+    evidence_grade: confirmed
+    sources:
+      - "https://www.sec.gov/Archives/edgar/data/1860166/000186016626000010/fly-20251231.htm"
+    as_of: 2026-03-01
+    lifecycle: active
+    synthetic: false
+
+  - type: EvidenceRecord
+    id: evd-mir-002
+    name: "Firefly Aerospace Miranda Engine Build & 3D Printed Turbopump Disclosure"
+    record_kind: build_record
+    issuer: "Firefly Aerospace Inc."
+    issued_on: 2025-06-10
+    citation: "https://fireflyspace.com/news/firefly-aerospace-completes-miranda-engine-build-begins-test-campaign/"
+    citation_section: "Press Release - Miranda Engine Assembly and Test Campaign"
+    evidence_grade: confirmed
+    sources:
+      - "https://fireflyspace.com/news/firefly-aerospace-completes-miranda-engine-build-begins-test-campaign/"
+    as_of: 2025-06-10
+    lifecycle: active
+    synthetic: false
+
+links:
+  # ---- organization & facility ----
+  - type: located_at
+    id: lnk-mir-001
+    from: ent-firefly-aerospace
+    to: fac-firefly-cedar-park
+    evidence_grade: confirmed
+    sources:
+      - "https://www.sec.gov/Archives/edgar/data/1860166/000186016626000010/fly-20251231.htm"
+    as_of: 2026-03-01
+    lifecycle: active
+    synthetic: false
+
+  - type: located_at
+    id: lnk-mir-002
+    from: ent-firefly-aerospace
+    to: fac-firefly-briggs
+    evidence_grade: confirmed
+    sources:
+      - "https://fireflyspace.com/news/firefly-aerospace-completes-miranda-engine-build-begins-test-campaign/"
+    as_of: 2025-06-10
+    lifecycle: active
+    synthetic: false
+
+  # ---- serial to design ----
+  - type: instance_of
+    id: lnk-mir-003
+    from: ser-miranda-tp-dev01
+    to: cmp-miranda-turbopump-housing
+    evidence_grade: confirmed
+    sources:
+      - "https://fireflyspace.com/news/firefly-aerospace-completes-miranda-engine-build-begins-test-campaign/"
+    as_of: 2025-06-10
+    lifecycle: active
+    synthetic: true
+
+  # ---- serial underwent process steps (NO sequence in public tier - rule DT-003) ----
+  - type: underwent
+    id: lnk-mir-004
+    from: ser-miranda-tp-dev01
+    to: stp-mir-001
+    evidence_grade: confirmed
+    sources:
+      - "https://www.sec.gov/Archives/edgar/data/1860166/000186016626000010/fly-20251231.htm"
+    as_of: 2026-03-01
+    lifecycle: active
+    synthetic: false
+
+  - type: underwent
+    id: lnk-mir-005
+    from: ser-miranda-tp-dev01
+    to: stp-mir-002
+    evidence_grade: reported
+    sources:
+      - "https://www.sec.gov/Archives/edgar/data/1860166/000186016626000010/fly-20251231.htm"
+    as_of: 2026-03-01
+    lifecycle: active
+    synthetic: false
+
+  - type: underwent
+    id: lnk-mir-006
+    from: ser-miranda-tp-dev01
+    to: stp-mir-003
+    evidence_grade: reported
+    sources:
+      - "https://fireflyspace.com/news/firefly-aerospace-completes-miranda-engine-build-begins-test-campaign/"
+    as_of: 2025-06-10
+    lifecycle: active
+    synthetic: false
+
+  # ---- process steps evidenced by public records (stp-mir-003 has no evidence link: expected gap) ----
+  - type: evidenced_by
+    id: lnk-mir-007
+    from: stp-mir-001
+    to: evd-mir-001
+    evidence_grade: confirmed
+    sources:
+      - "https://www.sec.gov/Archives/edgar/data/1860166/000186016626000010/fly-20251231.htm"
+    as_of: 2026-03-01
+    lifecycle: active
+    synthetic: false
+
+  - type: evidenced_by
+    id: lnk-mir-008
+    from: stp-mir-002
+    to: evd-mir-001
+    evidence_grade: confirmed
+    sources:
+      - "https://www.sec.gov/Archives/edgar/data/1860166/000186016626000010/fly-20251231.htm"
+    as_of: 2026-03-01
+    lifecycle: active
+    synthetic: false
+
+  - type: evidenced_by
+    id: lnk-mir-009
+    from: stp-mir-001
+    to: evd-mir-002
+    evidence_grade: confirmed
+    sources:
+      - "https://fireflyspace.com/news/firefly-aerospace-completes-miranda-engine-build-begins-test-campaign/"
+    as_of: 2025-06-10
+    lifecycle: active
+    synthetic: false
