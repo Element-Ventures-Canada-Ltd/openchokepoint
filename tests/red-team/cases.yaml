@@ -1,0 +1,55 @@
+# Handling: Unclassified — public
+# Fictional red-team cases. Every value is invented.
+- id: rt-001
+  kind: text
+  value: 'Example pump 25 mm'
+  expect: reject
+  rule: RT-001
+- id: rt-002
+  kind: text
+  value: 'Example pump ±0.5'
+  expect: reject
+  rule: RT-002
+- id: rt-003
+  kind: text
+  value: 'Example pump 10–20 bar'
+  expect: reject
+  rule: RT-002
+- id: rt-004
+  kind: text
+  value: 'Example pump 1 234'
+  expect: reject
+  rule: RT-003
+- id: rt-005
+  kind: text
+  value: 'Example pump 0x1F'
+  expect: reject
+  rule: RT-003
+- id: rt-006
+  kind: text
+  value: 'Example pump 25 µm'
+  expect: reject
+  rule: RT-001
+- id: rt-007
+  kind: identifier
+  field: part_number
+  value: 'X-1-25mm'
+  expect: reject
+  rule: RT-005
+- id: rt-100
+  kind: text
+  value: 'Example pump'
+  expect: accept
+- id: rt-101
+  kind: text
+  value: 'Example pump two stage'
+  expect: accept
+- id: rt-102
+  kind: identifier
+  field: part_number
+  value: 'X-1'
+  expect: accept
+- id: rt-103
+  kind: text
+  value: 'Section 3'
+  expect: accept
