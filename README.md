@@ -4,7 +4,7 @@ Handling: Unclassified — public
 
 An open grammar for mapping supply-chain dependencies: who supplies what, from where, under whose jurisdiction, and on what evidence. It gives analysts, researchers and industry one shared way to record chokepoints so registries can be compared, validated and combined.
 
-> **Status:** private preview. The project name is a placeholder pending a name-availability check.
+> **Status:** public preview, open for contributions (schema v0.2.1-draft). The project name is a working name pending a name-availability check.
 
 ## What is here
 
