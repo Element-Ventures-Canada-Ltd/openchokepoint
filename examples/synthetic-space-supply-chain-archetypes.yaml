@@ -1,0 +1,1070 @@
+# Handling: Unclassified — public
+# SYNTHETIC EXAMPLE ONLY — role archetypes, not real organizations. Every record is a generic role; no company, programme or
+# country is named. Jurisdiction XX is the ISO 3166 user-assigned code, used here for "any / unspecified".
+# Attributes for each archetype (bands, HS 2022, risk placement) are in docs/reference-maps/sovereign-space-supply-chain/.
+# © 2026 Element Ventures (Canada) Ltd. All rights reserved.
+# Indicative bands only; not legal, procurement or investment advice.
+# Licence: Open Government Licence – Canada 2.0 (documentation and data; see LICENSING.md).
+
+objects:
+  - { type: Entity, id: ent-ssc-U01, name: "Archetype: High-purity gallium refiner", entity_kind: company, incorporation_jurisdiction: XX,
+      controlling_jurisdiction: XX, evidence_grade: confirmed, sources: ["https://example.org/synthetic/archetype/U01"],
+      as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: Entity, id: ent-ssc-U02, name: "Archetype: Germanium refiner / substrate maker", entity_kind: company, incorporation_jurisdiction: XX,
+      controlling_jurisdiction: XX, evidence_grade: confirmed, sources: ["https://example.org/synthetic/archetype/U02"],
+      as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: Entity, id: ent-ssc-U03, name: "Archetype: Rare-earth separator / magnet maker", entity_kind: company, incorporation_jurisdiction: XX,
+      controlling_jurisdiction: XX, evidence_grade: reported, sources: ["https://example.org/synthetic/archetype/U03"],
+      as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: Entity, id: ent-ssc-U04, name: "Archetype: Indium refiner", entity_kind: company, incorporation_jurisdiction: XX,
+      controlling_jurisdiction: XX, evidence_grade: reported, sources: ["https://example.org/synthetic/archetype/U04"],
+      as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: Entity, id: ent-ssc-U05, name: "Archetype: Capacitor-grade tantalum supplier", entity_kind: company, incorporation_jurisdiction: XX,
+      controlling_jurisdiction: XX, evidence_grade: inferred, sources: ["https://example.org/synthetic/archetype/U05"],
+      as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: Entity, id: ent-ssc-U06, name: "Archetype: Helium supplier", entity_kind: company, incorporation_jurisdiction: XX,
+      controlling_jurisdiction: XX, evidence_grade: inferred, sources: ["https://example.org/synthetic/archetype/U06"],
+      as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: Entity, id: ent-ssc-U07, name: "Archetype: Xenon / krypton producer", entity_kind: company, incorporation_jurisdiction: XX,
+      controlling_jurisdiction: XX, evidence_grade: inferred, sources: ["https://example.org/synthetic/archetype/U07"],
+      as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: Entity, id: ent-ssc-U08, name: "Archetype: Ni/Co superalloy vacuum melter", entity_kind: company, incorporation_jurisdiction: XX,
+      controlling_jurisdiction: XX, evidence_grade: inferred, sources: ["https://example.org/synthetic/archetype/U08"],
+      as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: Entity, id: ent-ssc-U09, name: "Archetype: Titanium sponge / alloy producer", entity_kind: company, incorporation_jurisdiction: XX,
+      controlling_jurisdiction: XX, evidence_grade: inferred, sources: ["https://example.org/synthetic/archetype/U09"],
+      as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: Entity, id: ent-ssc-U10, name: "Archetype: Al-Li alloy plate maker", entity_kind: company, incorporation_jurisdiction: XX,
+      controlling_jurisdiction: XX, evidence_grade: inferred, sources: ["https://example.org/synthetic/archetype/U10"],
+      as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: Entity, id: ent-ssc-U11, name: "Archetype: Carbon-fibre / PAN-precursor maker", entity_kind: company, incorporation_jurisdiction: XX,
+      controlling_jurisdiction: XX, evidence_grade: reported, sources: ["https://example.org/synthetic/archetype/U11"],
+      as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: Entity, id: ent-ssc-U12, name: "Archetype: Space-qualified polyimide film maker", entity_kind: company, incorporation_jurisdiction: XX,
+      controlling_jurisdiction: XX, evidence_grade: inferred, sources: ["https://example.org/synthetic/archetype/U12"],
+      as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: Entity, id: ent-ssc-U13, name: "Archetype: Beryllium producer", entity_kind: company, incorporation_jurisdiction: XX,
+      controlling_jurisdiction: XX, evidence_grade: inferred, sources: ["https://example.org/synthetic/archetype/U13"],
+      as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: Entity, id: ent-ssc-U14, name: "Archetype: Hydrazine / green-propellant producer", entity_kind: company, incorporation_jurisdiction: XX,
+      controlling_jurisdiction: XX, evidence_grade: inferred, sources: ["https://example.org/synthetic/archetype/U14"],
+      as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: Entity, id: ent-ssc-U15, name: "Archetype: Liquid-oxygen supplier", entity_kind: company, incorporation_jurisdiction: XX,
+      controlling_jurisdiction: XX, evidence_grade: inferred, sources: ["https://example.org/synthetic/archetype/U15"],
+      as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: Entity, id: ent-ssc-U16, name: "Archetype: Methane/LNG, RP-1, hydrogen supplier", entity_kind: company, incorporation_jurisdiction: XX,
+      controlling_jurisdiction: XX, evidence_grade: inferred, sources: ["https://example.org/synthetic/archetype/U16"],
+      as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: Entity, id: ent-ssc-U17, name: "Archetype: High-test peroxide producer", entity_kind: company, incorporation_jurisdiction: XX,
+      controlling_jurisdiction: XX, evidence_grade: inferred, sources: ["https://example.org/synthetic/archetype/U17"],
+      as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: Entity, id: ent-ssc-U18, name: "Archetype: Wafer maker (Si, SOI, GaAs, GaN-on-SiC)", entity_kind: company, incorporation_jurisdiction: XX,
+      controlling_jurisdiction: XX, evidence_grade: inferred, sources: ["https://example.org/synthetic/archetype/U18"],
+      as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: Entity, id: ent-ssc-U19, name: "Archetype: Rad-hard-capable foundry", entity_kind: company, incorporation_jurisdiction: XX,
+      controlling_jurisdiction: XX, evidence_grade: inferred, sources: ["https://example.org/synthetic/archetype/U19"],
+      as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: Entity, id: ent-ssc-U20, name: "Archetype: Hermetic / advanced packaging house", entity_kind: company, incorporation_jurisdiction: XX,
+      controlling_jurisdiction: XX, evidence_grade: inferred, sources: ["https://example.org/synthetic/archetype/U20"],
+      as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: Entity, id: ent-ssc-U21, name: "Archetype: EEE screening / radiation lot-acceptance lab", entity_kind: company, incorporation_jurisdiction: XX,
+      controlling_jurisdiction: XX, evidence_grade: reported, sources: ["https://example.org/synthetic/archetype/U21"],
+      as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: Entity, id: ent-ssc-U22, name: "Archetype: Metal AM powder atomiser", entity_kind: company, incorporation_jurisdiction: XX,
+      controlling_jurisdiction: XX, evidence_grade: inferred, sources: ["https://example.org/synthetic/archetype/U22"],
+      as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: Entity, id: ent-ssc-U23, name: "Archetype: Metal AM build and HIP / post-processing", entity_kind: company, incorporation_jurisdiction: XX,
+      controlling_jurisdiction: XX, evidence_grade: reported, sources: ["https://example.org/synthetic/archetype/U23"],
+      as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: Entity, id: ent-ssc-C01, name: "Archetype: Rad-hard FPGA supplier", entity_kind: company, incorporation_jurisdiction: XX,
+      controlling_jurisdiction: XX, evidence_grade: reported, sources: ["https://example.org/synthetic/archetype/C01"],
+      as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: Entity, id: ent-ssc-C02, name: "Archetype: Rad-hard processor / SoC supplier", entity_kind: company, incorporation_jurisdiction: XX,
+      controlling_jurisdiction: XX, evidence_grade: inferred, sources: ["https://example.org/synthetic/archetype/C02"],
+      as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: Entity, id: ent-ssc-C03, name: "Archetype: Rad-hard memory supplier", entity_kind: company, incorporation_jurisdiction: XX,
+      controlling_jurisdiction: XX, evidence_grade: inferred, sources: ["https://example.org/synthetic/archetype/C03"],
+      as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: Entity, id: ent-ssc-C04, name: "Archetype: Space-grade ADC / DAC supplier", entity_kind: company, incorporation_jurisdiction: XX,
+      controlling_jurisdiction: XX, evidence_grade: inferred, sources: ["https://example.org/synthetic/archetype/C04"],
+      as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: Entity, id: ent-ssc-C05, name: "Archetype: Digital-payload ASIC designer", entity_kind: company, incorporation_jurisdiction: XX,
+      controlling_jurisdiction: XX, evidence_grade: reported, sources: ["https://example.org/synthetic/archetype/C05"],
+      as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: Entity, id: ent-ssc-C06, name: "Archetype: Power conditioning and switchgear maker", entity_kind: company, incorporation_jurisdiction: XX,
+      controlling_jurisdiction: XX, evidence_grade: reported, sources: ["https://example.org/synthetic/archetype/C06"],
+      as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: Entity, id: ent-ssc-C07, name: "Archetype: Space battery cell / pack maker", entity_kind: company, incorporation_jurisdiction: XX,
+      controlling_jurisdiction: XX, evidence_grade: inferred, sources: ["https://example.org/synthetic/archetype/C07"],
+      as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: Entity, id: ent-ssc-C08, name: "Archetype: Multi-junction solar cell maker", entity_kind: company, incorporation_jurisdiction: XX,
+      controlling_jurisdiction: XX, evidence_grade: inferred, sources: ["https://example.org/synthetic/archetype/C08"],
+      as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: Entity, id: ent-ssc-C09, name: "Archetype: Solar array / deployment maker", entity_kind: company, incorporation_jurisdiction: XX,
+      controlling_jurisdiction: XX, evidence_grade: inferred, sources: ["https://example.org/synthetic/archetype/C09"],
+      as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: Entity, id: ent-ssc-C10, name: "Archetype: Reaction wheel / CMG maker", entity_kind: company, incorporation_jurisdiction: XX,
+      controlling_jurisdiction: XX, evidence_grade: inferred, sources: ["https://example.org/synthetic/archetype/C10"],
+      as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: Entity, id: ent-ssc-C11, name: "Archetype: Star tracker maker", entity_kind: company, incorporation_jurisdiction: XX,
+      controlling_jurisdiction: XX, evidence_grade: inferred, sources: ["https://example.org/synthetic/archetype/C11"],
+      as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: Entity, id: ent-ssc-C12, name: "Archetype: Navigation-grade gyro / IMU maker", entity_kind: company, incorporation_jurisdiction: XX,
+      controlling_jurisdiction: XX, evidence_grade: inferred, sources: ["https://example.org/synthetic/archetype/C12"],
+      as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: Entity, id: ent-ssc-C13, name: "Archetype: Magnetorquer / magnetometer maker", entity_kind: company, incorporation_jurisdiction: XX,
+      controlling_jurisdiction: XX, evidence_grade: inferred, sources: ["https://example.org/synthetic/archetype/C13"],
+      as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: Entity, id: ent-ssc-C14, name: "Archetype: Chemical thruster maker", entity_kind: company, incorporation_jurisdiction: XX,
+      controlling_jurisdiction: XX, evidence_grade: inferred, sources: ["https://example.org/synthetic/archetype/C14"],
+      as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: Entity, id: ent-ssc-C15, name: "Archetype: Electric thruster / PPU maker", entity_kind: company, incorporation_jurisdiction: XX,
+      controlling_jurisdiction: XX, evidence_grade: inferred, sources: ["https://example.org/synthetic/archetype/C15"],
+      as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: Entity, id: ent-ssc-C16, name: "Archetype: Propellant tank / COPV maker", entity_kind: company, incorporation_jurisdiction: XX,
+      controlling_jurisdiction: XX, evidence_grade: reported, sources: ["https://example.org/synthetic/archetype/C16"],
+      as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: Entity, id: ent-ssc-C17, name: "Archetype: Propulsion valve / regulator maker", entity_kind: company, incorporation_jurisdiction: XX,
+      controlling_jurisdiction: XX, evidence_grade: reported, sources: ["https://example.org/synthetic/archetype/C17"],
+      as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: Entity, id: ent-ssc-C18, name: "Archetype: Thermal control (heat pipes, MLI)", entity_kind: company, incorporation_jurisdiction: XX,
+      controlling_jurisdiction: XX, evidence_grade: inferred, sources: ["https://example.org/synthetic/archetype/C18"],
+      as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: Entity, id: ent-ssc-C19, name: "Archetype: Structures / composite panel maker", entity_kind: company, incorporation_jurisdiction: XX,
+      controlling_jurisdiction: XX, evidence_grade: reported, sources: ["https://example.org/synthetic/archetype/C19"],
+      as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: Entity, id: ent-ssc-C20, name: "Archetype: Harness and connector maker", entity_kind: company, incorporation_jurisdiction: XX,
+      controlling_jurisdiction: XX, evidence_grade: reported, sources: ["https://example.org/synthetic/archetype/C20"],
+      as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: Entity, id: ent-ssc-C21, name: "Archetype: RF payload electronics maker", entity_kind: company, incorporation_jurisdiction: XX,
+      controlling_jurisdiction: XX, evidence_grade: inferred, sources: ["https://example.org/synthetic/archetype/C21"],
+      as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: Entity, id: ent-ssc-C22, name: "Archetype: Beamforming / phased-array antenna maker", entity_kind: company, incorporation_jurisdiction: XX,
+      controlling_jurisdiction: XX, evidence_grade: inferred, sources: ["https://example.org/synthetic/archetype/C22"],
+      as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: Entity, id: ent-ssc-C23, name: "Archetype: Optical inter-satellite terminal maker", entity_kind: company, incorporation_jurisdiction: XX,
+      controlling_jurisdiction: XX, evidence_grade: reported, sources: ["https://example.org/synthetic/archetype/C23"],
+      as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: Entity, id: ent-ssc-C24, name: "Archetype: On-board computer maker", entity_kind: company, incorporation_jurisdiction: XX,
+      controlling_jurisdiction: XX, evidence_grade: inferred, sources: ["https://example.org/synthetic/archetype/C24"],
+      as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: Entity, id: ent-ssc-C25, name: "Archetype: Spaceborne GNSS receiver maker", entity_kind: company, incorporation_jurisdiction: XX,
+      controlling_jurisdiction: XX, evidence_grade: inferred, sources: ["https://example.org/synthetic/archetype/C25"],
+      as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: Entity, id: ent-ssc-C26, name: "Archetype: Optical / IR payload and detector maker", entity_kind: company, incorporation_jurisdiction: XX,
+      controlling_jurisdiction: XX, evidence_grade: inferred, sources: ["https://example.org/synthetic/archetype/C26"],
+      as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: Entity, id: ent-ssc-C27, name: "Archetype: SAR payload maker", entity_kind: company, incorporation_jurisdiction: XX,
+      controlling_jurisdiction: XX, evidence_grade: inferred, sources: ["https://example.org/synthetic/archetype/C27"],
+      as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: Entity, id: ent-ssc-C28, name: "Archetype: Flight software / RTOS supplier", entity_kind: company, incorporation_jurisdiction: XX,
+      controlling_jurisdiction: XX, evidence_grade: inferred, sources: ["https://example.org/synthetic/archetype/C28"],
+      as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: Entity, id: ent-ssc-C29, name: "Archetype: Actuator / mechanism maker", entity_kind: company, incorporation_jurisdiction: XX,
+      controlling_jurisdiction: XX, evidence_grade: reported, sources: ["https://example.org/synthetic/archetype/C29"],
+      as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: Entity, id: ent-ssc-S01, name: "Archetype: Large / GEO-MEO bus prime", entity_kind: company, incorporation_jurisdiction: XX,
+      controlling_jurisdiction: XX, evidence_grade: inferred, sources: ["https://example.org/synthetic/archetype/S01"],
+      as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: Entity, id: ent-ssc-S02, name: "Archetype: Small-satellite bus maker", entity_kind: company, incorporation_jurisdiction: XX,
+      controlling_jurisdiction: XX, evidence_grade: inferred, sources: ["https://example.org/synthetic/archetype/S02"],
+      as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: Entity, id: ent-ssc-S03, name: "Archetype: Payload integrator", entity_kind: company, incorporation_jurisdiction: XX,
+      controlling_jurisdiction: XX, evidence_grade: inferred, sources: ["https://example.org/synthetic/archetype/S03"],
+      as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: Entity, id: ent-ssc-S04, name: "Archetype: Constellation-scale production line", entity_kind: company, incorporation_jurisdiction: XX,
+      controlling_jurisdiction: XX, evidence_grade: inferred, sources: ["https://example.org/synthetic/archetype/S04"],
+      as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: Entity, id: ent-ssc-A01, name: "Archetype: Thermal-vacuum facility", entity_kind: company, incorporation_jurisdiction: XX,
+      controlling_jurisdiction: XX, evidence_grade: inferred, sources: ["https://example.org/synthetic/archetype/A01"],
+      as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: Entity, id: ent-ssc-A02, name: "Archetype: Vibration / acoustic facility", entity_kind: company, incorporation_jurisdiction: XX,
+      controlling_jurisdiction: XX, evidence_grade: inferred, sources: ["https://example.org/synthetic/archetype/A02"],
+      as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: Entity, id: ent-ssc-A03, name: "Archetype: EMC facility", entity_kind: company, incorporation_jurisdiction: XX,
+      controlling_jurisdiction: XX, evidence_grade: inferred, sources: ["https://example.org/synthetic/archetype/A03"],
+      as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: Entity, id: ent-ssc-A04, name: "Archetype: Antenna range", entity_kind: company, incorporation_jurisdiction: XX,
+      controlling_jurisdiction: XX, evidence_grade: inferred, sources: ["https://example.org/synthetic/archetype/A04"],
+      as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: Entity, id: ent-ssc-A05, name: "Archetype: Radiation test facility", entity_kind: company, incorporation_jurisdiction: XX,
+      controlling_jurisdiction: XX, evidence_grade: inferred, sources: ["https://example.org/synthetic/archetype/A05"],
+      as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: Entity, id: ent-ssc-A06, name: "Archetype: Propulsion test stand (hot-fire, cold-flow, water-flow)", entity_kind: company, incorporation_jurisdiction: XX,
+      controlling_jurisdiction: XX, evidence_grade: reported, sources: ["https://example.org/synthetic/archetype/A06"],
+      as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: Entity, id: ent-ssc-L01, name: "Archetype: Light / responsive launch prime", entity_kind: company, incorporation_jurisdiction: XX,
+      controlling_jurisdiction: XX, evidence_grade: inferred, sources: ["https://example.org/synthetic/archetype/L01"],
+      as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: Entity, id: ent-ssc-L02, name: "Archetype: Medium / heavy launch prime", entity_kind: company, incorporation_jurisdiction: XX,
+      controlling_jurisdiction: XX, evidence_grade: inferred, sources: ["https://example.org/synthetic/archetype/L02"],
+      as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: Entity, id: ent-ssc-L03, name: "Archetype: Liquid engine developer", entity_kind: company, incorporation_jurisdiction: XX,
+      controlling_jurisdiction: XX, evidence_grade: inferred, sources: ["https://example.org/synthetic/archetype/L03"],
+      as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: Entity, id: ent-ssc-L04, name: "Archetype: Turbopump / turbomachinery developer", entity_kind: company, incorporation_jurisdiction: XX,
+      controlling_jurisdiction: XX, evidence_grade: inferred, sources: ["https://example.org/synthetic/archetype/L04"],
+      as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: Entity, id: ent-ssc-L05, name: "Archetype: Pressure-fed / hybrid propulsion developer", entity_kind: company, incorporation_jurisdiction: XX,
+      controlling_jurisdiction: XX, evidence_grade: inferred, sources: ["https://example.org/synthetic/archetype/L05"],
+      as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: Entity, id: ent-ssc-L06, name: "Archetype: Solid rocket motor maker", entity_kind: company, incorporation_jurisdiction: XX,
+      controlling_jurisdiction: XX, evidence_grade: inferred, sources: ["https://example.org/synthetic/archetype/L06"],
+      as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: Entity, id: ent-ssc-L07, name: "Archetype: Launch avionics / flight termination", entity_kind: company, incorporation_jurisdiction: XX,
+      controlling_jurisdiction: XX, evidence_grade: inferred, sources: ["https://example.org/synthetic/archetype/L07"],
+      as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: Entity, id: ent-ssc-L08, name: "Archetype: Stage structure / cryogenic tank maker", entity_kind: company, incorporation_jurisdiction: XX,
+      controlling_jurisdiction: XX, evidence_grade: inferred, sources: ["https://example.org/synthetic/archetype/L08"],
+      as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: Entity, id: ent-ssc-L09, name: "Archetype: Fairing / separation maker", entity_kind: company, incorporation_jurisdiction: XX,
+      controlling_jurisdiction: XX, evidence_grade: inferred, sources: ["https://example.org/synthetic/archetype/L09"],
+      as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: Entity, id: ent-ssc-L10, name: "Archetype: Ground support equipment", entity_kind: company, incorporation_jurisdiction: XX,
+      controlling_jurisdiction: XX, evidence_grade: inferred, sources: ["https://example.org/synthetic/archetype/L10"],
+      as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: Entity, id: ent-ssc-L11, name: "Archetype: Spaceport operator", entity_kind: company, incorporation_jurisdiction: XX,
+      controlling_jurisdiction: XX, evidence_grade: inferred, sources: ["https://example.org/synthetic/archetype/L11"],
+      as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: Entity, id: ent-ssc-L12, name: "Archetype: Range and range safety", entity_kind: government, incorporation_jurisdiction: XX,
+      controlling_jurisdiction: XX, evidence_grade: inferred, sources: ["https://example.org/synthetic/archetype/L12"],
+      as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: Entity, id: ent-ssc-L13, name: "Archetype: Launch licensing authority", entity_kind: government, incorporation_jurisdiction: XX,
+      controlling_jurisdiction: XX, evidence_grade: inferred, sources: ["https://example.org/synthetic/archetype/L13"],
+      as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: Entity, id: ent-ssc-L14, name: "Archetype: Launch / third-party liability insurance", entity_kind: company, incorporation_jurisdiction: XX,
+      controlling_jurisdiction: XX, evidence_grade: inferred, sources: ["https://example.org/synthetic/archetype/L14"],
+      as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: Entity, id: ent-ssc-L15, name: "Archetype: Responsive / tactical launch", entity_kind: company, incorporation_jurisdiction: XX,
+      controlling_jurisdiction: XX, evidence_grade: inferred, sources: ["https://example.org/synthetic/archetype/L15"],
+      as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: Entity, id: ent-ssc-TP01, name: "Archetype: Inducer maker", entity_kind: company, incorporation_jurisdiction: XX,
+      controlling_jurisdiction: XX, evidence_grade: inferred, sources: ["https://example.org/synthetic/archetype/TP01"],
+      as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: Entity, id: ent-ssc-TP02, name: "Archetype: Impeller maker", entity_kind: company, incorporation_jurisdiction: XX,
+      controlling_jurisdiction: XX, evidence_grade: inferred, sources: ["https://example.org/synthetic/archetype/TP02"],
+      as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: Entity, id: ent-ssc-TP03, name: "Archetype: Turbine maker", entity_kind: company, incorporation_jurisdiction: XX,
+      controlling_jurisdiction: XX, evidence_grade: inferred, sources: ["https://example.org/synthetic/archetype/TP03"],
+      as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: Entity, id: ent-ssc-TP04, name: "Archetype: Cryogenic bearing maker", entity_kind: company, incorporation_jurisdiction: XX,
+      controlling_jurisdiction: XX, evidence_grade: inferred, sources: ["https://example.org/synthetic/archetype/TP04"],
+      as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: Entity, id: ent-ssc-TP05, name: "Archetype: Dynamic seal maker", entity_kind: company, incorporation_jurisdiction: XX,
+      controlling_jurisdiction: XX, evidence_grade: inferred, sources: ["https://example.org/synthetic/archetype/TP05"],
+      as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: Entity, id: ent-ssc-TP06, name: "Archetype: Housing / volute maker", entity_kind: company, incorporation_jurisdiction: XX,
+      controlling_jurisdiction: XX, evidence_grade: inferred, sources: ["https://example.org/synthetic/archetype/TP06"],
+      as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: Entity, id: ent-ssc-TP07, name: "Archetype: Gas generator / preburner developer", entity_kind: company, incorporation_jurisdiction: XX,
+      controlling_jurisdiction: XX, evidence_grade: inferred, sources: ["https://example.org/synthetic/archetype/TP07"],
+      as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: Entity, id: ent-ssc-TP08, name: "Archetype: Cryogenic valve maker", entity_kind: company, incorporation_jurisdiction: XX,
+      controlling_jurisdiction: XX, evidence_grade: inferred, sources: ["https://example.org/synthetic/archetype/TP08"],
+      as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: Entity, id: ent-ssc-TP09, name: "Archetype: Superalloy and AM inputs", entity_kind: company, incorporation_jurisdiction: XX,
+      controlling_jurisdiction: XX, evidence_grade: inferred, sources: ["https://example.org/synthetic/archetype/TP09"],
+      as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: Entity, id: ent-ssc-TP10, name: "Archetype: Turbomachinery test", entity_kind: company, incorporation_jurisdiction: XX,
+      controlling_jurisdiction: XX, evidence_grade: inferred, sources: ["https://example.org/synthetic/archetype/TP10"],
+      as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: Entity, id: ent-ssc-TP11, name: "Archetype: Design tools and rotordynamics talent", entity_kind: company, incorporation_jurisdiction: XX,
+      controlling_jurisdiction: XX, evidence_grade: inferred, sources: ["https://example.org/synthetic/archetype/TP11"],
+      as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: Entity, id: ent-ssc-O01, name: "Archetype: Orbital transfer vehicle operator", entity_kind: company, incorporation_jurisdiction: XX,
+      controlling_jurisdiction: XX, evidence_grade: inferred, sources: ["https://example.org/synthetic/archetype/O01"],
+      as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: Entity, id: ent-ssc-O02, name: "Archetype: In-orbit servicing / robotics", entity_kind: company, incorporation_jurisdiction: XX,
+      controlling_jurisdiction: XX, evidence_grade: inferred, sources: ["https://example.org/synthetic/archetype/O02"],
+      as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: Entity, id: ent-ssc-O03, name: "Archetype: Debris removal / end-of-life", entity_kind: company, incorporation_jurisdiction: XX,
+      controlling_jurisdiction: XX, evidence_grade: inferred, sources: ["https://example.org/synthetic/archetype/O03"],
+      as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: Entity, id: ent-ssc-G01, name: "Archetype: Gateway / landing station; Ka-band gateway antenna maker", entity_kind: company, incorporation_jurisdiction: XX,
+      controlling_jurisdiction: XX, evidence_grade: inferred, sources: ["https://example.org/synthetic/archetype/G01"],
+      as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: Entity, id: ent-ssc-G02, name: "Archetype: TT&C network / ground-station operator", entity_kind: company, incorporation_jurisdiction: XX,
+      controlling_jurisdiction: XX, evidence_grade: inferred, sources: ["https://example.org/synthetic/archetype/G02"],
+      as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: Entity, id: ent-ssc-G03, name: "Archetype: Mission / network operations software", entity_kind: company, incorporation_jurisdiction: XX,
+      controlling_jurisdiction: XX, evidence_grade: inferred, sources: ["https://example.org/synthetic/archetype/G03"],
+      as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: Entity, id: ent-ssc-G04, name: "Archetype: Ground-segment cyber provider", entity_kind: company, incorporation_jurisdiction: XX,
+      controlling_jurisdiction: XX, evidence_grade: inferred, sources: ["https://example.org/synthetic/archetype/G04"],
+      as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: Entity, id: ent-ssc-G05, name: "Archetype: User terminal maker", entity_kind: company, incorporation_jurisdiction: XX,
+      controlling_jurisdiction: XX, evidence_grade: inferred, sources: ["https://example.org/synthetic/archetype/G05"],
+      as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: Entity, id: ent-ssc-G06, name: "Archetype: Timing / frequency reference", entity_kind: company, incorporation_jurisdiction: XX,
+      controlling_jurisdiction: XX, evidence_grade: inferred, sources: ["https://example.org/synthetic/archetype/G06"],
+      as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: Entity, id: ent-ssc-D01, name: "Archetype: Satcom service provider", entity_kind: company, incorporation_jurisdiction: XX,
+      controlling_jurisdiction: XX, evidence_grade: inferred, sources: ["https://example.org/synthetic/archetype/D01"],
+      as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: Entity, id: ent-ssc-D02, name: "Archetype: EO data and analytics", entity_kind: company, incorporation_jurisdiction: XX,
+      controlling_jurisdiction: XX, evidence_grade: inferred, sources: ["https://example.org/synthetic/archetype/D02"],
+      as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: Entity, id: ent-ssc-D03, name: "Archetype: PNT service", entity_kind: company, incorporation_jurisdiction: XX,
+      controlling_jurisdiction: XX, evidence_grade: inferred, sources: ["https://example.org/synthetic/archetype/D03"],
+      as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: Entity, id: ent-ssc-D04, name: "Archetype: Space domain awareness", entity_kind: company, incorporation_jurisdiction: XX,
+      controlling_jurisdiction: XX, evidence_grade: inferred, sources: ["https://example.org/synthetic/archetype/D04"],
+      as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: Entity, id: ent-ssc-D05, name: "Archetype: Space weather service", entity_kind: company, incorporation_jurisdiction: XX,
+      controlling_jurisdiction: XX, evidence_grade: inferred, sources: ["https://example.org/synthetic/archetype/D05"],
+      as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: Entity, id: ent-ssc-D06, name: "Archetype: Data platform / cloud host", entity_kind: company, incorporation_jurisdiction: XX,
+      controlling_jurisdiction: XX, evidence_grade: inferred, sources: ["https://example.org/synthetic/archetype/D06"],
+      as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: Entity, id: ent-ssc-D07, name: "Archetype: End users (defence, government, commercial)", entity_kind: government, incorporation_jurisdiction: XX,
+      controlling_jurisdiction: XX, evidence_grade: inferred, sources: ["https://example.org/synthetic/archetype/D07"],
+      as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: Entity, id: ent-ssc-E01, name: "Archetype: Finance and capital", entity_kind: company, incorporation_jurisdiction: XX,
+      controlling_jurisdiction: XX, evidence_grade: inferred, sources: ["https://example.org/synthetic/archetype/E01"],
+      as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: Entity, id: ent-ssc-E02, name: "Archetype: Export controls / controlled goods", entity_kind: government, incorporation_jurisdiction: XX,
+      controlling_jurisdiction: XX, evidence_grade: inferred, sources: ["https://example.org/synthetic/archetype/E02"],
+      as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: Entity, id: ent-ssc-E03, name: "Archetype: Cyber-certification regime", entity_kind: government, incorporation_jurisdiction: XX,
+      controlling_jurisdiction: XX, evidence_grade: inferred, sources: ["https://example.org/synthetic/archetype/E03"],
+      as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: Entity, id: ent-ssc-E04, name: "Archetype: Industrial-benefits / offset policy", entity_kind: government, incorporation_jurisdiction: XX,
+      controlling_jurisdiction: XX, evidence_grade: inferred, sources: ["https://example.org/synthetic/archetype/E04"],
+      as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: Entity, id: ent-ssc-E05, name: "Archetype: Spectrum and orbital filings", entity_kind: government, incorporation_jurisdiction: XX,
+      controlling_jurisdiction: XX, evidence_grade: inferred, sources: ["https://example.org/synthetic/archetype/E05"],
+      as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: Entity, id: ent-ssc-E06, name: "Archetype: On-orbit and third-party insurance", entity_kind: company, incorporation_jurisdiction: XX,
+      controlling_jurisdiction: XX, evidence_grade: inferred, sources: ["https://example.org/synthetic/archetype/E06"],
+      as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: Entity, id: ent-ssc-E07, name: "Archetype: Workforce and security clearances", entity_kind: government, incorporation_jurisdiction: XX,
+      controlling_jurisdiction: XX, evidence_grade: inferred, sources: ["https://example.org/synthetic/archetype/E07"],
+      as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: Entity, id: ent-ssc-E08, name: "Archetype: Education and research", entity_kind: academic, incorporation_jurisdiction: XX,
+      controlling_jurisdiction: XX, evidence_grade: inferred, sources: ["https://example.org/synthetic/archetype/E08"],
+      as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: Entity, id: ent-ssc-E09, name: "Archetype: National test-infrastructure ownership", entity_kind: government, incorporation_jurisdiction: XX,
+      controlling_jurisdiction: XX, evidence_grade: inferred, sources: ["https://example.org/synthetic/archetype/E09"],
+      as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: Entity, id: ent-ssc-E10, name: "Archetype: Standards and qualification bodies", entity_kind: government, incorporation_jurisdiction: XX,
+      controlling_jurisdiction: XX, evidence_grade: inferred, sources: ["https://example.org/synthetic/archetype/E10"],
+      as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: Entity, id: ent-ssc-E11, name: "Archetype: Community consultation and environmental assessment", entity_kind: government, incorporation_jurisdiction: XX,
+      controlling_jurisdiction: XX, evidence_grade: inferred, sources: ["https://example.org/synthetic/archetype/E11"],
+      as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: Entity, id: ent-ssc-E12, name: "Archetype: Foreign-investment screening", entity_kind: government, incorporation_jurisdiction: XX,
+      controlling_jurisdiction: XX, evidence_grade: inferred, sources: ["https://example.org/synthetic/archetype/E12"],
+      as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: Entity, id: ent-ssc-E13, name: "Archetype: Space-activity licensing", entity_kind: government, incorporation_jurisdiction: XX,
+      controlling_jurisdiction: XX, evidence_grade: inferred, sources: ["https://example.org/synthetic/archetype/E13"],
+      as_of: 2026-11-04, lifecycle: active, synthetic: true }
+
+links:
+  - { type: supplies, id: lnk-ssc-0001, from: ent-ssc-U01, to: ent-ssc-C08, item: "X01: Group III-V and substrate materials into solar cells, RF payloads and optical payloads", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/U01-C08"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0002, from: ent-ssc-U01, to: ent-ssc-C21, item: "X01: Group III-V and substrate materials into solar cells, RF payloads and optical payloads", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/U01-C21"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0003, from: ent-ssc-U01, to: ent-ssc-C26, item: "X01: Group III-V and substrate materials into solar cells, RF payloads and optical payloads", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/U01-C26"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0004, from: ent-ssc-U02, to: ent-ssc-C08, item: "X01: Group III-V and substrate materials into solar cells, RF payloads and optical payloads", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/U02-C08"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0005, from: ent-ssc-U02, to: ent-ssc-C21, item: "X01: Group III-V and substrate materials into solar cells, RF payloads and optical payloads", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/U02-C21"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0006, from: ent-ssc-U02, to: ent-ssc-C26, item: "X01: Group III-V and substrate materials into solar cells, RF payloads and optical payloads", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/U02-C26"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0007, from: ent-ssc-U04, to: ent-ssc-C08, item: "X01: Group III-V and substrate materials into solar cells, RF payloads and optical payloads", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/U04-C08"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0008, from: ent-ssc-U04, to: ent-ssc-C21, item: "X01: Group III-V and substrate materials into solar cells, RF payloads and optical payloads", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/U04-C21"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0009, from: ent-ssc-U04, to: ent-ssc-C26, item: "X01: Group III-V and substrate materials into solar cells, RF payloads and optical payloads", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/U04-C26"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0010, from: ent-ssc-U18, to: ent-ssc-C01, item: "X02: Wafers, foundry, packaging and screening into rad-hard electronics, on-board computing and launch avionics", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/U18-C01"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0011, from: ent-ssc-U18, to: ent-ssc-C02, item: "X02: Wafers, foundry, packaging and screening into rad-hard electronics, on-board computing and launch avionics", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/U18-C02"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0012, from: ent-ssc-U18, to: ent-ssc-C03, item: "X02: Wafers, foundry, packaging and screening into rad-hard electronics, on-board computing and launch avionics", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/U18-C03"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0013, from: ent-ssc-U18, to: ent-ssc-C04, item: "X02: Wafers, foundry, packaging and screening into rad-hard electronics, on-board computing and launch avionics", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/U18-C04"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0014, from: ent-ssc-U18, to: ent-ssc-C05, item: "X02: Wafers, foundry, packaging and screening into rad-hard electronics, on-board computing and launch avionics", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/U18-C05"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0015, from: ent-ssc-U18, to: ent-ssc-C24, item: "X02: Wafers, foundry, packaging and screening into rad-hard electronics, on-board computing and launch avionics", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/U18-C24"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0016, from: ent-ssc-U18, to: ent-ssc-L07, item: "X02: Wafers, foundry, packaging and screening into rad-hard electronics, on-board computing and launch avionics", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/U18-L07"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0017, from: ent-ssc-U19, to: ent-ssc-C01, item: "X02: Wafers, foundry, packaging and screening into rad-hard electronics, on-board computing and launch avionics", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/U19-C01"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0018, from: ent-ssc-U19, to: ent-ssc-C02, item: "X02: Wafers, foundry, packaging and screening into rad-hard electronics, on-board computing and launch avionics", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/U19-C02"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0019, from: ent-ssc-U19, to: ent-ssc-C03, item: "X02: Wafers, foundry, packaging and screening into rad-hard electronics, on-board computing and launch avionics", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/U19-C03"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0020, from: ent-ssc-U19, to: ent-ssc-C04, item: "X02: Wafers, foundry, packaging and screening into rad-hard electronics, on-board computing and launch avionics", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/U19-C04"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0021, from: ent-ssc-U19, to: ent-ssc-C05, item: "X02: Wafers, foundry, packaging and screening into rad-hard electronics, on-board computing and launch avionics", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/U19-C05"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0022, from: ent-ssc-U19, to: ent-ssc-C24, item: "X02: Wafers, foundry, packaging and screening into rad-hard electronics, on-board computing and launch avionics", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/U19-C24"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0023, from: ent-ssc-U19, to: ent-ssc-L07, item: "X02: Wafers, foundry, packaging and screening into rad-hard electronics, on-board computing and launch avionics", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/U19-L07"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0024, from: ent-ssc-U20, to: ent-ssc-C01, item: "X02: Wafers, foundry, packaging and screening into rad-hard electronics, on-board computing and launch avionics", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/U20-C01"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0025, from: ent-ssc-U20, to: ent-ssc-C02, item: "X02: Wafers, foundry, packaging and screening into rad-hard electronics, on-board computing and launch avionics", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/U20-C02"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0026, from: ent-ssc-U20, to: ent-ssc-C03, item: "X02: Wafers, foundry, packaging and screening into rad-hard electronics, on-board computing and launch avionics", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/U20-C03"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0027, from: ent-ssc-U20, to: ent-ssc-C04, item: "X02: Wafers, foundry, packaging and screening into rad-hard electronics, on-board computing and launch avionics", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/U20-C04"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0028, from: ent-ssc-U20, to: ent-ssc-C05, item: "X02: Wafers, foundry, packaging and screening into rad-hard electronics, on-board computing and launch avionics", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/U20-C05"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0029, from: ent-ssc-U20, to: ent-ssc-C24, item: "X02: Wafers, foundry, packaging and screening into rad-hard electronics, on-board computing and launch avionics", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/U20-C24"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0030, from: ent-ssc-U20, to: ent-ssc-L07, item: "X02: Wafers, foundry, packaging and screening into rad-hard electronics, on-board computing and launch avionics", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/U20-L07"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0031, from: ent-ssc-U21, to: ent-ssc-C01, item: "X02: Wafers, foundry, packaging and screening into rad-hard electronics, on-board computing and launch avionics", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/U21-C01"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0032, from: ent-ssc-U21, to: ent-ssc-C02, item: "X02: Wafers, foundry, packaging and screening into rad-hard electronics, on-board computing and launch avionics", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/U21-C02"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0033, from: ent-ssc-U21, to: ent-ssc-C03, item: "X02: Wafers, foundry, packaging and screening into rad-hard electronics, on-board computing and launch avionics", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/U21-C03"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0034, from: ent-ssc-U21, to: ent-ssc-C04, item: "X02: Wafers, foundry, packaging and screening into rad-hard electronics, on-board computing and launch avionics", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/U21-C04"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0035, from: ent-ssc-U21, to: ent-ssc-C05, item: "X02: Wafers, foundry, packaging and screening into rad-hard electronics, on-board computing and launch avionics", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/U21-C05"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0036, from: ent-ssc-U21, to: ent-ssc-C24, item: "X02: Wafers, foundry, packaging and screening into rad-hard electronics, on-board computing and launch avionics", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/U21-C24"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0037, from: ent-ssc-U21, to: ent-ssc-L07, item: "X02: Wafers, foundry, packaging and screening into rad-hard electronics, on-board computing and launch avionics", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/U21-L07"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0038, from: ent-ssc-U03, to: ent-ssc-C10, item: "X03: Rare-earth magnets into wheels, electric thrusters and actuators", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/U03-C10"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0039, from: ent-ssc-U03, to: ent-ssc-C15, item: "X03: Rare-earth magnets into wheels, electric thrusters and actuators", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/U03-C15"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0040, from: ent-ssc-U03, to: ent-ssc-C29, item: "X03: Rare-earth magnets into wheels, electric thrusters and actuators", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/U03-C29"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0041, from: ent-ssc-U08, to: ent-ssc-TP09, item: "X04: Superalloy, titanium and AM powder inputs into turbopump parts and liquid engines", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/U08-TP09"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0042, from: ent-ssc-U09, to: ent-ssc-TP09, item: "X04: Superalloy, titanium and AM powder inputs into turbopump parts and liquid engines", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/U09-TP09"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0043, from: ent-ssc-U22, to: ent-ssc-TP09, item: "X04: Superalloy, titanium and AM powder inputs into turbopump parts and liquid engines", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/U22-TP09"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0044, from: ent-ssc-U23, to: ent-ssc-TP09, item: "X04: Superalloy, titanium and AM powder inputs into turbopump parts and liquid engines", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/U23-TP09"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0045, from: ent-ssc-TP09, to: ent-ssc-TP01, item: "X04: Superalloy, titanium and AM powder inputs into turbopump parts and liquid engines", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/TP09-TP01"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0046, from: ent-ssc-TP09, to: ent-ssc-TP02, item: "X04: Superalloy, titanium and AM powder inputs into turbopump parts and liquid engines", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/TP09-TP02"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0047, from: ent-ssc-TP09, to: ent-ssc-TP03, item: "X04: Superalloy, titanium and AM powder inputs into turbopump parts and liquid engines", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/TP09-TP03"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0048, from: ent-ssc-TP09, to: ent-ssc-TP04, item: "X04: Superalloy, titanium and AM powder inputs into turbopump parts and liquid engines", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/TP09-TP04"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0049, from: ent-ssc-TP09, to: ent-ssc-TP05, item: "X04: Superalloy, titanium and AM powder inputs into turbopump parts and liquid engines", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/TP09-TP05"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0050, from: ent-ssc-TP09, to: ent-ssc-TP06, item: "X04: Superalloy, titanium and AM powder inputs into turbopump parts and liquid engines", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/TP09-TP06"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0051, from: ent-ssc-TP09, to: ent-ssc-L03, item: "X04: Superalloy, titanium and AM powder inputs into turbopump parts and liquid engines", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/TP09-L03"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0052, from: ent-ssc-U10, to: ent-ssc-C16, item: "X05: Al-Li plate and carbon fibre into tanks, structures, stages and fairings", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/U10-C16"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0053, from: ent-ssc-U10, to: ent-ssc-C19, item: "X05: Al-Li plate and carbon fibre into tanks, structures, stages and fairings", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/U10-C19"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0054, from: ent-ssc-U10, to: ent-ssc-L08, item: "X05: Al-Li plate and carbon fibre into tanks, structures, stages and fairings", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/U10-L08"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0055, from: ent-ssc-U10, to: ent-ssc-L09, item: "X05: Al-Li plate and carbon fibre into tanks, structures, stages and fairings", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/U10-L09"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0056, from: ent-ssc-U11, to: ent-ssc-C16, item: "X05: Al-Li plate and carbon fibre into tanks, structures, stages and fairings", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/U11-C16"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0057, from: ent-ssc-U11, to: ent-ssc-C19, item: "X05: Al-Li plate and carbon fibre into tanks, structures, stages and fairings", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/U11-C19"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0058, from: ent-ssc-U11, to: ent-ssc-L08, item: "X05: Al-Li plate and carbon fibre into tanks, structures, stages and fairings", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/U11-L08"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0059, from: ent-ssc-U11, to: ent-ssc-L09, item: "X05: Al-Li plate and carbon fibre into tanks, structures, stages and fairings", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/U11-L09"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0060, from: ent-ssc-U06, to: ent-ssc-L01, item: "X06: Gases, cryogens and fuels into engines and ground support equipment", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/U06-L01"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0061, from: ent-ssc-U06, to: ent-ssc-L02, item: "X06: Gases, cryogens and fuels into engines and ground support equipment", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/U06-L02"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0062, from: ent-ssc-U06, to: ent-ssc-L03, item: "X06: Gases, cryogens and fuels into engines and ground support equipment", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/U06-L03"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0063, from: ent-ssc-U06, to: ent-ssc-L04, item: "X06: Gases, cryogens and fuels into engines and ground support equipment", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/U06-L04"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0064, from: ent-ssc-U06, to: ent-ssc-L05, item: "X06: Gases, cryogens and fuels into engines and ground support equipment", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/U06-L05"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0065, from: ent-ssc-U06, to: ent-ssc-L10, item: "X06: Gases, cryogens and fuels into engines and ground support equipment", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/U06-L10"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0066, from: ent-ssc-U15, to: ent-ssc-L01, item: "X06: Gases, cryogens and fuels into engines and ground support equipment", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/U15-L01"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0067, from: ent-ssc-U15, to: ent-ssc-L02, item: "X06: Gases, cryogens and fuels into engines and ground support equipment", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/U15-L02"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0068, from: ent-ssc-U15, to: ent-ssc-L03, item: "X06: Gases, cryogens and fuels into engines and ground support equipment", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/U15-L03"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0069, from: ent-ssc-U15, to: ent-ssc-L04, item: "X06: Gases, cryogens and fuels into engines and ground support equipment", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/U15-L04"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0070, from: ent-ssc-U15, to: ent-ssc-L05, item: "X06: Gases, cryogens and fuels into engines and ground support equipment", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/U15-L05"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0071, from: ent-ssc-U15, to: ent-ssc-L10, item: "X06: Gases, cryogens and fuels into engines and ground support equipment", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/U15-L10"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0072, from: ent-ssc-U16, to: ent-ssc-L01, item: "X06: Gases, cryogens and fuels into engines and ground support equipment", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/U16-L01"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0073, from: ent-ssc-U16, to: ent-ssc-L02, item: "X06: Gases, cryogens and fuels into engines and ground support equipment", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/U16-L02"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0074, from: ent-ssc-U16, to: ent-ssc-L03, item: "X06: Gases, cryogens and fuels into engines and ground support equipment", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/U16-L03"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0075, from: ent-ssc-U16, to: ent-ssc-L04, item: "X06: Gases, cryogens and fuels into engines and ground support equipment", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/U16-L04"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0076, from: ent-ssc-U16, to: ent-ssc-L05, item: "X06: Gases, cryogens and fuels into engines and ground support equipment", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/U16-L05"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0077, from: ent-ssc-U16, to: ent-ssc-L10, item: "X06: Gases, cryogens and fuels into engines and ground support equipment", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/U16-L10"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0078, from: ent-ssc-U17, to: ent-ssc-L01, item: "X06: Gases, cryogens and fuels into engines and ground support equipment", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/U17-L01"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0079, from: ent-ssc-U17, to: ent-ssc-L02, item: "X06: Gases, cryogens and fuels into engines and ground support equipment", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/U17-L02"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0080, from: ent-ssc-U17, to: ent-ssc-L03, item: "X06: Gases, cryogens and fuels into engines and ground support equipment", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/U17-L03"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0081, from: ent-ssc-U17, to: ent-ssc-L04, item: "X06: Gases, cryogens and fuels into engines and ground support equipment", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/U17-L04"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0082, from: ent-ssc-U17, to: ent-ssc-L05, item: "X06: Gases, cryogens and fuels into engines and ground support equipment", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/U17-L05"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0083, from: ent-ssc-U17, to: ent-ssc-L10, item: "X06: Gases, cryogens and fuels into engines and ground support equipment", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/U17-L10"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0084, from: ent-ssc-U07, to: ent-ssc-C14, item: "X07: Xenon, krypton and hydrazine into thrusters", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/U07-C14"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0085, from: ent-ssc-U07, to: ent-ssc-C15, item: "X07: Xenon, krypton and hydrazine into thrusters", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/U07-C15"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0086, from: ent-ssc-U14, to: ent-ssc-C14, item: "X07: Xenon, krypton and hydrazine into thrusters", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/U14-C14"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0087, from: ent-ssc-U14, to: ent-ssc-C15, item: "X07: Xenon, krypton and hydrazine into thrusters", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/U14-C15"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0088, from: ent-ssc-C01, to: ent-ssc-S01, item: "X08: Components and subsystems into spacecraft integration", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/C01-S01"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0089, from: ent-ssc-C01, to: ent-ssc-S02, item: "X08: Components and subsystems into spacecraft integration", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/C01-S02"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0090, from: ent-ssc-C01, to: ent-ssc-S03, item: "X08: Components and subsystems into spacecraft integration", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/C01-S03"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0091, from: ent-ssc-C01, to: ent-ssc-S04, item: "X08: Components and subsystems into spacecraft integration", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/C01-S04"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0092, from: ent-ssc-C02, to: ent-ssc-S01, item: "X08: Components and subsystems into spacecraft integration", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/C02-S01"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0093, from: ent-ssc-C02, to: ent-ssc-S02, item: "X08: Components and subsystems into spacecraft integration", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/C02-S02"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0094, from: ent-ssc-C02, to: ent-ssc-S03, item: "X08: Components and subsystems into spacecraft integration", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/C02-S03"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0095, from: ent-ssc-C02, to: ent-ssc-S04, item: "X08: Components and subsystems into spacecraft integration", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/C02-S04"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0096, from: ent-ssc-C03, to: ent-ssc-S01, item: "X08: Components and subsystems into spacecraft integration", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/C03-S01"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0097, from: ent-ssc-C03, to: ent-ssc-S02, item: "X08: Components and subsystems into spacecraft integration", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/C03-S02"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0098, from: ent-ssc-C03, to: ent-ssc-S03, item: "X08: Components and subsystems into spacecraft integration", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/C03-S03"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0099, from: ent-ssc-C03, to: ent-ssc-S04, item: "X08: Components and subsystems into spacecraft integration", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/C03-S04"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0100, from: ent-ssc-C04, to: ent-ssc-S01, item: "X08: Components and subsystems into spacecraft integration", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/C04-S01"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0101, from: ent-ssc-C04, to: ent-ssc-S02, item: "X08: Components and subsystems into spacecraft integration", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/C04-S02"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0102, from: ent-ssc-C04, to: ent-ssc-S03, item: "X08: Components and subsystems into spacecraft integration", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/C04-S03"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0103, from: ent-ssc-C04, to: ent-ssc-S04, item: "X08: Components and subsystems into spacecraft integration", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/C04-S04"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0104, from: ent-ssc-C05, to: ent-ssc-S01, item: "X08: Components and subsystems into spacecraft integration", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/C05-S01"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0105, from: ent-ssc-C05, to: ent-ssc-S02, item: "X08: Components and subsystems into spacecraft integration", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/C05-S02"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0106, from: ent-ssc-C05, to: ent-ssc-S03, item: "X08: Components and subsystems into spacecraft integration", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/C05-S03"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0107, from: ent-ssc-C05, to: ent-ssc-S04, item: "X08: Components and subsystems into spacecraft integration", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/C05-S04"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0108, from: ent-ssc-C06, to: ent-ssc-S01, item: "X08: Components and subsystems into spacecraft integration", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/C06-S01"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0109, from: ent-ssc-C06, to: ent-ssc-S02, item: "X08: Components and subsystems into spacecraft integration", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/C06-S02"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0110, from: ent-ssc-C06, to: ent-ssc-S03, item: "X08: Components and subsystems into spacecraft integration", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/C06-S03"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0111, from: ent-ssc-C06, to: ent-ssc-S04, item: "X08: Components and subsystems into spacecraft integration", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/C06-S04"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0112, from: ent-ssc-C07, to: ent-ssc-S01, item: "X08: Components and subsystems into spacecraft integration", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/C07-S01"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0113, from: ent-ssc-C07, to: ent-ssc-S02, item: "X08: Components and subsystems into spacecraft integration", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/C07-S02"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0114, from: ent-ssc-C07, to: ent-ssc-S03, item: "X08: Components and subsystems into spacecraft integration", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/C07-S03"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0115, from: ent-ssc-C07, to: ent-ssc-S04, item: "X08: Components and subsystems into spacecraft integration", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/C07-S04"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0116, from: ent-ssc-C08, to: ent-ssc-S01, item: "X08: Components and subsystems into spacecraft integration", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/C08-S01"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0117, from: ent-ssc-C08, to: ent-ssc-S02, item: "X08: Components and subsystems into spacecraft integration", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/C08-S02"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0118, from: ent-ssc-C08, to: ent-ssc-S03, item: "X08: Components and subsystems into spacecraft integration", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/C08-S03"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0119, from: ent-ssc-C08, to: ent-ssc-S04, item: "X08: Components and subsystems into spacecraft integration", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/C08-S04"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0120, from: ent-ssc-C09, to: ent-ssc-S01, item: "X08: Components and subsystems into spacecraft integration", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/C09-S01"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0121, from: ent-ssc-C09, to: ent-ssc-S02, item: "X08: Components and subsystems into spacecraft integration", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/C09-S02"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0122, from: ent-ssc-C09, to: ent-ssc-S03, item: "X08: Components and subsystems into spacecraft integration", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/C09-S03"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0123, from: ent-ssc-C09, to: ent-ssc-S04, item: "X08: Components and subsystems into spacecraft integration", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/C09-S04"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0124, from: ent-ssc-C10, to: ent-ssc-S01, item: "X08: Components and subsystems into spacecraft integration", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/C10-S01"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0125, from: ent-ssc-C10, to: ent-ssc-S02, item: "X08: Components and subsystems into spacecraft integration", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/C10-S02"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0126, from: ent-ssc-C10, to: ent-ssc-S03, item: "X08: Components and subsystems into spacecraft integration", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/C10-S03"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0127, from: ent-ssc-C10, to: ent-ssc-S04, item: "X08: Components and subsystems into spacecraft integration", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/C10-S04"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0128, from: ent-ssc-C11, to: ent-ssc-S01, item: "X08: Components and subsystems into spacecraft integration", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/C11-S01"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0129, from: ent-ssc-C11, to: ent-ssc-S02, item: "X08: Components and subsystems into spacecraft integration", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/C11-S02"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0130, from: ent-ssc-C11, to: ent-ssc-S03, item: "X08: Components and subsystems into spacecraft integration", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/C11-S03"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0131, from: ent-ssc-C11, to: ent-ssc-S04, item: "X08: Components and subsystems into spacecraft integration", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/C11-S04"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0132, from: ent-ssc-C12, to: ent-ssc-S01, item: "X08: Components and subsystems into spacecraft integration", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/C12-S01"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0133, from: ent-ssc-C12, to: ent-ssc-S02, item: "X08: Components and subsystems into spacecraft integration", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/C12-S02"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0134, from: ent-ssc-C12, to: ent-ssc-S03, item: "X08: Components and subsystems into spacecraft integration", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/C12-S03"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0135, from: ent-ssc-C12, to: ent-ssc-S04, item: "X08: Components and subsystems into spacecraft integration", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/C12-S04"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0136, from: ent-ssc-C13, to: ent-ssc-S01, item: "X08: Components and subsystems into spacecraft integration", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/C13-S01"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0137, from: ent-ssc-C13, to: ent-ssc-S02, item: "X08: Components and subsystems into spacecraft integration", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/C13-S02"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0138, from: ent-ssc-C13, to: ent-ssc-S03, item: "X08: Components and subsystems into spacecraft integration", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/C13-S03"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0139, from: ent-ssc-C13, to: ent-ssc-S04, item: "X08: Components and subsystems into spacecraft integration", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/C13-S04"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0140, from: ent-ssc-C14, to: ent-ssc-S01, item: "X08: Components and subsystems into spacecraft integration", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/C14-S01"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0141, from: ent-ssc-C14, to: ent-ssc-S02, item: "X08: Components and subsystems into spacecraft integration", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/C14-S02"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0142, from: ent-ssc-C14, to: ent-ssc-S03, item: "X08: Components and subsystems into spacecraft integration", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/C14-S03"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0143, from: ent-ssc-C14, to: ent-ssc-S04, item: "X08: Components and subsystems into spacecraft integration", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/C14-S04"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0144, from: ent-ssc-C15, to: ent-ssc-S01, item: "X08: Components and subsystems into spacecraft integration", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/C15-S01"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0145, from: ent-ssc-C15, to: ent-ssc-S02, item: "X08: Components and subsystems into spacecraft integration", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/C15-S02"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0146, from: ent-ssc-C15, to: ent-ssc-S03, item: "X08: Components and subsystems into spacecraft integration", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/C15-S03"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0147, from: ent-ssc-C15, to: ent-ssc-S04, item: "X08: Components and subsystems into spacecraft integration", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/C15-S04"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0148, from: ent-ssc-C16, to: ent-ssc-S01, item: "X08: Components and subsystems into spacecraft integration", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/C16-S01"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0149, from: ent-ssc-C16, to: ent-ssc-S02, item: "X08: Components and subsystems into spacecraft integration", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/C16-S02"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0150, from: ent-ssc-C16, to: ent-ssc-S03, item: "X08: Components and subsystems into spacecraft integration", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/C16-S03"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0151, from: ent-ssc-C16, to: ent-ssc-S04, item: "X08: Components and subsystems into spacecraft integration", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/C16-S04"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0152, from: ent-ssc-C17, to: ent-ssc-S01, item: "X08: Components and subsystems into spacecraft integration", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/C17-S01"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0153, from: ent-ssc-C17, to: ent-ssc-S02, item: "X08: Components and subsystems into spacecraft integration", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/C17-S02"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0154, from: ent-ssc-C17, to: ent-ssc-S03, item: "X08: Components and subsystems into spacecraft integration", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/C17-S03"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0155, from: ent-ssc-C17, to: ent-ssc-S04, item: "X08: Components and subsystems into spacecraft integration", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/C17-S04"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0156, from: ent-ssc-C18, to: ent-ssc-S01, item: "X08: Components and subsystems into spacecraft integration", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/C18-S01"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0157, from: ent-ssc-C18, to: ent-ssc-S02, item: "X08: Components and subsystems into spacecraft integration", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/C18-S02"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0158, from: ent-ssc-C18, to: ent-ssc-S03, item: "X08: Components and subsystems into spacecraft integration", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/C18-S03"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0159, from: ent-ssc-C18, to: ent-ssc-S04, item: "X08: Components and subsystems into spacecraft integration", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/C18-S04"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0160, from: ent-ssc-C19, to: ent-ssc-S01, item: "X08: Components and subsystems into spacecraft integration", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/C19-S01"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0161, from: ent-ssc-C19, to: ent-ssc-S02, item: "X08: Components and subsystems into spacecraft integration", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/C19-S02"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0162, from: ent-ssc-C19, to: ent-ssc-S03, item: "X08: Components and subsystems into spacecraft integration", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/C19-S03"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0163, from: ent-ssc-C19, to: ent-ssc-S04, item: "X08: Components and subsystems into spacecraft integration", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/C19-S04"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0164, from: ent-ssc-C20, to: ent-ssc-S01, item: "X08: Components and subsystems into spacecraft integration", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/C20-S01"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0165, from: ent-ssc-C20, to: ent-ssc-S02, item: "X08: Components and subsystems into spacecraft integration", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/C20-S02"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0166, from: ent-ssc-C20, to: ent-ssc-S03, item: "X08: Components and subsystems into spacecraft integration", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/C20-S03"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0167, from: ent-ssc-C20, to: ent-ssc-S04, item: "X08: Components and subsystems into spacecraft integration", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/C20-S04"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0168, from: ent-ssc-C21, to: ent-ssc-S01, item: "X08: Components and subsystems into spacecraft integration", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/C21-S01"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0169, from: ent-ssc-C21, to: ent-ssc-S02, item: "X08: Components and subsystems into spacecraft integration", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/C21-S02"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0170, from: ent-ssc-C21, to: ent-ssc-S03, item: "X08: Components and subsystems into spacecraft integration", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/C21-S03"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0171, from: ent-ssc-C21, to: ent-ssc-S04, item: "X08: Components and subsystems into spacecraft integration", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/C21-S04"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0172, from: ent-ssc-C22, to: ent-ssc-S01, item: "X08: Components and subsystems into spacecraft integration", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/C22-S01"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0173, from: ent-ssc-C22, to: ent-ssc-S02, item: "X08: Components and subsystems into spacecraft integration", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/C22-S02"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0174, from: ent-ssc-C22, to: ent-ssc-S03, item: "X08: Components and subsystems into spacecraft integration", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/C22-S03"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0175, from: ent-ssc-C22, to: ent-ssc-S04, item: "X08: Components and subsystems into spacecraft integration", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/C22-S04"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0176, from: ent-ssc-C23, to: ent-ssc-S01, item: "X08: Components and subsystems into spacecraft integration", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/C23-S01"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0177, from: ent-ssc-C23, to: ent-ssc-S02, item: "X08: Components and subsystems into spacecraft integration", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/C23-S02"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0178, from: ent-ssc-C23, to: ent-ssc-S03, item: "X08: Components and subsystems into spacecraft integration", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/C23-S03"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0179, from: ent-ssc-C23, to: ent-ssc-S04, item: "X08: Components and subsystems into spacecraft integration", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/C23-S04"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0180, from: ent-ssc-C24, to: ent-ssc-S01, item: "X08: Components and subsystems into spacecraft integration", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/C24-S01"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0181, from: ent-ssc-C24, to: ent-ssc-S02, item: "X08: Components and subsystems into spacecraft integration", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/C24-S02"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0182, from: ent-ssc-C24, to: ent-ssc-S03, item: "X08: Components and subsystems into spacecraft integration", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/C24-S03"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0183, from: ent-ssc-C24, to: ent-ssc-S04, item: "X08: Components and subsystems into spacecraft integration", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/C24-S04"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0184, from: ent-ssc-C25, to: ent-ssc-S01, item: "X08: Components and subsystems into spacecraft integration", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/C25-S01"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0185, from: ent-ssc-C25, to: ent-ssc-S02, item: "X08: Components and subsystems into spacecraft integration", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/C25-S02"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0186, from: ent-ssc-C25, to: ent-ssc-S03, item: "X08: Components and subsystems into spacecraft integration", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/C25-S03"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0187, from: ent-ssc-C25, to: ent-ssc-S04, item: "X08: Components and subsystems into spacecraft integration", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/C25-S04"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0188, from: ent-ssc-C26, to: ent-ssc-S01, item: "X08: Components and subsystems into spacecraft integration", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/C26-S01"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0189, from: ent-ssc-C26, to: ent-ssc-S02, item: "X08: Components and subsystems into spacecraft integration", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/C26-S02"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0190, from: ent-ssc-C26, to: ent-ssc-S03, item: "X08: Components and subsystems into spacecraft integration", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/C26-S03"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0191, from: ent-ssc-C26, to: ent-ssc-S04, item: "X08: Components and subsystems into spacecraft integration", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/C26-S04"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0192, from: ent-ssc-C27, to: ent-ssc-S01, item: "X08: Components and subsystems into spacecraft integration", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/C27-S01"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0193, from: ent-ssc-C27, to: ent-ssc-S02, item: "X08: Components and subsystems into spacecraft integration", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/C27-S02"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0194, from: ent-ssc-C27, to: ent-ssc-S03, item: "X08: Components and subsystems into spacecraft integration", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/C27-S03"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0195, from: ent-ssc-C27, to: ent-ssc-S04, item: "X08: Components and subsystems into spacecraft integration", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/C27-S04"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0196, from: ent-ssc-C28, to: ent-ssc-S01, item: "X08: Components and subsystems into spacecraft integration", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/C28-S01"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0197, from: ent-ssc-C28, to: ent-ssc-S02, item: "X08: Components and subsystems into spacecraft integration", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/C28-S02"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0198, from: ent-ssc-C28, to: ent-ssc-S03, item: "X08: Components and subsystems into spacecraft integration", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/C28-S03"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0199, from: ent-ssc-C28, to: ent-ssc-S04, item: "X08: Components and subsystems into spacecraft integration", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/C28-S04"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0200, from: ent-ssc-C29, to: ent-ssc-S01, item: "X08: Components and subsystems into spacecraft integration", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/C29-S01"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0201, from: ent-ssc-C29, to: ent-ssc-S02, item: "X08: Components and subsystems into spacecraft integration", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/C29-S02"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0202, from: ent-ssc-C29, to: ent-ssc-S03, item: "X08: Components and subsystems into spacecraft integration", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/C29-S03"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0203, from: ent-ssc-C29, to: ent-ssc-S04, item: "X08: Components and subsystems into spacecraft integration", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/C29-S04"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0204, from: ent-ssc-S01, to: ent-ssc-A01, item: "X09: Spacecraft integration into assembly, integration and test", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/S01-A01"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0205, from: ent-ssc-S01, to: ent-ssc-A02, item: "X09: Spacecraft integration into assembly, integration and test", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/S01-A02"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0206, from: ent-ssc-S01, to: ent-ssc-A03, item: "X09: Spacecraft integration into assembly, integration and test", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/S01-A03"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0207, from: ent-ssc-S01, to: ent-ssc-A04, item: "X09: Spacecraft integration into assembly, integration and test", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/S01-A04"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0208, from: ent-ssc-S01, to: ent-ssc-A05, item: "X09: Spacecraft integration into assembly, integration and test", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/S01-A05"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0209, from: ent-ssc-S02, to: ent-ssc-A01, item: "X09: Spacecraft integration into assembly, integration and test", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/S02-A01"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0210, from: ent-ssc-S02, to: ent-ssc-A02, item: "X09: Spacecraft integration into assembly, integration and test", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/S02-A02"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0211, from: ent-ssc-S02, to: ent-ssc-A03, item: "X09: Spacecraft integration into assembly, integration and test", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/S02-A03"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0212, from: ent-ssc-S02, to: ent-ssc-A04, item: "X09: Spacecraft integration into assembly, integration and test", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/S02-A04"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0213, from: ent-ssc-S02, to: ent-ssc-A05, item: "X09: Spacecraft integration into assembly, integration and test", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/S02-A05"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0214, from: ent-ssc-S03, to: ent-ssc-A01, item: "X09: Spacecraft integration into assembly, integration and test", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/S03-A01"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0215, from: ent-ssc-S03, to: ent-ssc-A02, item: "X09: Spacecraft integration into assembly, integration and test", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/S03-A02"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0216, from: ent-ssc-S03, to: ent-ssc-A03, item: "X09: Spacecraft integration into assembly, integration and test", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/S03-A03"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0217, from: ent-ssc-S03, to: ent-ssc-A04, item: "X09: Spacecraft integration into assembly, integration and test", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/S03-A04"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0218, from: ent-ssc-S03, to: ent-ssc-A05, item: "X09: Spacecraft integration into assembly, integration and test", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/S03-A05"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0219, from: ent-ssc-S04, to: ent-ssc-A01, item: "X09: Spacecraft integration into assembly, integration and test", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/S04-A01"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0220, from: ent-ssc-S04, to: ent-ssc-A02, item: "X09: Spacecraft integration into assembly, integration and test", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/S04-A02"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0221, from: ent-ssc-S04, to: ent-ssc-A03, item: "X09: Spacecraft integration into assembly, integration and test", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/S04-A03"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0222, from: ent-ssc-S04, to: ent-ssc-A04, item: "X09: Spacecraft integration into assembly, integration and test", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/S04-A04"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0223, from: ent-ssc-S04, to: ent-ssc-A05, item: "X09: Spacecraft integration into assembly, integration and test", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/S04-A05"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0224, from: ent-ssc-A01, to: ent-ssc-L01, item: "Xa: Assembly and test facilities into launch vehicle primes", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/A01-L01"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0225, from: ent-ssc-A01, to: ent-ssc-L02, item: "Xa: Assembly and test facilities into launch vehicle primes", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/A01-L02"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0226, from: ent-ssc-A02, to: ent-ssc-L01, item: "Xa: Assembly and test facilities into launch vehicle primes", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/A02-L01"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0227, from: ent-ssc-A02, to: ent-ssc-L02, item: "Xa: Assembly and test facilities into launch vehicle primes", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/A02-L02"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0228, from: ent-ssc-A03, to: ent-ssc-L01, item: "Xa: Assembly and test facilities into launch vehicle primes", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/A03-L01"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0229, from: ent-ssc-A03, to: ent-ssc-L02, item: "Xa: Assembly and test facilities into launch vehicle primes", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/A03-L02"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0230, from: ent-ssc-A04, to: ent-ssc-L01, item: "Xa: Assembly and test facilities into launch vehicle primes", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/A04-L01"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0231, from: ent-ssc-A04, to: ent-ssc-L02, item: "Xa: Assembly and test facilities into launch vehicle primes", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/A04-L02"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0232, from: ent-ssc-TP01, to: ent-ssc-L04, item: "X10: Turbopump sub-chain into engine, stage and launch prime", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/TP01-L04"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0233, from: ent-ssc-TP02, to: ent-ssc-L04, item: "X10: Turbopump sub-chain into engine, stage and launch prime", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/TP02-L04"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0234, from: ent-ssc-TP03, to: ent-ssc-L04, item: "X10: Turbopump sub-chain into engine, stage and launch prime", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/TP03-L04"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0235, from: ent-ssc-TP04, to: ent-ssc-L04, item: "X10: Turbopump sub-chain into engine, stage and launch prime", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/TP04-L04"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0236, from: ent-ssc-TP05, to: ent-ssc-L04, item: "X10: Turbopump sub-chain into engine, stage and launch prime", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/TP05-L04"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0237, from: ent-ssc-TP06, to: ent-ssc-L04, item: "X10: Turbopump sub-chain into engine, stage and launch prime", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/TP06-L04"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0238, from: ent-ssc-TP07, to: ent-ssc-L04, item: "X10: Turbopump sub-chain into engine, stage and launch prime", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/TP07-L04"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0239, from: ent-ssc-TP08, to: ent-ssc-L04, item: "X10: Turbopump sub-chain into engine, stage and launch prime", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/TP08-L04"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0240, from: ent-ssc-TP09, to: ent-ssc-L04, item: "X10: Turbopump sub-chain into engine, stage and launch prime", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/TP09-L04"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0241, from: ent-ssc-TP10, to: ent-ssc-L04, item: "X10: Turbopump sub-chain into engine, stage and launch prime", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/TP10-L04"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0242, from: ent-ssc-TP11, to: ent-ssc-L04, item: "X10: Turbopump sub-chain into engine, stage and launch prime", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/TP11-L04"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0243, from: ent-ssc-L04, to: ent-ssc-L03, item: "X10: Turbopump sub-chain into engine, stage and launch prime", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/L04-L03"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0244, from: ent-ssc-L03, to: ent-ssc-L02, item: "X10: Turbopump sub-chain into engine, stage and launch prime", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/L03-L02"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0245, from: ent-ssc-L03, to: ent-ssc-L01, item: "X10: Turbopump sub-chain into engine, stage and launch prime", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/L03-L01"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0246, from: ent-ssc-L05, to: ent-ssc-L01, item: "X10: Turbopump sub-chain into engine, stage and launch prime", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/L05-L01"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0247, from: ent-ssc-A06, to: ent-ssc-TP10, item: "X11: Propulsion test stand into turbopump test, engine and pressure-fed propulsion", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/A06-TP10"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0248, from: ent-ssc-A06, to: ent-ssc-L03, item: "X11: Propulsion test stand into turbopump test, engine and pressure-fed propulsion", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/A06-L03"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0249, from: ent-ssc-A06, to: ent-ssc-L05, item: "X11: Propulsion test stand into turbopump test, engine and pressure-fed propulsion", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/A06-L05"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0250, from: ent-ssc-L01, to: ent-ssc-O01, item: "X12: Launch, range, licensing and insurance into in-space and downstream services", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/L01-O01"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0251, from: ent-ssc-L01, to: ent-ssc-O02, item: "X12: Launch, range, licensing and insurance into in-space and downstream services", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/L01-O02"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0252, from: ent-ssc-L01, to: ent-ssc-O03, item: "X12: Launch, range, licensing and insurance into in-space and downstream services", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/L01-O03"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0253, from: ent-ssc-L01, to: ent-ssc-D01, item: "X12: Launch, range, licensing and insurance into in-space and downstream services", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/L01-D01"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0254, from: ent-ssc-L01, to: ent-ssc-D02, item: "X12: Launch, range, licensing and insurance into in-space and downstream services", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/L01-D02"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0255, from: ent-ssc-L01, to: ent-ssc-D03, item: "X12: Launch, range, licensing and insurance into in-space and downstream services", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/L01-D03"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0256, from: ent-ssc-L01, to: ent-ssc-D04, item: "X12: Launch, range, licensing and insurance into in-space and downstream services", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/L01-D04"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0257, from: ent-ssc-L01, to: ent-ssc-D05, item: "X12: Launch, range, licensing and insurance into in-space and downstream services", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/L01-D05"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0258, from: ent-ssc-L02, to: ent-ssc-O01, item: "X12: Launch, range, licensing and insurance into in-space and downstream services", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/L02-O01"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0259, from: ent-ssc-L02, to: ent-ssc-O02, item: "X12: Launch, range, licensing and insurance into in-space and downstream services", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/L02-O02"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0260, from: ent-ssc-L02, to: ent-ssc-O03, item: "X12: Launch, range, licensing and insurance into in-space and downstream services", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/L02-O03"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0261, from: ent-ssc-L02, to: ent-ssc-D01, item: "X12: Launch, range, licensing and insurance into in-space and downstream services", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/L02-D01"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0262, from: ent-ssc-L02, to: ent-ssc-D02, item: "X12: Launch, range, licensing and insurance into in-space and downstream services", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/L02-D02"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0263, from: ent-ssc-L02, to: ent-ssc-D03, item: "X12: Launch, range, licensing and insurance into in-space and downstream services", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/L02-D03"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0264, from: ent-ssc-L02, to: ent-ssc-D04, item: "X12: Launch, range, licensing and insurance into in-space and downstream services", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/L02-D04"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0265, from: ent-ssc-L02, to: ent-ssc-D05, item: "X12: Launch, range, licensing and insurance into in-space and downstream services", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/L02-D05"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0266, from: ent-ssc-L11, to: ent-ssc-O01, item: "X12: Launch, range, licensing and insurance into in-space and downstream services", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/L11-O01"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0267, from: ent-ssc-L11, to: ent-ssc-O02, item: "X12: Launch, range, licensing and insurance into in-space and downstream services", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/L11-O02"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0268, from: ent-ssc-L11, to: ent-ssc-O03, item: "X12: Launch, range, licensing and insurance into in-space and downstream services", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/L11-O03"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0269, from: ent-ssc-L11, to: ent-ssc-D01, item: "X12: Launch, range, licensing and insurance into in-space and downstream services", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/L11-D01"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0270, from: ent-ssc-L11, to: ent-ssc-D02, item: "X12: Launch, range, licensing and insurance into in-space and downstream services", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/L11-D02"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0271, from: ent-ssc-L11, to: ent-ssc-D03, item: "X12: Launch, range, licensing and insurance into in-space and downstream services", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/L11-D03"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0272, from: ent-ssc-L11, to: ent-ssc-D04, item: "X12: Launch, range, licensing and insurance into in-space and downstream services", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/L11-D04"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0273, from: ent-ssc-L11, to: ent-ssc-D05, item: "X12: Launch, range, licensing and insurance into in-space and downstream services", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/L11-D05"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0274, from: ent-ssc-L12, to: ent-ssc-O01, item: "X12: Launch, range, licensing and insurance into in-space and downstream services", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/L12-O01"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0275, from: ent-ssc-L12, to: ent-ssc-O02, item: "X12: Launch, range, licensing and insurance into in-space and downstream services", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/L12-O02"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0276, from: ent-ssc-L12, to: ent-ssc-O03, item: "X12: Launch, range, licensing and insurance into in-space and downstream services", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/L12-O03"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0277, from: ent-ssc-L12, to: ent-ssc-D01, item: "X12: Launch, range, licensing and insurance into in-space and downstream services", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/L12-D01"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0278, from: ent-ssc-L12, to: ent-ssc-D02, item: "X12: Launch, range, licensing and insurance into in-space and downstream services", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/L12-D02"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0279, from: ent-ssc-L12, to: ent-ssc-D03, item: "X12: Launch, range, licensing and insurance into in-space and downstream services", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/L12-D03"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0280, from: ent-ssc-L12, to: ent-ssc-D04, item: "X12: Launch, range, licensing and insurance into in-space and downstream services", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/L12-D04"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0281, from: ent-ssc-L12, to: ent-ssc-D05, item: "X12: Launch, range, licensing and insurance into in-space and downstream services", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/L12-D05"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0282, from: ent-ssc-L13, to: ent-ssc-O01, item: "X12: Launch, range, licensing and insurance into in-space and downstream services", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/L13-O01"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0283, from: ent-ssc-L13, to: ent-ssc-O02, item: "X12: Launch, range, licensing and insurance into in-space and downstream services", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/L13-O02"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0284, from: ent-ssc-L13, to: ent-ssc-O03, item: "X12: Launch, range, licensing and insurance into in-space and downstream services", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/L13-O03"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0285, from: ent-ssc-L13, to: ent-ssc-D01, item: "X12: Launch, range, licensing and insurance into in-space and downstream services", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/L13-D01"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0286, from: ent-ssc-L13, to: ent-ssc-D02, item: "X12: Launch, range, licensing and insurance into in-space and downstream services", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/L13-D02"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0287, from: ent-ssc-L13, to: ent-ssc-D03, item: "X12: Launch, range, licensing and insurance into in-space and downstream services", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/L13-D03"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0288, from: ent-ssc-L13, to: ent-ssc-D04, item: "X12: Launch, range, licensing and insurance into in-space and downstream services", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/L13-D04"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0289, from: ent-ssc-L13, to: ent-ssc-D05, item: "X12: Launch, range, licensing and insurance into in-space and downstream services", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/L13-D05"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0290, from: ent-ssc-L14, to: ent-ssc-O01, item: "X12: Launch, range, licensing and insurance into in-space and downstream services", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/L14-O01"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0291, from: ent-ssc-L14, to: ent-ssc-O02, item: "X12: Launch, range, licensing and insurance into in-space and downstream services", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/L14-O02"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0292, from: ent-ssc-L14, to: ent-ssc-O03, item: "X12: Launch, range, licensing and insurance into in-space and downstream services", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/L14-O03"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0293, from: ent-ssc-L14, to: ent-ssc-D01, item: "X12: Launch, range, licensing and insurance into in-space and downstream services", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/L14-D01"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0294, from: ent-ssc-L14, to: ent-ssc-D02, item: "X12: Launch, range, licensing and insurance into in-space and downstream services", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/L14-D02"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0295, from: ent-ssc-L14, to: ent-ssc-D03, item: "X12: Launch, range, licensing and insurance into in-space and downstream services", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/L14-D03"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0296, from: ent-ssc-L14, to: ent-ssc-D04, item: "X12: Launch, range, licensing and insurance into in-space and downstream services", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/L14-D04"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0297, from: ent-ssc-L14, to: ent-ssc-D05, item: "X12: Launch, range, licensing and insurance into in-space and downstream services", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/L14-D05"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0298, from: ent-ssc-L15, to: ent-ssc-O01, item: "X12: Launch, range, licensing and insurance into in-space and downstream services", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/L15-O01"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0299, from: ent-ssc-L15, to: ent-ssc-O02, item: "X12: Launch, range, licensing and insurance into in-space and downstream services", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/L15-O02"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0300, from: ent-ssc-L15, to: ent-ssc-O03, item: "X12: Launch, range, licensing and insurance into in-space and downstream services", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/L15-O03"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0301, from: ent-ssc-L15, to: ent-ssc-D01, item: "X12: Launch, range, licensing and insurance into in-space and downstream services", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/L15-D01"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0302, from: ent-ssc-L15, to: ent-ssc-D02, item: "X12: Launch, range, licensing and insurance into in-space and downstream services", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/L15-D02"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0303, from: ent-ssc-L15, to: ent-ssc-D03, item: "X12: Launch, range, licensing and insurance into in-space and downstream services", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/L15-D03"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0304, from: ent-ssc-L15, to: ent-ssc-D04, item: "X12: Launch, range, licensing and insurance into in-space and downstream services", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/L15-D04"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0305, from: ent-ssc-L15, to: ent-ssc-D05, item: "X12: Launch, range, licensing and insurance into in-space and downstream services", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/L15-D05"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0306, from: ent-ssc-G01, to: ent-ssc-D01, item: "X13: Ground segment and data platforms into downstream services", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/G01-D01"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0307, from: ent-ssc-G01, to: ent-ssc-D02, item: "X13: Ground segment and data platforms into downstream services", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/G01-D02"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0308, from: ent-ssc-G01, to: ent-ssc-D03, item: "X13: Ground segment and data platforms into downstream services", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/G01-D03"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0309, from: ent-ssc-G01, to: ent-ssc-D04, item: "X13: Ground segment and data platforms into downstream services", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/G01-D04"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0310, from: ent-ssc-G01, to: ent-ssc-D05, item: "X13: Ground segment and data platforms into downstream services", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/G01-D05"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0311, from: ent-ssc-G01, to: ent-ssc-D06, item: "X13: Ground segment and data platforms into downstream services", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/G01-D06"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0312, from: ent-ssc-G01, to: ent-ssc-D07, item: "X13: Ground segment and data platforms into downstream services", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/G01-D07"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0313, from: ent-ssc-G02, to: ent-ssc-D01, item: "X13: Ground segment and data platforms into downstream services", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/G02-D01"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0314, from: ent-ssc-G02, to: ent-ssc-D02, item: "X13: Ground segment and data platforms into downstream services", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/G02-D02"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0315, from: ent-ssc-G02, to: ent-ssc-D03, item: "X13: Ground segment and data platforms into downstream services", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/G02-D03"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0316, from: ent-ssc-G02, to: ent-ssc-D04, item: "X13: Ground segment and data platforms into downstream services", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/G02-D04"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0317, from: ent-ssc-G02, to: ent-ssc-D05, item: "X13: Ground segment and data platforms into downstream services", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/G02-D05"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0318, from: ent-ssc-G02, to: ent-ssc-D06, item: "X13: Ground segment and data platforms into downstream services", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/G02-D06"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0319, from: ent-ssc-G02, to: ent-ssc-D07, item: "X13: Ground segment and data platforms into downstream services", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/G02-D07"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0320, from: ent-ssc-G03, to: ent-ssc-D01, item: "X13: Ground segment and data platforms into downstream services", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/G03-D01"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0321, from: ent-ssc-G03, to: ent-ssc-D02, item: "X13: Ground segment and data platforms into downstream services", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/G03-D02"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0322, from: ent-ssc-G03, to: ent-ssc-D03, item: "X13: Ground segment and data platforms into downstream services", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/G03-D03"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0323, from: ent-ssc-G03, to: ent-ssc-D04, item: "X13: Ground segment and data platforms into downstream services", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/G03-D04"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0324, from: ent-ssc-G03, to: ent-ssc-D05, item: "X13: Ground segment and data platforms into downstream services", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/G03-D05"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0325, from: ent-ssc-G03, to: ent-ssc-D06, item: "X13: Ground segment and data platforms into downstream services", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/G03-D06"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0326, from: ent-ssc-G03, to: ent-ssc-D07, item: "X13: Ground segment and data platforms into downstream services", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/G03-D07"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0327, from: ent-ssc-G04, to: ent-ssc-D01, item: "X13: Ground segment and data platforms into downstream services", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/G04-D01"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0328, from: ent-ssc-G04, to: ent-ssc-D02, item: "X13: Ground segment and data platforms into downstream services", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/G04-D02"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0329, from: ent-ssc-G04, to: ent-ssc-D03, item: "X13: Ground segment and data platforms into downstream services", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/G04-D03"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0330, from: ent-ssc-G04, to: ent-ssc-D04, item: "X13: Ground segment and data platforms into downstream services", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/G04-D04"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0331, from: ent-ssc-G04, to: ent-ssc-D05, item: "X13: Ground segment and data platforms into downstream services", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/G04-D05"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0332, from: ent-ssc-G04, to: ent-ssc-D06, item: "X13: Ground segment and data platforms into downstream services", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/G04-D06"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0333, from: ent-ssc-G04, to: ent-ssc-D07, item: "X13: Ground segment and data platforms into downstream services", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/G04-D07"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0334, from: ent-ssc-G05, to: ent-ssc-D01, item: "X13: Ground segment and data platforms into downstream services", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/G05-D01"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0335, from: ent-ssc-G05, to: ent-ssc-D02, item: "X13: Ground segment and data platforms into downstream services", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/G05-D02"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0336, from: ent-ssc-G05, to: ent-ssc-D03, item: "X13: Ground segment and data platforms into downstream services", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/G05-D03"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0337, from: ent-ssc-G05, to: ent-ssc-D04, item: "X13: Ground segment and data platforms into downstream services", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/G05-D04"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0338, from: ent-ssc-G05, to: ent-ssc-D05, item: "X13: Ground segment and data platforms into downstream services", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/G05-D05"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0339, from: ent-ssc-G05, to: ent-ssc-D06, item: "X13: Ground segment and data platforms into downstream services", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/G05-D06"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0340, from: ent-ssc-G05, to: ent-ssc-D07, item: "X13: Ground segment and data platforms into downstream services", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/G05-D07"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0341, from: ent-ssc-G06, to: ent-ssc-D01, item: "X13: Ground segment and data platforms into downstream services", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/G06-D01"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0342, from: ent-ssc-G06, to: ent-ssc-D02, item: "X13: Ground segment and data platforms into downstream services", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/G06-D02"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0343, from: ent-ssc-G06, to: ent-ssc-D03, item: "X13: Ground segment and data platforms into downstream services", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/G06-D03"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0344, from: ent-ssc-G06, to: ent-ssc-D04, item: "X13: Ground segment and data platforms into downstream services", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/G06-D04"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0345, from: ent-ssc-G06, to: ent-ssc-D05, item: "X13: Ground segment and data platforms into downstream services", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/G06-D05"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0346, from: ent-ssc-G06, to: ent-ssc-D06, item: "X13: Ground segment and data platforms into downstream services", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/G06-D06"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0347, from: ent-ssc-G06, to: ent-ssc-D07, item: "X13: Ground segment and data platforms into downstream services", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/G06-D07"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0348, from: ent-ssc-D06, to: ent-ssc-D01, item: "X13: Ground segment and data platforms into downstream services", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/D06-D01"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0349, from: ent-ssc-D06, to: ent-ssc-D02, item: "X13: Ground segment and data platforms into downstream services", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/D06-D02"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0350, from: ent-ssc-D06, to: ent-ssc-D03, item: "X13: Ground segment and data platforms into downstream services", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/D06-D03"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0351, from: ent-ssc-D06, to: ent-ssc-D04, item: "X13: Ground segment and data platforms into downstream services", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/D06-D04"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0352, from: ent-ssc-D06, to: ent-ssc-D05, item: "X13: Ground segment and data platforms into downstream services", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/D06-D05"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0353, from: ent-ssc-D06, to: ent-ssc-D06, item: "X13: Ground segment and data platforms into downstream services", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/D06-D06"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-ssc-0354, from: ent-ssc-D06, to: ent-ssc-D07, item: "X13: Ground segment and data platforms into downstream services", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/archetype-edge/D06-D07"], as_of: 2026-11-04, lifecycle: active, synthetic: true }
