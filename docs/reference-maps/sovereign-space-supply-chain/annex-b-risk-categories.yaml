@@ -1,0 +1,48 @@
+# Handling: Unclassified — public
+# Licence: Open Government Licence – Canada 2.0 (documentation and data; see LICENSING.md).
+# © 2026 Element Ventures (Canada) Ltd. All rights reserved.
+# Indicative bands only; not legal, procurement or investment advice.
+#
+# The 13 supply-chain risk categories used to place each archetype (primary and secondary). They follow Annex B of the
+# publicly released Defence Supply Chain Control Tower request for information (CanadaBuys, https://canadabuys.canada.ca).
+# Codes are short labels for this repository; the category names follow the public document.
+categories:
+  - code: FOCI
+    name: "Foreign ownership, control or influence"
+    short_name: "FOCI"
+  - code: POL
+    name: "Political and regulatory"
+    short_name: "Political & regulatory"
+  - code: MFG
+    name: "Manufacturing and supply"
+    short_name: "Manufacturing & supply"
+  - code: TECH
+    name: "Technology and cybersecurity"
+    short_name: "Technology & cyber"
+  - code: INFRA
+    name: "Infrastructure"
+    short_name: "Infrastructure"
+  - code: PLAN
+    name: "Planning"
+    short_name: "Planning"
+  - code: TRANS
+    name: "Transportation and distribution"
+    short_name: "Transport & distribution"
+  - code: HUM
+    name: "Human capital"
+    short_name: "Human capital"
+  - code: ENV
+    name: "Environmental"
+    short_name: "Environmental"
+  - code: COMP
+    name: "Compliance"
+    short_name: "Compliance"
+  - code: ECON
+    name: "Economic"
+    short_name: "Economic"
+  - code: FIN
+    name: "Financial"
+    short_name: "Financial"
+  - code: QUAL
+    name: "Product quality and design"
+    short_name: "Quality & design"
