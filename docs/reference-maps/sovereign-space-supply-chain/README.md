@@ -15,6 +15,7 @@ A reference map of **role archetypes** for a space supply chain, from upstream m
 | `dependency-edges.yaml` | The 354 dependency edges (feeds → consumer) and the 14 edge families |
 | `annex-b-risk-categories.yaml` | The 13 risk categories used for placement |
 | `generic-chokepoints.yaml` | Ten generic chokepoints with their evidence notes |
+| `RATING-CRITERIA.md` | The published sovereign-control rating scale (SC1 to SC5), flags, evidence grades and chokepoint score used with the map |
 
 ## Archetype fields
 
@@ -64,5 +65,5 @@ python3 -m unittest discover -s tests -p test_reference_map.py
 ```
 
 ---
-Element Ventures (Canada) Ltd. · © 2026 T. Leroy Smith. Exclusively licensed to Element Ventures (Canada) Ltd.
+© 2026 Element Ventures (Canada) Ltd. All rights reserved.
 Indicative bands only; not legal, procurement or investment advice.
