@@ -43,5 +43,5 @@ Read [PROGRAM.md](PROGRAM.md) for the programme and first use case, [CONTRIBUTIN
 Code under Apache-2.0; documentation and data under the Open Government Licence – Canada 2.0. See [LICENSING.md](LICENSING.md).
 
 ---
-Element Ventures (Canada) Ltd. · © 2026 T. Leroy Smith. Exclusively licensed to Element Ventures (Canada) Ltd.
+© 2026 Element Ventures (Canada) Ltd. All rights reserved.
 

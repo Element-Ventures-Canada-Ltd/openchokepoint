@@ -1,7 +1,7 @@
 # Handling: Unclassified — public
 # OpenChokepoint schema v0.2.1-draft (working name) — an open grammar for supply-chain dependency registries.
 # Types only: no entities, no scores, no assessments. Licensed under Apache-2.0.
-# © 2026 T. Leroy Smith. Exclusively licensed to Element Ventures (Canada) Ltd.
+# © 2026 Element Ventures (Canada) Ltd. All rights reserved.
 #
 # v0.2 adds the digital-thread and critical-items types (issue #3). The thread records THAT evidence
 # exists and WHERE it sits. It never carries technical content: no geometry, drawings, build parameters,
