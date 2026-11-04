@@ -29,4 +29,4 @@ Issues are labelled by track. Bounty issues carry the `bounty` label and a tier 
 | Close | 31 March 2027 | Tagged v1.0 of the grammar and validator |
 
 ---
-Element Ventures (Canada) Ltd. · © 2026 T. Leroy Smith. Exclusively licensed to Element Ventures (Canada) Ltd.
+© 2026 Element Ventures (Canada) Ltd. All rights reserved.
