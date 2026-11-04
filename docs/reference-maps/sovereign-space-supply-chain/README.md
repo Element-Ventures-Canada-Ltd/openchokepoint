@@ -15,7 +15,6 @@ A reference map of **role archetypes** for a space supply chain, from upstream m
 | `dependency-edges.yaml` | The 354 dependency edges (feeds → consumer) and the 14 edge families |
 | `annex-b-risk-categories.yaml` | The 13 risk categories used for placement |
 | `generic-chokepoints.yaml` | Ten generic chokepoints with their evidence notes |
-| `RATING-CRITERIA.md` | The published sovereign-control rating scale (SC1 to SC5), flags, evidence grades and chokepoint score used with the map |
 
 ## Archetype fields
 
@@ -25,7 +24,7 @@ A reference map of **role archetypes** for a space supply chain, from upstream m
 | `tier` | `4` raw and processed inputs, `3` specialist process, `2` component or subsystem, `1` integrator, facility or service, `E` enabler |
 | `suppliers_worldwide_band` | Indicative count band of qualified suppliers worldwide (for example `≤3`, `4–10`, `11–30`, `>30`) |
 | `export_regime` | The regime family that governs trade in the item, named by category only |
-| `exposure` | Indicative concentration and control exposure: Low, Medium, High, Extreme |
+| `exposure` | Indicative concentration exposure: Low, Medium, High, Extreme |
 | `hs_2022` | Harmonized System 2022 subheadings where the archetype is a traded good; `n/a (service)` for services, facilities and enablers |
 | `risk_note` | One-line reason the archetype matters |
 | `evidence_grade` | `C` confirmed, `R` reported, `I` inferred, `S` speculative (see below) |
@@ -46,7 +45,7 @@ A mixed grade such as `R/I` keeps both letters in `archetypes.yaml` and `generic
 
 ## Caveats
 
-- **Bands are indicative.** Supplier-count bands and exposure ratings are ordinal bands set from public reporting and analyst judgment. They are not measurements, and they change.
+- **Bands are indicative.** Supplier-count bands and exposure bands are ordinal bands set from public reporting and analyst judgment. They are not measurements, and they change.
 - **Archetypes are not organizations.** The example graph uses the `Entity` type with `synthetic: true` for every archetype. Jurisdiction `XX` (the ISO 3166 user-assigned code) means any or unspecified, so jurisdiction of control is deliberately left open: a registry that instantiates an archetype records the real incorporation and controlling jurisdictions.
 - **Entity kind is nominal.** `entity_kind` on an archetype that is a regime, authority or market function (for example export controls or launch licensing) is `government`, `academic` or `company` by closest fit.
 - **Chokepoint notes cite publications by name.** Figures in `generic-chokepoints.yaml` are as reported in the named public publication. Source URLs are to be added before any chokepoint is promoted to a graded record under `data/`.
