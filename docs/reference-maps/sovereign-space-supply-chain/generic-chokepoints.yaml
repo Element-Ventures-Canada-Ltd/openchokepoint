@@ -1,0 +1,58 @@
+# Handling: Unclassified — public
+# Licence: Open Government Licence – Canada 2.0 (documentation and data; see LICENSING.md).
+# © 2026 Element Ventures (Canada) Ltd. All rights reserved.
+# Indicative bands only; not legal, procurement or investment advice.
+#
+# Ten generic chokepoints, drawn from public reporting. `evidence_note` names the public publication behind each note;
+# figures are as reported there and are indicative. Source URLs are to be added per record before any promotion to data/.
+chokepoints:
+  - rank: 1
+    name: "Sovereign launch and turbomachinery"
+    archetypes: [L01, L02, L04, TP01]
+    evidence_note: "Few nations field medium lift; turbopumps sit under MTCR and ITAR/EAR"
+    evidence_grade: "R/I"
+  - rank: 2
+    name: "Rad-hard EEE and foundry"
+    archetypes: [C01, C02, C03, C04, U19]
+    evidence_note: "FPGAs on the AIA/PwC constrained list; Altana finds 26.8% Taiwan exposure"
+    evidence_grade: "R/C"
+  - rank: 3
+    name: "Gallium, germanium, indium"
+    archetypes: [U01, U02, U04, C08]
+    evidence_note: "99% of primary low-purity gallium from one country (USGS 2026)"
+    evidence_grade: "C"
+  - rank: 4
+    name: "Optical inter-satellite terminals"
+    archetypes: [C23]
+    evidence_note: "AIA/PwC constrained list"
+    evidence_grade: "R"
+  - rank: 5
+    name: "Tanks, pressure vessels, valves, nozzles"
+    archetypes: [C16, C17, L03]
+    evidence_note: "AIA/PwC constrained list"
+    evidence_grade: "R"
+  - rank: 6
+    name: "Connectors and harnesses"
+    archetypes: [C20]
+    evidence_note: "Production capacity reported extremely low"
+    evidence_grade: "R"
+  - rank: 7
+    name: "Rare-earth magnets"
+    archetypes: [U03]
+    evidence_note: "~270k of 390k t 2025 mine output in one country"
+    evidence_grade: "R"
+  - rank: 8
+    name: "Test and post-processing"
+    archetypes: [A01, A06, U21, U23]
+    evidence_note: "Capacity limited; facilities average ~26 years old"
+    evidence_grade: "R"
+  - rank: 9
+    name: "Power switching"
+    archetypes: [C06]
+    evidence_note: "Switchgear lead 27 months, from 30 weeks in late 2023"
+    evidence_grade: "R"
+  - rank: 10
+    name: "Lower-tier visibility"
+    archetypes: [U01, U19]
+    evidence_note: "NASA OIG: no full visibility into Artemis suppliers; 849k+ US space imports with tier-3+ Chinese exposure"
+    evidence_grade: "C"
