@@ -1,0 +1,1550 @@
+# Handling: Unclassified — public
+# Licence: Open Government Licence – Canada 2.0 (documentation and data; see LICENSING.md).
+# Element Ventures (Canada) Ltd. · © 2026 T. Leroy Smith. Exclusively licensed to Element Ventures (Canada) Ltd.
+# Indicative bands only; not legal, procurement or investment advice.
+#
+# Generic role archetypes for a country-agnostic space supply chain. No company, programme or country is named.
+# Field notes are in README.md. Grades: C confirmed, R reported, I inferred, S speculative (mixed grades such as R/I
+# keep both letters; `evidence_grade` in the example graph takes the weaker one).
+#
+# exposure and suppliers_worldwide_band are indicative bands, not measurements.
+# export_regime names regime categories only (no technical data, no thresholds).
+schema: sovereign-space-supply-chain-archetypes
+version: 0.1.0
+as_of: 2026-11-04
+synthetic: true
+
+groups:
+  U: "Upstream inputs"
+  C: "Components & subsystems"
+  S: "Spacecraft integration"
+  A: "Assembly, integration & test"
+  L: "Launch"
+  TP: "Turbopump sub-chain"
+  O: "In-space"
+  G: "Ground segment"
+  D: "Downstream"
+  E: "Horizontal enablers"
+
+archetypes:
+  - id: U01
+    group: U
+    tier: "4"
+    name: "High-purity gallium refiner"
+    short_name: "Gallium refiner"
+    suppliers_worldwide_band: "≤10; one country holds 99% of primary output"
+    export_regime: "Producer-state licensing; destination bans"
+    exposure: Extreme
+    hs_2022: ["8112.92"]
+    risk_note: "Feeds GaAs/GaN and solar cells; licences revocable"
+    evidence_grade: "C"
+    annex_b_primary: [MFG, POL]
+    annex_b_secondary: [FOCI, ECON, ENV]
+  - id: U02
+    group: U
+    tier: "4"
+    name: "Germanium refiner / substrate maker"
+    short_name: "Germanium substrates"
+    suppliers_worldwide_band: "4–10; one country 77% of refined output"
+    export_regime: "Producer-state licensing"
+    exposure: High
+    hs_2022: ["8112.92", "3818.00"]
+    risk_note: "Substrates for multi-junction solar cells"
+    evidence_grade: "C"
+    annex_b_primary: [MFG, POL]
+    annex_b_secondary: [FOCI, ECON, ENV]
+  - id: U03
+    group: U
+    tier: "4"
+    name: "Rare-earth separator / magnet maker"
+    short_name: "Rare-earth magnets"
+    suppliers_worldwide_band: "One country ~270k of 390k t mine output (2025)"
+    export_regime: "Producer-state controls"
+    exposure: Extreme
+    hs_2022: ["2805.30", "8505.11"]
+    risk_note: "Wheels, actuators, electric propulsion"
+    evidence_grade: "R"
+    annex_b_primary: [MFG, POL]
+    annex_b_secondary: [FOCI, ECON, ENV]
+  - id: U04
+    group: U
+    tier: "4"
+    name: "Indium refiner"
+    short_name: "Indium refiner"
+    suppliers_worldwide_band: "One country ~70% of refinery output"
+    export_regime: "Producer-state restrictions"
+    exposure: High
+    hs_2022: ["8112.92"]
+    risk_note: "Solar cells, IR detectors"
+    evidence_grade: "R"
+    annex_b_primary: [MFG, POL]
+    annex_b_secondary: [FOCI, ECON, ENV]
+  - id: U05
+    group: U
+    tier: "4"
+    name: "Capacitor-grade tantalum supplier"
+    short_name: "Tantalum"
+    suppliers_worldwide_band: "4–10"
+    export_regime: "Conflict-minerals due diligence"
+    exposure: Medium
+    hs_2022: ["8103.20"]
+    risk_note: "Traceability"
+    evidence_grade: "I"
+    annex_b_primary: [MFG, POL]
+    annex_b_secondary: [FOCI, ECON, ENV]
+  - id: U06
+    group: U
+    tier: "4"
+    name: "Helium supplier"
+    short_name: "Helium"
+    suppliers_worldwide_band: "≤10 source countries"
+    export_regime: "None"
+    exposure: Medium
+    hs_2022: ["2804.29"]
+    risk_note: "Pressurant and purge shortages delay campaigns"
+    evidence_grade: "I"
+    annex_b_primary: [MFG, POL]
+    annex_b_secondary: [FOCI, ECON, ENV]
+  - id: U07
+    group: U
+    tier: "4"
+    name: "Xenon / krypton producer"
+    short_name: "Xenon / krypton"
+    suppliers_worldwide_band: "≤10"
+    export_regime: "None"
+    exposure: High
+    hs_2022: ["2804.29"]
+    risk_note: "Electric-propulsion propellant"
+    evidence_grade: "I"
+    annex_b_primary: [MFG, POL]
+    annex_b_secondary: [FOCI, ECON, ENV]
+  - id: U08
+    group: U
+    tier: "4"
+    name: "Ni/Co superalloy vacuum melter"
+    short_name: "Superalloy melter"
+    suppliers_worldwide_band: "4–10"
+    export_regime: "Wassenaar Cat 1C (some)"
+    exposure: Medium
+    hs_2022: ["7502.20", "8105.20"]
+    risk_note: "Turbines and chambers; feeds TP09"
+    evidence_grade: "I"
+    annex_b_primary: [MFG, POL]
+    annex_b_secondary: [FOCI, ECON, ENV]
+  - id: U09
+    group: U
+    tier: "4"
+    name: "Titanium sponge / alloy producer"
+    short_name: "Titanium sponge/alloy"
+    suppliers_worldwide_band: "4–10 non-adversary"
+    export_regime: "Wassenaar Cat 1C (some)"
+    exposure: High
+    hs_2022: ["8108.20"]
+    risk_note: "Tanks, structures, AM powder"
+    evidence_grade: "I"
+    annex_b_primary: [MFG, POL]
+    annex_b_secondary: [FOCI, ECON, ENV]
+  - id: U10
+    group: U
+    tier: "4"
+    name: "Al-Li alloy plate maker"
+    short_name: "Al-Li plate"
+    suppliers_worldwide_band: "≤3"
+    export_regime: "Wassenaar Cat 1C"
+    exposure: Low
+    hs_2022: ["7601.20", "7606.12"]
+    risk_note: "Cryogenic tanks"
+    evidence_grade: "I"
+    annex_b_primary: [MFG, POL]
+    annex_b_secondary: [FOCI, ECON, ENV]
+  - id: U11
+    group: U
+    tier: "4"
+    name: "Carbon-fibre / PAN-precursor maker"
+    short_name: "Carbon fibre / PAN"
+    suppliers_worldwide_band: "4–10 qualified; ≥6-month lead"
+    export_regime: "Wassenaar 1C010; MTCR Item 6"
+    exposure: Medium
+    hs_2022: ["6815.11", "5501.30"]
+    risk_note: "Structures, COPVs, fairings"
+    evidence_grade: "R"
+    annex_b_primary: [MFG, POL]
+    annex_b_secondary: [FOCI, ECON, ENV]
+  - id: U12
+    group: U
+    tier: "4"
+    name: "Space-qualified polyimide film maker"
+    short_name: "Polyimide film"
+    suppliers_worldwide_band: "≤3"
+    export_regime: "None"
+    exposure: Low
+    hs_2022: ["3920.99"]
+    risk_note: "MLI, flex circuits"
+    evidence_grade: "I"
+    annex_b_primary: [MFG, POL]
+    annex_b_secondary: [FOCI, ECON, ENV]
+  - id: U13
+    group: U
+    tier: "4"
+    name: "Beryllium producer"
+    short_name: "Beryllium"
+    suppliers_worldwide_band: "≤3"
+    export_regime: "Wassenaar Cat 1C; NSG"
+    exposure: Low
+    hs_2022: ["8112.12"]
+    risk_note: "Optics, structures"
+    evidence_grade: "I"
+    annex_b_primary: [MFG, POL]
+    annex_b_secondary: [FOCI, ECON, ENV]
+  - id: U14
+    group: U
+    tier: "4"
+    name: "Hydrazine / green-propellant producer"
+    short_name: "Hydrazine / green prop."
+    suppliers_worldwide_band: "≤3"
+    export_regime: "Wassenaar ML8; MTCR Item 4"
+    exposure: Medium
+    hs_2022: ["2825.10"]
+    risk_note: "Spacecraft propulsion"
+    evidence_grade: "I"
+    annex_b_primary: [MFG, TRANS]
+    annex_b_secondary: [ENV, COMP]
+  - id: U15
+    group: U
+    tier: "4"
+    name: "Liquid-oxygen supplier"
+    short_name: "Liquid oxygen"
+    suppliers_worldwide_band: ">30"
+    export_regime: "None"
+    exposure: Low
+    hs_2022: ["2804.40"]
+    risk_note: "Regional logistics"
+    evidence_grade: "I"
+    annex_b_primary: [MFG, TRANS]
+    annex_b_secondary: [ENV, COMP]
+  - id: U16
+    group: U
+    tier: "4"
+    name: "Methane/LNG, RP-1, hydrogen supplier"
+    short_name: "Methane · RP-1 · H2"
+    suppliers_worldwide_band: ">30 LNG; ≤10 RP-1"
+    export_regime: "None"
+    exposure: Low
+    hs_2022: ["2711.11", "2710.19", "2804.10"]
+    risk_note: "Purity specification"
+    evidence_grade: "I"
+    annex_b_primary: [MFG, TRANS]
+    annex_b_secondary: [ENV, COMP]
+  - id: U17
+    group: U
+    tier: "4"
+    name: "High-test peroxide producer"
+    short_name: "High-test peroxide"
+    suppliers_worldwide_band: "≤3"
+    export_regime: "MTCR Item 4"
+    exposure: Medium
+    hs_2022: ["2847.00"]
+    risk_note: "Hybrid oxidiser"
+    evidence_grade: "I"
+    annex_b_primary: [MFG, TRANS]
+    annex_b_secondary: [ENV, COMP]
+  - id: U18
+    group: U
+    tier: "4"
+    name: "Wafer maker (Si, SOI, GaAs, GaN-on-SiC)"
+    short_name: "Wafers"
+    suppliers_worldwide_band: "4–10 per type"
+    export_regime: "EAR Cat 3C"
+    exposure: High
+    hs_2022: ["3818.00"]
+    risk_note: "Feedstock for all EEE"
+    evidence_grade: "I"
+    annex_b_primary: [MFG, TECH]
+    annex_b_secondary: [FOCI]
+  - id: U19
+    group: U
+    tier: "3"
+    name: "Rad-hard-capable foundry"
+    short_name: "Rad-hard foundry"
+    suppliers_worldwide_band: "≤10"
+    export_regime: "EAR 3A001.a.1; trusted foundry"
+    exposure: High
+    hs_2022: "n/a (service)"
+    risk_note: "Largest microelectronics chokepoint"
+    evidence_grade: "C/I"
+    annex_b_primary: [MFG, TECH]
+    annex_b_secondary: [FOCI]
+  - id: U20
+    group: U
+    tier: "3"
+    name: "Hermetic / advanced packaging house"
+    short_name: "Hermetic packaging"
+    suppliers_worldwide_band: "≤10"
+    export_regime: "EAR Cat 3A"
+    exposure: Medium
+    hs_2022: "n/a (service)"
+    risk_note: "Ceramic packages, hybrids"
+    evidence_grade: "I"
+    annex_b_primary: [MFG, TECH]
+    annex_b_secondary: [FOCI]
+  - id: U21
+    group: U
+    tier: "3"
+    name: "EEE screening / radiation lot-acceptance lab"
+    short_name: "EEE screening lab"
+    suppliers_worldwide_band: "11–30"
+    export_regime: "ITAR/EAR technical data"
+    exposure: Low
+    hs_2022: "n/a (service)"
+    risk_note: "Capacity-limited"
+    evidence_grade: "R"
+    annex_b_primary: [MFG, TECH]
+    annex_b_secondary: [FOCI]
+  - id: U22
+    group: U
+    tier: "4"
+    name: "Metal AM powder atomiser"
+    short_name: "AM powder atomiser"
+    suppliers_worldwide_band: "11–30"
+    export_regime: "Wassenaar Cat 1C (some)"
+    exposure: Medium
+    hs_2022: ["7504.00", "8108.20", "7603.10"]
+    risk_note: "Feeds AM chambers and turbopumps"
+    evidence_grade: "I"
+    annex_b_primary: [MFG, FOCI]
+    annex_b_secondary: [QUAL]
+  - id: U23
+    group: U
+    tier: "3"
+    name: "Metal AM build and HIP / post-processing"
+    short_name: "AM build + HIP"
+    suppliers_worldwide_band: ">30 build; ≤10 large HIP"
+    export_regime: "ITAR/EAR on build files"
+    exposure: Low
+    hs_2022: "n/a (service)"
+    risk_note: "Post-processing is a flagged constraint"
+    evidence_grade: "R"
+    annex_b_primary: [MFG, FOCI]
+    annex_b_secondary: [QUAL]
+  - id: C01
+    group: C
+    tier: "2"
+    name: "Rad-hard FPGA supplier"
+    short_name: "Rad-hard FPGA"
+    suppliers_worldwide_band: "≤3"
+    export_regime: "EAR 9A515.e / 3A001.a.1; ITAR XV(e) some"
+    exposure: High
+    hs_2022: ["8542.39"]
+    risk_note: "AIA/PwC constrained category"
+    evidence_grade: "R"
+    annex_b_primary: [MFG, TECH]
+    annex_b_secondary: [FOCI, COMP]
+  - id: C02
+    group: C
+    tier: "2"
+    name: "Rad-hard processor / SoC supplier"
+    short_name: "Rad-hard processor"
+    suppliers_worldwide_band: "≤5"
+    export_regime: "As C01"
+    exposure: High
+    hs_2022: ["8542.31"]
+    risk_note: "US content triggers re-export control"
+    evidence_grade: "I"
+    annex_b_primary: [MFG, TECH]
+    annex_b_secondary: [FOCI, COMP]
+  - id: C03
+    group: C
+    tier: "2"
+    name: "Rad-hard memory supplier"
+    short_name: "Rad-hard memory"
+    suppliers_worldwide_band: "≤5"
+    export_regime: "As C01"
+    exposure: High
+    hs_2022: ["8542.32"]
+    risk_note: "US content triggers re-export control"
+    evidence_grade: "I"
+    annex_b_primary: [MFG, TECH]
+    annex_b_secondary: [FOCI, COMP]
+  - id: C04
+    group: C
+    tier: "2"
+    name: "Space-grade ADC / DAC supplier"
+    short_name: "Space ADC/DAC"
+    suppliers_worldwide_band: "≤5"
+    export_regime: "As C01"
+    exposure: High
+    hs_2022: ["8542.39"]
+    risk_note: "US content triggers re-export control"
+    evidence_grade: "I"
+    annex_b_primary: [MFG, TECH]
+    annex_b_secondary: [FOCI, COMP]
+  - id: C05
+    group: C
+    tier: "2"
+    name: "Digital-payload ASIC designer"
+    short_name: "Payload ASIC"
+    suppliers_worldwide_band: "4–10"
+    export_regime: "EAR 9A515.e; Wassenaar 3A"
+    exposure: High
+    hs_2022: ["8542.39"]
+    risk_note: "Schedule-critical"
+    evidence_grade: "R"
+    annex_b_primary: [MFG, TECH]
+    annex_b_secondary: [FOCI, COMP]
+  - id: C06
+    group: C
+    tier: "2"
+    name: "Power conditioning and switchgear maker"
+    short_name: "Power / switchgear"
+    suppliers_worldwide_band: "11–30; switchgear lead 27 months"
+    export_regime: "EAR 9A515.x"
+    exposure: Medium
+    hs_2022: ["8504.40"]
+    risk_note: "Up from 30 weeks in late 2023"
+    evidence_grade: "R"
+    annex_b_primary: [MFG, QUAL]
+    annex_b_secondary: [PLAN, ECON]
+  - id: C07
+    group: C
+    tier: "2"
+    name: "Space battery cell / pack maker"
+    short_name: "Battery cells/packs"
+    suppliers_worldwide_band: "4–10"
+    export_regime: "EAR 9A515.x"
+    exposure: High
+    hs_2022: ["8507.60"]
+    risk_note: "Cell supply concentrated in Asia"
+    evidence_grade: "I"
+    annex_b_primary: [MFG, QUAL]
+    annex_b_secondary: [PLAN, ECON]
+  - id: C08
+    group: C
+    tier: "2"
+    name: "Multi-junction solar cell maker"
+    short_name: "MJ solar cells"
+    suppliers_worldwide_band: "≤5"
+    export_regime: "EAR 9A515.x; ITAR XV(e)"
+    exposure: High
+    hs_2022: ["8541.42"]
+    risk_note: "Depends on U01, U02, U04"
+    evidence_grade: "I"
+    annex_b_primary: [MFG, QUAL]
+    annex_b_secondary: [PLAN, ECON]
+  - id: C09
+    group: C
+    tier: "2"
+    name: "Solar array / deployment maker"
+    short_name: "Solar arrays"
+    suppliers_worldwide_band: "4–10"
+    export_regime: "EAR 9A515"
+    exposure: Medium
+    hs_2022: ["8541.43"]
+    risk_note: "Lay-down capacity"
+    evidence_grade: "I"
+    annex_b_primary: [MFG, QUAL]
+    annex_b_secondary: [PLAN, ECON]
+  - id: C10
+    group: C
+    tier: "2"
+    name: "Reaction wheel / CMG maker"
+    short_name: "Reaction wheels"
+    suppliers_worldwide_band: "11–30"
+    export_regime: "EAR 9A515.x"
+    exposure: Medium
+    hs_2022: ["8807.90"]
+    risk_note: "Magnet dependency"
+    evidence_grade: "I"
+    annex_b_primary: [MFG, QUAL]
+    annex_b_secondary: [PLAN, ECON]
+  - id: C11
+    group: C
+    tier: "2"
+    name: "Star tracker maker"
+    short_name: "Star trackers"
+    suppliers_worldwide_band: "11–30"
+    export_regime: "EAR 9A515.x"
+    exposure: Low
+    hs_2022: ["9014.20"]
+    risk_note: "Detector supply"
+    evidence_grade: "I"
+    annex_b_primary: [MFG, QUAL]
+    annex_b_secondary: [PLAN, ECON]
+  - id: C12
+    group: C
+    tier: "2"
+    name: "Navigation-grade gyro / IMU maker"
+    short_name: "Gyro / IMU"
+    suppliers_worldwide_band: "4–10"
+    export_regime: "EAR Cat 7A; ITAR XV(e)"
+    exposure: Low
+    hs_2022: ["9014.20"]
+    risk_note: "MTCR-relevant grades"
+    evidence_grade: "I"
+    annex_b_primary: [MFG, QUAL]
+    annex_b_secondary: [PLAN, ECON]
+  - id: C13
+    group: C
+    tier: "2"
+    name: "Magnetorquer / magnetometer maker"
+    short_name: "Magnetorquers"
+    suppliers_worldwide_band: ">30"
+    export_regime: "EAR 9A515.x"
+    exposure: Low
+    hs_2022: ["8807.90"]
+    risk_note: "Commodity at small-sat scale"
+    evidence_grade: "I"
+    annex_b_primary: [MFG, QUAL]
+    annex_b_secondary: [PLAN, ECON]
+  - id: C14
+    group: C
+    tier: "2"
+    name: "Chemical thruster maker"
+    short_name: "Chemical thrusters"
+    suppliers_worldwide_band: "4–10"
+    export_regime: "ITAR XV(e) / EAR 9A515"
+    exposure: Low
+    hs_2022: ["8412.10"]
+    risk_note: "Propellant dependency"
+    evidence_grade: "I"
+    annex_b_primary: [MFG, QUAL]
+    annex_b_secondary: [PLAN, ECON]
+  - id: C15
+    group: C
+    tier: "2"
+    name: "Electric thruster / PPU maker"
+    short_name: "Electric thrusters"
+    suppliers_worldwide_band: "11–30"
+    export_regime: "EAR 9A515.x"
+    exposure: Medium
+    hs_2022: ["8412.10"]
+    risk_note: "Xenon/krypton dependency"
+    evidence_grade: "I"
+    annex_b_primary: [MFG, QUAL]
+    annex_b_secondary: [PLAN, ECON]
+  - id: C16
+    group: C
+    tier: "2"
+    name: "Propellant tank / COPV maker"
+    short_name: "Tanks / COPVs"
+    suppliers_worldwide_band: "≤10"
+    export_regime: "EAR 9A515; MTCR some"
+    exposure: Low
+    hs_2022: ["7311.00", "7613.00"]
+    risk_note: "AIA/PwC constrained category"
+    evidence_grade: "R"
+    annex_b_primary: [MFG, QUAL]
+    annex_b_secondary: [PLAN, ECON]
+  - id: C17
+    group: C
+    tier: "2"
+    name: "Propulsion valve / regulator maker"
+    short_name: "Valves / regulators"
+    suppliers_worldwide_band: "≤10"
+    export_regime: "ITAR/EAR 9A515; MTCR"
+    exposure: Low
+    hs_2022: ["8481.80"]
+    risk_note: "AIA/PwC constrained category"
+    evidence_grade: "R"
+    annex_b_primary: [MFG, QUAL]
+    annex_b_secondary: [PLAN, ECON]
+  - id: C18
+    group: C
+    tier: "2"
+    name: "Thermal control (heat pipes, MLI)"
+    short_name: "Thermal control"
+    suppliers_worldwide_band: "11–30"
+    export_regime: "EAR 9A515"
+    exposure: Low
+    hs_2022: ["8419.50", "3920.99"]
+    risk_note: "Polyimide dependency"
+    evidence_grade: "I"
+    annex_b_primary: [MFG, QUAL]
+    annex_b_secondary: [PLAN, ECON]
+  - id: C19
+    group: C
+    tier: "2"
+    name: "Structures / composite panel maker"
+    short_name: "Structures"
+    suppliers_worldwide_band: ">30"
+    export_regime: "EAR 9A515"
+    exposure: Low
+    hs_2022: ["8807.90"]
+    risk_note: "Carbon fibre lead ≥6 months"
+    evidence_grade: "R"
+    annex_b_primary: [MFG, QUAL]
+    annex_b_secondary: [PLAN, ECON]
+  - id: C20
+    group: C
+    tier: "2"
+    name: "Harness and connector maker"
+    short_name: "Harness / connectors"
+    suppliers_worldwide_band: "≤10 qualified lines"
+    export_regime: "EAR 9A515.x"
+    exposure: Medium
+    hs_2022: ["8544.42", "8536.69"]
+    risk_note: "Connector capacity reported extremely low"
+    evidence_grade: "R"
+    annex_b_primary: [MFG, QUAL]
+    annex_b_secondary: [PLAN, ECON]
+  - id: C21
+    group: C
+    tier: "2"
+    name: "RF payload electronics maker"
+    short_name: "RF payload electronics"
+    suppliers_worldwide_band: "11–30"
+    export_regime: "EAR 9A515; ITAR XV(e)"
+    exposure: Medium
+    hs_2022: ["8540.79", "8543.70"]
+    risk_note: "GaN/GaAs dependency"
+    evidence_grade: "I"
+    annex_b_primary: [TECH, QUAL]
+    annex_b_secondary: [COMP]
+  - id: C22
+    group: C
+    tier: "2"
+    name: "Beamforming / phased-array antenna maker"
+    short_name: "Beamforming antenna"
+    suppliers_worldwide_band: "4–10"
+    export_regime: "EAR 9A515; Cat 5A"
+    exposure: Medium
+    hs_2022: ["8529.10"]
+    risk_note: "ASIC dependency"
+    evidence_grade: "I"
+    annex_b_primary: [TECH, QUAL]
+    annex_b_secondary: [COMP]
+  - id: C23
+    group: C
+    tier: "2"
+    name: "Optical inter-satellite terminal maker"
+    short_name: "Optical terminals"
+    suppliers_worldwide_band: "≤10 at volume"
+    export_regime: "EAR 9A515; ITAR some"
+    exposure: Medium
+    hs_2022: ["8517.62"]
+    risk_note: "AIA/PwC constrained category"
+    evidence_grade: "R"
+    annex_b_primary: [TECH, QUAL]
+    annex_b_secondary: [COMP]
+  - id: C24
+    group: C
+    tier: "2"
+    name: "On-board computer maker"
+    short_name: "On-board computer"
+    suppliers_worldwide_band: "11–30"
+    export_regime: "EAR 9A515"
+    exposure: High
+    hs_2022: ["8471.50"]
+    risk_note: "Inherits C01–C03"
+    evidence_grade: "I"
+    annex_b_primary: [TECH, QUAL]
+    annex_b_secondary: [COMP]
+  - id: C25
+    group: C
+    tier: "2"
+    name: "Spaceborne GNSS receiver maker"
+    short_name: "GNSS receiver"
+    suppliers_worldwide_band: "4–10"
+    export_regime: "EAR 7A005/7A105"
+    exposure: Low
+    hs_2022: ["8526.91"]
+    risk_note: "Allied-signal dependency"
+    evidence_grade: "I"
+    annex_b_primary: [TECH, QUAL]
+    annex_b_secondary: [COMP]
+  - id: C26
+    group: C
+    tier: "2"
+    name: "Optical / IR payload and detector maker"
+    short_name: "Optical/IR payload"
+    suppliers_worldwide_band: "11–30"
+    export_regime: "EAR Cat 6A; ITAR XV"
+    exposure: Medium
+    hs_2022: ["8525.89", "8541.49"]
+    risk_note: "Detector materials"
+    evidence_grade: "I"
+    annex_b_primary: [TECH, QUAL]
+    annex_b_secondary: [COMP]
+  - id: C27
+    group: C
+    tier: "2"
+    name: "SAR payload maker"
+    short_name: "SAR payload"
+    suppliers_worldwide_band: "≤10"
+    export_regime: "ITAR XV / EAR 9A515"
+    exposure: Low
+    hs_2022: ["8526.10"]
+    risk_note: "National-security sensitivity"
+    evidence_grade: "I"
+    annex_b_primary: [TECH, QUAL]
+    annex_b_secondary: [COMP]
+  - id: C28
+    group: C
+    tier: "2"
+    name: "Flight software / RTOS supplier"
+    short_name: "Flight software"
+    suppliers_worldwide_band: ">30"
+    export_regime: "EAR 9D515; 5D"
+    exposure: Low
+    hs_2022: "n/a (service)"
+    risk_note: "Library provenance"
+    evidence_grade: "I"
+    annex_b_primary: [TECH]
+    annex_b_secondary: [HUM, FOCI]
+  - id: C29
+    group: C
+    tier: "2"
+    name: "Actuator / mechanism maker"
+    short_name: "Actuators"
+    suppliers_worldwide_band: "11–30"
+    export_regime: "EAR 9A515"
+    exposure: Medium
+    hs_2022: ["8501.10"]
+    risk_note: "AIA/PwC constrained category"
+    evidence_grade: "R"
+    annex_b_primary: [MFG, QUAL]
+    annex_b_secondary: [PLAN, ECON]
+  - id: S01
+    group: S
+    tier: "1"
+    name: "Large / GEO-MEO bus prime"
+    short_name: "Large bus prime"
+    suppliers_worldwide_band: "≤15"
+    export_regime: "ITAR XV / EAR 9A515.a"
+    exposure: Low
+    hs_2022: ["8802.60"]
+    risk_note: "Absorbs tier-2 risk"
+    evidence_grade: "I"
+    annex_b_primary: [MFG, PLAN]
+    annex_b_secondary: [FIN, FOCI]
+  - id: S02
+    group: S
+    tier: "1"
+    name: "Small-satellite bus maker"
+    short_name: "Smallsat bus"
+    suppliers_worldwide_band: ">30"
+    export_regime: "EAR 9A515.a"
+    exposure: Low
+    hs_2022: ["8802.60"]
+    risk_note: "EEE-limited"
+    evidence_grade: "I"
+    annex_b_primary: [MFG, PLAN]
+    annex_b_secondary: [FIN, FOCI]
+  - id: S03
+    group: S
+    tier: "1"
+    name: "Payload integrator"
+    short_name: "Payload integrator"
+    suppliers_worldwide_band: "11–30"
+    export_regime: "ITAR XV / EAR 9A515"
+    exposure: Low
+    hs_2022: ["8802.60"]
+    risk_note: "Holds payload IP"
+    evidence_grade: "I"
+    annex_b_primary: [MFG, PLAN]
+    annex_b_secondary: [FIN, FOCI]
+  - id: S04
+    group: S
+    tier: "1"
+    name: "Constellation-scale production line"
+    short_name: "Constellation line"
+    suppliers_worldwide_band: "≤10"
+    export_regime: "EAR 9A515"
+    exposure: Medium
+    hs_2022: ["8802.60"]
+    risk_note: "Rate is the constraint"
+    evidence_grade: "I"
+    annex_b_primary: [MFG, PLAN]
+    annex_b_secondary: [FIN, FOCI]
+  - id: A01
+    group: A
+    tier: "1"
+    name: "Thermal-vacuum facility"
+    short_name: "Thermal vacuum"
+    suppliers_worldwide_band: "11–30 large"
+    export_regime: "Facility security"
+    exposure: Low
+    hs_2022: "n/a (service)"
+    risk_note: "Few spacecraft-scale chambers per nation"
+    evidence_grade: "I"
+    annex_b_primary: [INFRA, PLAN]
+    annex_b_secondary: [HUM]
+  - id: A02
+    group: A
+    tier: "1"
+    name: "Vibration / acoustic facility"
+    short_name: "Vibration / acoustic"
+    suppliers_worldwide_band: "11–30"
+    export_regime: "Facility security"
+    exposure: Low
+    hs_2022: "n/a (service)"
+    risk_note: "Few spacecraft-scale facilities per nation"
+    evidence_grade: "I"
+    annex_b_primary: [INFRA, PLAN]
+    annex_b_secondary: [HUM]
+  - id: A03
+    group: A
+    tier: "1"
+    name: "EMC facility"
+    short_name: "EMC"
+    suppliers_worldwide_band: ">30"
+    export_regime: "Facility security"
+    exposure: Low
+    hs_2022: "n/a (service)"
+    risk_note: "Few spacecraft-scale facilities per nation"
+    evidence_grade: "I"
+    annex_b_primary: [INFRA, PLAN]
+    annex_b_secondary: [HUM]
+  - id: A04
+    group: A
+    tier: "1"
+    name: "Antenna range"
+    short_name: "Antenna range"
+    suppliers_worldwide_band: "11–30"
+    export_regime: "Facility security"
+    exposure: Low
+    hs_2022: "n/a (service)"
+    risk_note: "Large ranges scarce"
+    evidence_grade: "I"
+    annex_b_primary: [INFRA, PLAN]
+    annex_b_secondary: [HUM]
+  - id: A05
+    group: A
+    tier: "1"
+    name: "Radiation test facility"
+    short_name: "Radiation test"
+    suppliers_worldwide_band: "≤10 accessible"
+    export_regime: "Beam-time allocation"
+    exposure: Medium
+    hs_2022: "n/a (service)"
+    risk_note: "Beam time rationed"
+    evidence_grade: "I"
+    annex_b_primary: [INFRA, PLAN]
+    annex_b_secondary: [HUM]
+  - id: A06
+    group: A
+    tier: "1"
+    name: "Propulsion test stand (hot-fire, cold-flow, water-flow)"
+    short_name: "Propulsion test stand"
+    suppliers_worldwide_band: "<10 countries with >1 MN static"
+    export_regime: "MTCR technical data"
+    exposure: Medium
+    hs_2022: "n/a (service)"
+    risk_note: "Gates engine qualification"
+    evidence_grade: "R"
+    annex_b_primary: [INFRA, PLAN]
+    annex_b_secondary: [HUM]
+  - id: L01
+    group: L
+    tier: "1"
+    name: "Light / responsive launch prime"
+    short_name: "Light launch prime"
+    suppliers_worldwide_band: "11–30 developers"
+    export_regime: "ITAR IV / EAR 9A004, 9A604; MTCR"
+    exposure: High
+    hs_2022: ["8802.60"]
+    risk_note: "Vehicle IP determines sovereignty"
+    evidence_grade: "I"
+    annex_b_primary: [MFG, QUAL]
+    annex_b_secondary: [COMP, HUM, FIN]
+  - id: L02
+    group: L
+    tier: "1"
+    name: "Medium / heavy launch prime"
+    short_name: "Medium/heavy launch"
+    suppliers_worldwide_band: "≤10 operational"
+    export_regime: "As L01"
+    exposure: High
+    hs_2022: ["8802.60"]
+    risk_note: "One allied provider dominates"
+    evidence_grade: "I"
+    annex_b_primary: [MFG, QUAL]
+    annex_b_secondary: [COMP, HUM, FIN]
+  - id: L03
+    group: L
+    tier: "2"
+    name: "Liquid engine developer"
+    short_name: "Liquid engine"
+    suppliers_worldwide_band: "≤15"
+    export_regime: "ITAR IV(h) / EAR 9A604; MTCR Item 2"
+    exposure: High
+    hs_2022: ["8412.10"]
+    risk_note: "Engine IP is the asset"
+    evidence_grade: "I"
+    annex_b_primary: [MFG, QUAL]
+    annex_b_secondary: [COMP, HUM, FIN]
+  - id: L04
+    group: L
+    tier: "2"
+    name: "Turbopump / turbomachinery developer"
+    short_name: "Turbopump developer"
+    suppliers_worldwide_band: "≤10 independent"
+    export_regime: "EAR 9A106.d; MTCR 3.A.5; ITAR IV(h)"
+    exposure: Extreme
+    hs_2022: ["8413.70", "8412.90"]
+    risk_note: "Effectively not importable"
+    evidence_grade: "I"
+    annex_b_primary: [MFG, QUAL]
+    annex_b_secondary: [COMP, HUM, FIN]
+  - id: L05
+    group: L
+    tier: "2"
+    name: "Pressure-fed / hybrid propulsion developer"
+    short_name: "Pressure-fed / hybrid"
+    suppliers_worldwide_band: "11–30"
+    export_regime: "MTCR Item 2/3"
+    exposure: Medium
+    hs_2022: ["8412.10"]
+    risk_note: "Lower complexity, limited payload"
+    evidence_grade: "I"
+    annex_b_primary: [MFG, QUAL]
+    annex_b_secondary: [COMP, HUM, FIN]
+  - id: L06
+    group: L
+    tier: "2"
+    name: "Solid rocket motor maker"
+    short_name: "Solid motors"
+    suppliers_worldwide_band: "≤10"
+    export_regime: "ITAR IV / MTCR"
+    exposure: High
+    hs_2022: ["8412.10", "3601.00"]
+    risk_note: "Energetics"
+    evidence_grade: "I"
+    annex_b_primary: [MFG, QUAL]
+    annex_b_secondary: [COMP, HUM, FIN]
+  - id: L07
+    group: L
+    tier: "2"
+    name: "Launch avionics / flight termination"
+    short_name: "Launch avionics"
+    suppliers_worldwide_band: "11–30"
+    export_regime: "ITAR IV / EAR 9A604"
+    exposure: High
+    hs_2022: ["8526.92"]
+    risk_note: "Inherits C01–C03"
+    evidence_grade: "I"
+    annex_b_primary: [MFG, QUAL]
+    annex_b_secondary: [COMP, HUM, FIN]
+  - id: L08
+    group: L
+    tier: "2"
+    name: "Stage structure / cryogenic tank maker"
+    short_name: "Stages / cryo tanks"
+    suppliers_worldwide_band: "11–30"
+    export_regime: "EAR 9A604; MTCR"
+    exposure: Medium
+    hs_2022: ["7311.00"]
+    risk_note: "Al-Li and carbon fibre"
+    evidence_grade: "I"
+    annex_b_primary: [MFG, QUAL]
+    annex_b_secondary: [COMP, HUM, FIN]
+  - id: L09
+    group: L
+    tier: "2"
+    name: "Fairing / separation maker"
+    short_name: "Fairing / separation"
+    suppliers_worldwide_band: "≤10"
+    export_regime: "EAR 9A604"
+    exposure: Medium
+    hs_2022: ["8807.90"]
+    risk_note: "Pyrotechnics"
+    evidence_grade: "I"
+    annex_b_primary: [MFG, QUAL]
+    annex_b_secondary: [COMP, HUM, FIN]
+  - id: L10
+    group: L
+    tier: "2"
+    name: "Ground support equipment"
+    short_name: "Ground support equip."
+    suppliers_worldwide_band: ">30"
+    export_regime: "Limited"
+    exposure: Low
+    hs_2022: ["8479.89"]
+    risk_note: "Site-specific"
+    evidence_grade: "I"
+    annex_b_primary: [INFRA, ENV]
+    annex_b_secondary: [TRANS]
+  - id: L11
+    group: L
+    tier: "1"
+    name: "Spaceport operator"
+    short_name: "Spaceport"
+    suppliers_worldwide_band: "National"
+    export_regime: "Technology safeguards agreements"
+    exposure: Medium
+    hs_2022: "n/a (service)"
+    risk_note: "Tenant vehicle nationality"
+    evidence_grade: "I"
+    annex_b_primary: [INFRA, ENV]
+    annex_b_secondary: [TRANS]
+  - id: L12
+    group: L
+    tier: "1"
+    name: "Range and range safety"
+    short_name: "Range / safety"
+    suppliers_worldwide_band: "National"
+    export_regime: "EAR Cat 5A"
+    exposure: Medium
+    hs_2022: "n/a (service)"
+    risk_note: "Often borrowed from defence"
+    evidence_grade: "I"
+    annex_b_primary: [INFRA, ENV]
+    annex_b_secondary: [TRANS]
+  - id: L13
+    group: L
+    tier: "E"
+    name: "Launch licensing authority"
+    short_name: "Launch licensing"
+    suppliers_worldwide_band: "National"
+    export_regime: "Statute"
+    exposure: Low
+    hs_2022: "n/a (service)"
+    risk_note: "Absence delays launches"
+    evidence_grade: "I"
+    annex_b_primary: [POL]
+    annex_b_secondary: [COMP]
+  - id: L14
+    group: L
+    tier: "E"
+    name: "Launch / third-party liability insurance"
+    short_name: "Launch insurance"
+    suppliers_worldwide_band: "≤15 lead underwriters"
+    export_regime: "n/a"
+    exposure: Medium
+    hs_2022: "n/a (service)"
+    risk_note: "Capacity shocks"
+    evidence_grade: "I"
+    annex_b_primary: [FIN]
+    annex_b_secondary: [ECON]
+  - id: L15
+    group: L
+    tier: "1"
+    name: "Responsive / tactical launch"
+    short_name: "Responsive launch"
+    suppliers_worldwide_band: "≤10"
+    export_regime: "As L01"
+    exposure: High
+    hs_2022: ["8802.60"]
+    risk_note: "Reconstitution requirement"
+    evidence_grade: "I"
+    annex_b_primary: [PLAN, INFRA]
+    annex_b_secondary: [POL]
+  - id: TP01
+    group: TP
+    tier: "3"
+    name: "Inducer maker"
+    short_name: "Inducer"
+    suppliers_worldwide_band: "≤10"
+    export_regime: "MTCR 3.A.5"
+    exposure: High
+    hs_2022: ["8413.91"]
+    risk_note: "Precision machining"
+    evidence_grade: "I"
+    annex_b_primary: [MFG, QUAL]
+    annex_b_secondary: [COMP, HUM, FIN]
+  - id: TP02
+    group: TP
+    tier: "3"
+    name: "Impeller maker"
+    short_name: "Impeller"
+    suppliers_worldwide_band: "≤10"
+    export_regime: "MTCR 3.A.5"
+    exposure: High
+    hs_2022: ["8413.91"]
+    risk_note: "Five-axis machining or AM"
+    evidence_grade: "I"
+    annex_b_primary: [MFG, QUAL]
+    annex_b_secondary: [COMP, HUM, FIN]
+  - id: TP03
+    group: TP
+    tier: "3"
+    name: "Turbine maker"
+    short_name: "Turbine"
+    suppliers_worldwide_band: "≤10"
+    export_regime: "MTCR; Wassenaar 9E"
+    exposure: High
+    hs_2022: ["8412.90"]
+    risk_note: "Superalloy dependency"
+    evidence_grade: "I"
+    annex_b_primary: [MFG, QUAL]
+    annex_b_secondary: [COMP, HUM, FIN]
+  - id: TP04
+    group: TP
+    tier: "3"
+    name: "Cryogenic bearing maker"
+    short_name: "Cryogenic bearings"
+    suppliers_worldwide_band: "≤5"
+    export_regime: "EAR 2A001 some; MTCR"
+    exposure: Extreme
+    hs_2022: ["8482.10"]
+    risk_note: "Rarest sub-tier"
+    evidence_grade: "I"
+    annex_b_primary: [MFG, QUAL]
+    annex_b_secondary: [COMP, HUM, FIN]
+  - id: TP05
+    group: TP
+    tier: "3"
+    name: "Dynamic seal maker"
+    short_name: "Dynamic seals"
+    suppliers_worldwide_band: "≤5"
+    export_regime: "MTCR"
+    exposure: Extreme
+    hs_2022: ["8484.20"]
+    risk_note: "As rare as bearings"
+    evidence_grade: "I"
+    annex_b_primary: [MFG, QUAL]
+    annex_b_secondary: [COMP, HUM, FIN]
+  - id: TP06
+    group: TP
+    tier: "3"
+    name: "Housing / volute maker"
+    short_name: "Housing / volute"
+    suppliers_worldwide_band: "≤10"
+    export_regime: "MTCR"
+    exposure: High
+    hs_2022: ["8413.91"]
+    risk_note: "AM dependency"
+    evidence_grade: "I"
+    annex_b_primary: [MFG, QUAL]
+    annex_b_secondary: [COMP, HUM, FIN]
+  - id: TP07
+    group: TP
+    tier: "3"
+    name: "Gas generator / preburner developer"
+    short_name: "Gas generator"
+    suppliers_worldwide_band: "≤10"
+    export_regime: "MTCR 3.A.5"
+    exposure: High
+    hs_2022: ["8412.90"]
+    risk_note: "First hot-fire gate"
+    evidence_grade: "I"
+    annex_b_primary: [MFG, QUAL]
+    annex_b_secondary: [COMP, HUM, FIN]
+  - id: TP08
+    group: TP
+    tier: "3"
+    name: "Cryogenic valve maker"
+    short_name: "Cryogenic valves"
+    suppliers_worldwide_band: "≤10"
+    export_regime: "MTCR; EAR 9A106"
+    exposure: High
+    hs_2022: ["8481.80"]
+    risk_note: "Shares C17 capacity"
+    evidence_grade: "I"
+    annex_b_primary: [MFG, QUAL]
+    annex_b_secondary: [COMP, HUM, FIN]
+  - id: TP09
+    group: TP
+    tier: "4"
+    name: "Superalloy and AM inputs"
+    short_name: "Superalloy + AM inputs"
+    suppliers_worldwide_band: "Links U08, U22, U23"
+    export_regime: "Wassenaar Cat 1C"
+    exposure: Medium
+    hs_2022: ["7502.20", "8108.20"]
+    risk_note: "AM-provider ownership"
+    evidence_grade: "I"
+    annex_b_primary: [MFG, FOCI]
+    annex_b_secondary: [QUAL]
+  - id: TP10
+    group: TP
+    tier: "1"
+    name: "Turbomachinery test"
+    short_name: "Turbomachinery test"
+    suppliers_worldwide_band: "≤10"
+    export_regime: "MTCR technical data"
+    exposure: High
+    hs_2022: "n/a (service)"
+    risk_note: "Links A06"
+    evidence_grade: "I"
+    annex_b_primary: [INFRA, PLAN]
+    annex_b_secondary: [HUM]
+  - id: TP11
+    group: TP
+    tier: "E"
+    name: "Design tools and rotordynamics talent"
+    short_name: "Rotordynamics talent"
+    suppliers_worldwide_band: "n/a"
+    export_regime: "ITAR/EAR deemed export"
+    exposure: High
+    hs_2022: "n/a (service)"
+    risk_note: "Talent trained abroad"
+    evidence_grade: "I"
+    annex_b_primary: [HUM]
+    annex_b_secondary: [COMP]
+  - id: O01
+    group: O
+    tier: "1"
+    name: "Orbital transfer vehicle operator"
+    short_name: "Orbital transfer"
+    suppliers_worldwide_band: "4–10"
+    export_regime: "ITAR XV / EAR 9A515"
+    exposure: Low
+    hs_2022: ["8802.60"]
+    risk_note: "Emerging"
+    evidence_grade: "I"
+    annex_b_primary: [TECH, POL]
+    annex_b_secondary: [ENV]
+  - id: O02
+    group: O
+    tier: "1"
+    name: "In-orbit servicing / robotics"
+    short_name: "In-orbit servicing"
+    suppliers_worldwide_band: "≤10"
+    export_regime: "ITAR XV / EAR 9A515"
+    exposure: Low
+    hs_2022: ["8479.50"]
+    risk_note: "National niche"
+    evidence_grade: "I"
+    annex_b_primary: [TECH, POL]
+    annex_b_secondary: [ENV]
+  - id: O03
+    group: O
+    tier: "1"
+    name: "Debris removal / end-of-life"
+    short_name: "Debris removal"
+    suppliers_worldwide_band: "≤10"
+    export_regime: "ITAR XV / EAR 9A515"
+    exposure: Low
+    hs_2022: ["8802.60"]
+    risk_note: "Regulation-driven"
+    evidence_grade: "I"
+    annex_b_primary: [TECH, POL]
+    annex_b_secondary: [ENV]
+  - id: G01
+    group: G
+    tier: "1"
+    name: "Gateway / landing station; Ka-band gateway antenna maker"
+    short_name: "Gateways"
+    suppliers_worldwide_band: "11–30"
+    export_regime: "EAR Cat 5A"
+    exposure: Medium
+    hs_2022: ["8529.10"]
+    risk_note: "Host-nation jurisdiction"
+    evidence_grade: "I"
+    annex_b_primary: [INFRA, FOCI]
+    annex_b_secondary: [TECH]
+  - id: G02
+    group: G
+    tier: "1"
+    name: "TT&C network / ground-station operator"
+    short_name: "TT&C network"
+    suppliers_worldwide_band: "11–30"
+    export_regime: "EAR 5A; national licensing"
+    exposure: Medium
+    hs_2022: ["8525.60"]
+    risk_note: "Foreign-operated stations on national soil"
+    evidence_grade: "I"
+    annex_b_primary: [INFRA, FOCI]
+    annex_b_secondary: [TECH]
+  - id: G03
+    group: G
+    tier: "1"
+    name: "Mission / network operations software"
+    short_name: "Ops software"
+    suppliers_worldwide_band: ">30"
+    export_regime: "EAR 5D; 9D515"
+    exposure: Medium
+    hs_2022: "n/a (service)"
+    risk_note: "Update and support jurisdiction"
+    evidence_grade: "I"
+    annex_b_primary: [TECH]
+    annex_b_secondary: [FOCI, MFG]
+  - id: G04
+    group: G
+    tier: "1"
+    name: "Ground-segment cyber provider"
+    short_name: "Ground cyber"
+    suppliers_worldwide_band: ">30"
+    export_regime: "EAR Cat 5 Part 2"
+    exposure: Medium
+    hs_2022: "n/a (service)"
+    risk_note: "Vendor network access"
+    evidence_grade: "I"
+    annex_b_primary: [TECH]
+    annex_b_secondary: [FOCI, MFG]
+  - id: G05
+    group: G
+    tier: "1"
+    name: "User terminal maker"
+    short_name: "User terminals"
+    suppliers_worldwide_band: "11–30"
+    export_regime: "EAR Cat 5A"
+    exposure: High
+    hs_2022: ["8517.62"]
+    risk_note: "Volume made in Asia"
+    evidence_grade: "I"
+    annex_b_primary: [TECH]
+    annex_b_secondary: [FOCI, MFG]
+  - id: G06
+    group: G
+    tier: "1"
+    name: "Timing / frequency reference"
+    short_name: "Timing reference"
+    suppliers_worldwide_band: "≤10"
+    export_regime: "EAR 3A002"
+    exposure: Medium
+    hs_2022: ["8543.20"]
+    risk_note: "GNSS-independent holdover"
+    evidence_grade: "I"
+    annex_b_primary: [TECH]
+    annex_b_secondary: [FOCI, MFG]
+  - id: D01
+    group: D
+    tier: "1"
+    name: "Satcom service provider"
+    short_name: "Satcom services"
+    suppliers_worldwide_band: ">30"
+    export_regime: "Licensing"
+    exposure: Medium
+    hs_2022: "n/a (service)"
+    risk_note: "Landing rights abroad"
+    evidence_grade: "I"
+    annex_b_primary: [ECON]
+    annex_b_secondary: [FOCI]
+  - id: D02
+    group: D
+    tier: "1"
+    name: "EO data and analytics"
+    short_name: "EO data"
+    suppliers_worldwide_band: ">30"
+    export_regime: "Remote-sensing licensing"
+    exposure: Medium
+    hs_2022: "n/a (service)"
+    risk_note: "Tasking priority under foreign law"
+    evidence_grade: "I"
+    annex_b_primary: [TECH]
+    annex_b_secondary: [POL]
+  - id: D03
+    group: D
+    tier: "1"
+    name: "PNT service"
+    short_name: "PNT service"
+    suppliers_worldwide_band: "4 global constellations"
+    export_regime: "Signal governance"
+    exposure: High
+    hs_2022: "n/a (service)"
+    risk_note: "Allied-signal dependence"
+    evidence_grade: "I"
+    annex_b_primary: [POL]
+    annex_b_secondary: [INFRA]
+  - id: D04
+    group: D
+    tier: "1"
+    name: "Space domain awareness"
+    short_name: "Space domain awareness"
+    suppliers_worldwide_band: "≤15"
+    export_regime: "ITAR XV / EAR 9A515"
+    exposure: Medium
+    hs_2022: "n/a (service)"
+    risk_note: "Data-sharing agreements"
+    evidence_grade: "I"
+    annex_b_primary: [TECH]
+    annex_b_secondary: [FOCI]
+  - id: D05
+    group: D
+    tier: "1"
+    name: "Space weather service"
+    short_name: "Space weather"
+    suppliers_worldwide_band: "≤10"
+    export_regime: "None"
+    exposure: Low
+    hs_2022: "n/a (service)"
+    risk_note: "Foreign observatories"
+    evidence_grade: "I"
+    annex_b_primary: [PLAN]
+    annex_b_secondary: [INFRA]
+  - id: D06
+    group: D
+    tier: "1"
+    name: "Data platform / cloud host"
+    short_name: "Cloud / data host"
+    suppliers_worldwide_band: "≤5 hyperscale"
+    export_regime: "Home-state access laws (e.g. US CLOUD Act)"
+    exposure: High
+    hs_2022: "n/a (service)"
+    risk_note: "Residency does not equal control"
+    evidence_grade: "I"
+    annex_b_primary: [FOCI, TECH]
+    annex_b_secondary: [COMP]
+  - id: D07
+    group: D
+    tier: "1"
+    name: "End users (defence, government, commercial)"
+    short_name: "End users"
+    suppliers_worldwide_band: "n/a"
+    export_regime: "n/a"
+    exposure: n/a
+    hs_2022: "n/a (service)"
+    risk_note: "Demand sets scale"
+    evidence_grade: "I"
+    annex_b_primary: [PLAN]
+    annex_b_secondary: [ECON]
+  - id: E01
+    group: E
+    tier: "E"
+    name: "Finance and capital"
+    short_name: "Finance & capital"
+    suppliers_worldwide_band: "n/a"
+    export_regime: "Foreign-investment rules"
+    exposure: Medium
+    hs_2022: "n/a (service)"
+    risk_note: "Foreign lead investors can shape control"
+    evidence_grade: "I"
+    annex_b_primary: [FIN]
+    annex_b_secondary: [ECON]
+  - id: E02
+    group: E
+    tier: "E"
+    name: "Export controls / controlled goods"
+    short_name: "Export controls"
+    suppliers_worldwide_band: "n/a"
+    export_regime: "National lists plus ITAR/EAR re-export"
+    exposure: High
+    hs_2022: "n/a (service)"
+    risk_note: "Re-export rights override ownership"
+    evidence_grade: "I"
+    annex_b_primary: [POL, COMP]
+    annex_b_secondary: []
+  - id: E03
+    group: E
+    tier: "E"
+    name: "Cyber-certification regime"
+    short_name: "Cyber certification"
+    suppliers_worldwide_band: "n/a"
+    export_regime: "National standard"
+    exposure: Medium
+    hs_2022: "n/a (service)"
+    risk_note: "Gates defence contracts"
+    evidence_grade: "I"
+    annex_b_primary: [TECH]
+    annex_b_secondary: [COMP]
+  - id: E04
+    group: E
+    tier: "E"
+    name: "Industrial-benefits / offset policy"
+    short_name: "Industrial benefits"
+    suppliers_worldwide_band: "n/a"
+    export_regime: "National policy"
+    exposure: Low
+    hs_2022: "n/a (service)"
+    risk_note: "Domestic-content lever"
+    evidence_grade: "I"
+    annex_b_primary: [ECON]
+    annex_b_secondary: [POL]
+  - id: E05
+    group: E
+    tier: "E"
+    name: "Spectrum and orbital filings"
+    short_name: "Spectrum & filings"
+    suppliers_worldwide_band: "n/a"
+    export_regime: "ITU / national"
+    exposure: Medium
+    hs_2022: "n/a (service)"
+    risk_note: "Filing priority is a national asset"
+    evidence_grade: "I"
+    annex_b_primary: [POL, COMP]
+    annex_b_secondary: []
+  - id: E06
+    group: E
+    tier: "E"
+    name: "On-orbit and third-party insurance"
+    short_name: "Insurance"
+    suppliers_worldwide_band: "n/a"
+    export_regime: "Market"
+    exposure: Medium
+    hs_2022: "n/a (service)"
+    risk_note: "Concentrated capacity"
+    evidence_grade: "I"
+    annex_b_primary: [FIN]
+    annex_b_secondary: [ECON]
+  - id: E07
+    group: E
+    tier: "E"
+    name: "Workforce and security clearances"
+    short_name: "Workforce & clearances"
+    suppliers_worldwide_band: "n/a"
+    export_regime: "Security policy"
+    exposure: Medium
+    hs_2022: "n/a (service)"
+    risk_note: "Clearance throughput"
+    evidence_grade: "I"
+    annex_b_primary: [HUM]
+    annex_b_secondary: [PLAN, FOCI]
+  - id: E08
+    group: E
+    tier: "E"
+    name: "Education and research"
+    short_name: "Education & research"
+    suppliers_worldwide_band: "n/a"
+    export_regime: "n/a"
+    exposure: Low
+    hs_2022: "n/a (service)"
+    risk_note: "Talent pipeline"
+    evidence_grade: "I"
+    annex_b_primary: [HUM]
+    annex_b_secondary: [PLAN, FOCI]
+  - id: E09
+    group: E
+    tier: "E"
+    name: "National test-infrastructure ownership"
+    short_name: "Test-infra ownership"
+    suppliers_worldwide_band: "n/a"
+    export_regime: "State-owned infrastructure"
+    exposure: Medium
+    hs_2022: "n/a (service)"
+    risk_note: "Tenure determines continuity"
+    evidence_grade: "I"
+    annex_b_primary: [INFRA, QUAL]
+    annex_b_secondary: [COMP]
+  - id: E10
+    group: E
+    tier: "E"
+    name: "Standards and qualification bodies"
+    short_name: "Standards bodies"
+    suppliers_worldwide_band: "n/a"
+    export_regime: "National / international"
+    exposure: Low
+    hs_2022: "n/a (service)"
+    risk_note: "Accreditation capacity"
+    evidence_grade: "I"
+    annex_b_primary: [INFRA, QUAL]
+    annex_b_secondary: [COMP]
+  - id: E11
+    group: E
+    tier: "E"
+    name: "Community consultation and environmental assessment"
+    short_name: "Consultation & environment"
+    suppliers_worldwide_band: "n/a"
+    export_regime: "Statutory consultation; impact assessment"
+    exposure: Medium
+    hs_2022: "n/a (service)"
+    risk_note: "Site approval timelines"
+    evidence_grade: "I"
+    annex_b_primary: [ENV]
+    annex_b_secondary: [POL]
+  - id: E12
+    group: E
+    tier: "E"
+    name: "Foreign-investment screening"
+    short_name: "Investment screening"
+    suppliers_worldwide_band: "n/a"
+    export_regime: "Security-review statute"
+    exposure: Medium
+    hs_2022: "n/a (service)"
+    risk_note: "Main tool against control drift"
+    evidence_grade: "I"
+    annex_b_primary: [POL, COMP, FOCI]
+    annex_b_secondary: []
+  - id: E13
+    group: E
+    tier: "E"
+    name: "Space-activity licensing"
+    short_name: "Space licensing"
+    suppliers_worldwide_band: "n/a"
+    export_regime: "National statute"
+    exposure: Low
+    hs_2022: "n/a (service)"
+    risk_note: "Shutter-control powers"
+    evidence_grade: "I"
+    annex_b_primary: [POL, COMP]
+    annex_b_secondary: []
