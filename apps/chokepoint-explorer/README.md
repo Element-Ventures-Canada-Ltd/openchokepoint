@@ -10,6 +10,7 @@ It reads one instance file and writes a plain-language Markdown report.
 ```bash
 pip install pyyaml
 python3 apps/chokepoint-explorer/explore.py examples/synthetic-turbopump-thread.yaml
+python3 apps/chokepoint-explorer/explore.py examples/synthetic-example.yaml --format json
 python3 apps/chokepoint-explorer/explore.py data/registry/launch-chain.yaml --out report.md
 ```
 
