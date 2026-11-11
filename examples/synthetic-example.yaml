@@ -8,6 +8,21 @@ objects:
   - { type: Entity, id: ent-0002, name: "Example Turbomachinery GmbH", entity_kind: company, incorporation_jurisdiction: DE,
       controlling_jurisdiction: DE, evidence_grade: reported, sources: ["https://example.org/synthetic/ent-0002"],
       as_of: 2026-10-01, lifecycle: active, synthetic: true }
+  - { type: Entity, id: ent-0003, name: "Example Precision Bearings AB", entity_kind: company, incorporation_jurisdiction: SE,
+      controlling_jurisdiction: SE, evidence_grade: confirmed, sources: ["https://example.org/synthetic/ent-0003"],
+      as_of: 2026-10-01, lifecycle: active, synthetic: true }
+  - { type: Entity, id: ent-0004, name: "Example Dynamic Seals K.K.", entity_kind: company, incorporation_jurisdiction: JP,
+      controlling_jurisdiction: JP, evidence_grade: reported, sources: ["https://example.org/synthetic/ent-0004"],
+      as_of: 2026-10-01, lifecycle: active, synthetic: true }
+  - { type: Entity, id: ent-0005, name: "Example Retainer Works S.r.l.", entity_kind: company, incorporation_jurisdiction: IT,
+      controlling_jurisdiction: IT, evidence_grade: inferred, sources: ["https://example.org/synthetic/ent-0005"],
+      as_of: 2026-10-01, lifecycle: active, synthetic: true }
+  - { type: Entity, id: ent-0006, name: "Example Rolling Elements S.A.", entity_kind: company, incorporation_jurisdiction: CH,
+      controlling_jurisdiction: CH, evidence_grade: confirmed, sources: ["https://example.org/synthetic/ent-0006"],
+      as_of: 2026-10-01, lifecycle: active, synthetic: true }
+  - { type: Entity, id: ent-0007, name: "Example Seal Assembly B.V.", entity_kind: company, incorporation_jurisdiction: NL,
+      controlling_jurisdiction: NL, evidence_grade: speculative, sources: ["https://example.org/synthetic/ent-0007"],
+      as_of: 2026-10-01, lifecycle: active, synthetic: true }
   - { type: Facility, id: fac-0001, name: "Example Test Site", facility_kind: test, host_jurisdiction: CA-BC,
       evidence_grade: inferred, sources: ["https://example.org/synthetic/fac-0001"], as_of: 2026-10-01, lifecycle: active, synthetic: true }
   - { type: Capability, id: cap-0001, name: "Example turbopump hot-fire testing", evidence_grade: inferred,
@@ -24,3 +39,13 @@ links:
       sources: ["https://example.org/synthetic/lnk-0003"], as_of: 2026-10-01, lifecycle: active, synthetic: true }
   - { type: supplies, id: lnk-0004, from: ent-0002, to: ent-0001, item: "Example turbopump bearing set", evidence_grade: reported,
       sources: ["https://example.org/synthetic/lnk-0004"], as_of: 2026-10-01, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-0005, from: ent-0003, to: ent-0002, item: "Example bearing raceway subassembly", evidence_grade: confirmed,
+      sources: ["https://example.org/synthetic/lnk-0005"], as_of: 2026-10-01, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-0006, from: ent-0004, to: ent-0001, item: "Example shaft seal cartridge", evidence_grade: reported,
+      sources: ["https://example.org/synthetic/lnk-0006"], as_of: 2026-10-01, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-0007, from: ent-0005, to: ent-0003, item: "Example bearing cage retainer", evidence_grade: inferred,
+      sources: ["https://example.org/synthetic/lnk-0007"], as_of: 2026-10-01, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-0008, from: ent-0006, to: ent-0003, item: "Example bearing rolling element set", evidence_grade: confirmed,
+      sources: ["https://example.org/synthetic/lnk-0008"], as_of: 2026-10-01, lifecycle: active, synthetic: true }
+  - { type: supplies, id: lnk-0009, from: ent-0007, to: ent-0004, item: "Example secondary seal housing", evidence_grade: speculative,
+      sources: ["https://example.org/synthetic/lnk-0009"], as_of: 2026-10-01, lifecycle: active, synthetic: true }
