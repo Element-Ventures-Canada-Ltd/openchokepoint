@@ -1,0 +1,39 @@
+# Handling: Unclassified — public
+# SYNTHETIC DEMONSTRATION ONLY (Slice B / Issue #17) — every issuer, key, digest and record is fictional.
+
+objects:
+  - { type: Entity, id: ent-2101, name: "Northfield Test Foundry", entity_kind: company,
+      incorporation_jurisdiction: CA, controlling_jurisdiction: CA, evidence_grade: confirmed,
+      sources: ["https://example.org/synthetic/ent-2101"], as_of: 2026-10-19, lifecycle: active, synthetic: true }
+  - { type: Facility, id: fac-2101, name: "Northfield HIP Facility", facility_kind: processing,
+      host_jurisdiction: CA-ON, evidence_grade: confirmed,
+      sources: ["https://example.org/synthetic/fac-2101"], as_of: 2026-10-19, lifecycle: active, synthetic: true }
+  - { type: Component, id: cmp-2101, name: "Synthetic Impeller I-200", part_number: "I-200", revision: "A",
+      component_kind: impeller, evidence_grade: confirmed,
+      sources: ["https://example.org/synthetic/cmp-2101"], as_of: 2026-10-19, lifecycle: active, synthetic: true }
+  - { type: SerialItem, id: ser-2101, name: "I-200-0001", serial: "I-200-0001",
+      evidence_grade: confirmed, sources: ["https://example.org/synthetic/ser-2101"],
+      as_of: 2026-10-19, lifecycle: active, synthetic: true }
+  - { type: ProcessStep, id: stp-2101, step_kind: hip, evidence_grade: confirmed,
+      sources: ["https://example.org/synthetic/stp-2101"], as_of: 2026-10-19, lifecycle: active, synthetic: true }
+  - { type: EvidenceRecord, id: evd-2101, record_kind: heat_treatment_record,
+      issuer: "Northfield Test Foundry",
+      issuer_id: "did:web:example.org:issuers:northfield-foundry",
+      issued_on: 2026-10-19,
+      hash_algorithm: sha256,
+      digest: "07e52743b6cf3bfdee36ac2398e36f4eb9e4bc4d2e1dc2977be28f2ceac003d5",
+      content_hash: "sha256:07e52743b6cf3bfdee36ac2398e36f4eb9e4bc4d2e1dc2977be28f2ceac003d5",
+      signature_ref: "urn:sig:openchokepoint:synthetic:evd-2101",
+      evidence_grade: confirmed,
+      sources: ["https://example.org/synthetic/evd-2101"],
+      as_of: 2026-10-19, lifecycle: active, synthetic: true }
+
+links:
+  - { type: instance_of, id: lnk-2101, from: ser-2101, to: cmp-2101, evidence_grade: confirmed,
+      sources: ["https://example.org/synthetic/lnk-2101"], as_of: 2026-10-19, lifecycle: active, synthetic: true }
+  - { type: underwent, id: lnk-2102, from: ser-2101, to: stp-2101, sequence: 1, evidence_grade: confirmed,
+      sources: ["https://example.org/synthetic/lnk-2102"], as_of: 2026-10-19, lifecycle: active, synthetic: true }
+  - { type: performed_at, id: lnk-2103, from: stp-2101, to: fac-2101, evidence_grade: confirmed,
+      sources: ["https://example.org/synthetic/lnk-2103"], as_of: 2026-10-19, lifecycle: active, synthetic: true }
+  - { type: evidenced_by, id: lnk-2104, from: stp-2101, to: evd-2101, evidence_grade: confirmed,
+      sources: ["https://example.org/synthetic/lnk-2104"], as_of: 2026-10-19, lifecycle: active, synthetic: true }

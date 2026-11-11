@@ -110,6 +110,13 @@ def check_public_data(path, records):
 
 THREAD_TYPES = {"Component", "SerialItem", "MaterialLot", "ProcessStep", "EvidenceRecord"}
 SHA256 = re.compile(r"^sha256:[0-9a-f]{64}$")
+DIGEST_HEX_BY_ALG = {
+    "sha256": re.compile(r"^[0-9a-f]{64}$"),
+    "sha384": re.compile(r"^[0-9a-f]{96}$"),
+    "sha512": re.compile(r"^[0-9a-f]{128}$"),
+}
+ISSUER_URI = re.compile(r"^(did:[a-z0-9]+:[A-Za-z0-9._:-]+|urn:[a-z0-9][a-z0-9.-]*:[A-Za-z0-9._:-]+)$")
+SIGNATURE_REF_URI = re.compile(r"^(https://\S+|urn:sig:[A-Za-z0-9._:-]+)$")
 INLINE_CONTENT = {"content", "body", "text", "data", "attachment", "payload", "excerpt", "value", "values",
                   "result", "results", "measurements", "parameters", "notes"}
 EVIDENCE_STRING_MAX = 120   # pointers are short; anything longer looks like content (EV-002)
@@ -130,8 +137,20 @@ def check_thread(objects, links, tier="public"):
             continue
         rid = o.get("id")
         has_hash, has_cite = "content_hash" in o, "citation" in o
-        if not (has_hash or has_cite):
-            errs.append(f"EV-001 {rid}: EvidenceRecord needs content_hash or citation (a pointer to the record, never the record)")
+        has_alg, has_digest = "hash_algorithm" in o, "digest" in o
+        if has_alg != has_digest:
+            errs.append(f"EV-005 {rid}: hash_algorithm and digest must be provided together on EvidenceRecord")
+        if has_alg and has_digest:
+            alg = str(o["hash_algorithm"])
+            pat = DIGEST_HEX_BY_ALG.get(alg)
+            if not pat or not pat.match(str(o["digest"])):
+                errs.append(f"EV-006 {rid}: digest is malformed for algorithm {alg!r} (expected lowercase hex)")
+        if "issuer_id" in o and not ISSUER_URI.match(str(o["issuer_id"])):
+            errs.append(f"EV-007 {rid}: issuer_id must be a valid DID (did:...) or URN (urn:...)")
+        if "signature_ref" in o and not SIGNATURE_REF_URI.match(str(o["signature_ref"])):
+            errs.append(f"EV-008 {rid}: signature_ref must be a public https:// URL or urn:sig:... reference")
+        if not (has_hash or has_cite or (has_alg and has_digest)):
+            errs.append(f"EV-001 {rid}: EvidenceRecord needs content_hash, (hash_algorithm + digest), or citation (a pointer to the record, never the record)")
         bad = sorted(INLINE_CONTENT & set(o))
         if bad:
             errs.append(f"EV-002 {rid}: inline content field(s) {bad} not allowed; point to the record with content_hash or citation")

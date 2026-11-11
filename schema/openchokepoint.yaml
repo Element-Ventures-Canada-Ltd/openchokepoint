@@ -10,7 +10,7 @@
 
 schema:
   name: openchokepoint
-  version: 0.2.1-draft
+  version: 0.3.0-draft
   status: draft
 
 shared_properties:            # every object and link carries these
@@ -78,6 +78,10 @@ object_types:
       content_hash:     { type: string }                   # sha256:<64 hex> of the record held elsewhere (rule EV-002)
       citation:         { type: url }                      # public https location of the record (rule EV-003)
       citation_section: { type: string }                   # section, page or figure reference within the citation
+      hash_algorithm:   { type: enum, values: [sha256, sha384, sha512] } # Slice B (#17) digest algorithm
+      digest:           { type: string }                   # Slice B (#17) lowercase hex digest matching hash_algorithm
+      issuer_id:        { type: string }                   # Slice B (#17) DID or URN of signing issuer
+      signature_ref:    { type: string }                   # Slice B (#17) detached signature URI or URN
   CriticalItem:
     description: >-
       A judgment flag: loss of the flagged item would delay a programme by more than 30 days.
